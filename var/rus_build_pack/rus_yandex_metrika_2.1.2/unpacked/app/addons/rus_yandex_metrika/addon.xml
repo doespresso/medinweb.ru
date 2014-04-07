@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--  rus_build_yandex_metrika dbazhenov -->
+<addon scheme="2.0">
+    <id>rus_yandex_metrika</id>
+    <name>Русская локализация - Яндекс.Метрика</name>
+    <description>Интегрирует сервис Яндекс.Метрика в магазин</description>
+    <version>2.1.2</version>
+    <priority>2014</priority>
+    <position>9</position>
+    <default_language>ru</default_language>
+        <translations> 
+            <item for="name" lang="en">Russian localization - Yandex.Metrika</item>
+            <item for="description" lang="en">Statistics from Yandex</item>
+        </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <name>General</name>
+                <items>
+                    <item id="general_settings">
+                        <name>General</name>
+                        <type>header</type>
+                        <translations>
+                            <item lang="ru">Общие</item>
+                        </translations>
+                    </item>
+                    <item id="counter_number">
+                        <tooltip>can be acquired at metrika.yandex.ru</tooltip>
+                        <name>Counter ID</name>
+                        <type>input</type>
+                        <translations>
+                            <item lang="ru">Номер счётчика</item>
+                            <item lang="ru" for="tooltip">Номер счетчика, который Вы можете создать на сайте metrika.yandex.ru</item>
+                        </translations>
+                    </item>
+                    <item id="base_settings">
+                        <name>Settings</name>
+                        <type>header</type>
+                        <translations>
+                            <item lang="ru">Настройки</item>
+                        </translations>
+                    </item>
+
+                    <item id="visor">
+                        <name>WebVisor</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item lang="ru">Вебвизор</item>
+                        </translations>
+                    </item>
+                    <item id="clickmap">
+                        <name>Click map</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item lang="ru">Карта кликов</item>
+                        </translations>
+                    </item>
+                    <item id="external_links">
+                        <name>External links, file downloads and "Share" button report</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item lang="ru">Внешние ссылки, загрузки файлов и отчёт по кнопке «Поделиться»</item>
+                        </translations>
+                    </item>
+                    <item id="denial">
+                        <name>Accurate bounce rate</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item lang="ru">Точный показатель отказов</item>
+                        </translations>
+                    </item>
+                    <item id="addition_settings">
+                        <name>Addition settings</name>
+                        <type>header</type>
+                        <translations>
+                            <item lang="ru">Дополнительные настройки</item>
+                        </translations>
+                    </item>
+                    <item id="track_hash">
+                        <name>Tracking the hash in your browser</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item lang="ru">Отслеживание хеша в адресной строке браузера</item>
+                        </translations>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction" edition_type="ROOT">
+                <name>Инструкции</name>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <translations>
+        <item for="name" lang="en">RUS Yandex Metrika</item>
+        <item for="description" lang="en">Integrates a Yandex.Metrika service with the store</item>
+    </translations>
+</addon>

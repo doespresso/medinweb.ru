@@ -1,0 +1,848 @@
+<?xml version="1.0"?>
+<!-- rus_build_pack dbazhenov -->
+<addon scheme="2.0">
+	<id>rus_build_pack</id>
+	<name>Русская локализация</name>
+    <priority>4500</priority>
+    <version>2.2.2</version>
+	<position>0</position>
+    <auto_install>ULTIMATE</auto_install>
+	<status>active</status>
+    <description>Главный модуль "Русской локализации CS-Cart". Методы оплаты и доставки. Центр обновлений. Символ рубля и синхронизация валют. </description>
+    <default_language>ru</default_language>
+    <translations> 
+        <item for="name" lang="en">Russian localization for CS-Cart</item>
+        <item for="description" lang="en">The main add-on of "Russian localization for CS-Cart". Payment and shipping methods. Upgrade center. Rouble sign and currency synchronization.</item>
+    </translations>
+	<settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+		<sections>
+			<section id="settings" edition_type="ROOT">
+                <name>Настройки</name>
+                <translations>
+                    <item lang="en">Settings</item>
+                </translations>
+                <items>
+                    <item id="settings">
+                        <type>template</type>
+                        <default_value>settings.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="upgrade" edition_type="ROOT">
+                <name>Настройки обновлений</name>
+                <translations>
+                    <item lang="en">Upgrade settings</item>
+                </translations>
+                <items>
+                    <item id="auto_check_upgrade">
+                        <name>Проверять наличие обновлений автоматически</name>
+                        <translations>
+                            <item lang="en">Check for upgrades automatically</item>
+                        </translations>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction" >
+                <name>Инструкции</name>
+                <translations>
+                    <item lang="en">Instructions</item>
+                </translations>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+		</sections>
+    </settings>
+    <functions>
+        <item for="uninstall">fn_russian_pack_delete_payments</item>
+        <item for="uninstall">fn_russian_pack_shippings_uninstall</item>
+    </functions>
+	
+    <language_variables>
+        <item lang="en" id="rus_build_pack.day">day</item>
+        <item lang="en" id="rus_build_pack.how_days">days</item>
+        <item lang="en" id="rus_build_pack.hour">hour</item>
+        <item lang="en" id="rus_build_pack.how_hours">hours</item>
+        <item lang="ru" id="rus_build_pack.day">день</item>
+        <item lang="ru" id="rus_build_pack.how_days">дней</item>
+        <item lang="ru" id="rus_build_pack.hour">час</item>
+        <item lang="ru" id="rus_build_pack.how_hours">часов</item>
+
+
+        <item lang="ru" id="rus_connect.end_trial_text">Период действия пробной версии окончен. Вам необходимо приобрести лицензионный ключ на "Русскую локализацию CS-Cart". Пожалуйста, приобретите полный лицензионный ключ и активируйте его.</item> 
+        <item lang="en" id="rus_connect.end_trial_text">Trial period has expired. You need to purchase a license key of "Russian localization for CS-Cart". Please purchase a license key and activate it.</item> 
+        <item lang="ru" id="rus_connect.end_trial_notify">Пробный период "Русской локализации CS-Cart" истёк.</item> 
+        <item lang="en" id="rus_connect.end_trial_notify">Trial period of "Russian localization for CS-Cart" has expired.</item>
+        <item lang="ru" id="rus_build_pack.end_tial_to">Тестовый период окончен. Дата окончания: </item> 
+        <item lang="en" id="rus_build_pack.end_tial_to">Trial period has expired. Expiration date: </item>
+        <item lang="ru" id="rus_connect.end_trial_text">Период действия пробной версии окончен. Вам необходимо приобрести лицензионный ключ на "Русскую локализацию CS-Cart". Пожалуйста, приобретите полный лицензионный ключ и активируйте его.</item>       
+        <item lang="ru" id="rus_connect.end_trial_notify">Пробный период "Русской локализации CS-Cart" истёк.</item>     
+        <item lang="ru" id="rus_connect.license_tab">Активировать лицензионный ключ</item>
+        <item lang="en" id="rus_connect.license_tab">Activate license key</item>
+        <item lang="ru" id="rus_connect.get_trial_tab">Пробная версия</item>
+        <item lang="en" id="rus_connect.get_trial_tab">Trial version</item>
+        <item lang="ru" id="rus_connect.trial_subheader">Тест-драйв без ограничения функционала на 30 дней.</item>
+        <item lang="en" id="rus_connect.trial_subheader">Test it with no functionality limitations for 30 days.</item>
+        <item lang="ru" id="rus_connect.trial_text">Через 30 дней Вам необходимо приобести лицензионный ключ или удалить файлы модулей "Русской локализации CS-Cart" с Вашего магазина.<![CDATA[<br/>]]>Для активации тестового периода введите email от Вашего аккаунта в компании Simtech Development. Если Вы не зарегистрированы, то создайте для себя личный кабинет в системе поддержки Simtech Development по ссылке: <![CDATA[<a href="https://www.simtechdev.com/index.php?dispatch=profiles.add">www.simtechdev.com</a>]]></item>
+        <item lang="en" id="rus_connect.trial_text">In 30 days you will need to buy a license or remove add-on files of "Russian localization for CS-Cart" from your store installation.<![CDATA[<br/>]]>To activate trial period, enter the email of your account in the Help Desk system of Simtech Development. If you are not registered, create an account in Simtech Development Help Desk system at <![CDATA[<a href="https://www.simtechdev.com/index.php?dispatch=profiles.add">www.simtechdev.com</a>]]></item>
+        <item lang="ru" id="rus_connect.install">Русская локализация - Загрузка модулей</item>
+        <item lang="en" id="rus_connect.install">Russian localization - Loading modules</item>
+        <item lang="ru" id="rus_connect.activate_text">Если у Вас нет лицензионного ключа, Вы можете приобрести его у официальных продавцов "Русской локализации CS-Cart" или оставьте заявку на официальном сайте компании Simtech Development  <![CDATA[<a href="http://www.simtechdev.com/">www.simtechdev.com</a>]]> </item>
+        <item lang="en" id="rus_connect.activate_text">If you do not have a license key, you can purchase it from official vendors of "Russian localization for CS-Cart" or post a request at Simtech Development official site <![CDATA[<a href="http://www.simtechdev.com/">www.simtechdev.com</a>]]> </item>
+        <item lang="ru" id="rus_connect.install_text_instruction"><![CDATA[<p>Обновление происходит в несколько шагов:<br/>1. Выберите модули которые необходимо установить или обновить.<br/>2. Мастер установки загрузит необходимые дистрибутивы.<br/>3. Мастер установки загрузит правила обновления для вашей конфигурации. Проверит ваш CS-Cart на наличие конфликтов модулей и права на запись файлов.<br/> 4. Будет выполнено создание резервных копий старых версий и конфликтующих модулей. Старые файлы будут заменены на новые.<br/>5. Новые версии модулей будут переустановлены с востановлением старых настрое (если старые настройки подходят для новой версии модуля).<br/><br/><b>Внимание!</b> Процесс обновления может занимать продолжительное время. При нестабильном или медленном доступе в интернет, рекомендуем выполнять апгрейд модулей частями.]]></item>
+        <item lang="en" id="rus_connect.install_text_instruction"><![CDATA[<p>The upgrade is carried out in several steps:<br/>1. Select the add-ons to be installed or upgraded.<br/>2. Installation Wizard will load the necessary installation package.<br/>3. Installation Wizard will load installation rules for your configuration and check your CS-Cart for add-on conflicts and writing permissions.<br/> 4. Backup copies of old versions and conflict add-ons will be created. The old files will be replaced with the new ones.<br/>5. The new versions of add-ons will be reinstalled with old settings (if old settings are supported by the new version of the add-on).<br/><br/><b>Note!</b> Upgrade process may take a long time. If the internet connection is slow or unstable, we recommend to upgrade the add-ons one by one.]]></item>
+        <item lang="ru" id="rus_connect.install_download_addons">Доступны новые версии модулей:</item>
+        <item lang="en" id="rus_connect.install_download_addons">New versions of add-ons are available:</item>
+        <item lang="ru" id="rus_connect.access_id">Лицензионный ключ</item>
+        <item lang="en" id="rus_connect.access_id">License key</item>
+        <item lang="ru" id="rus_connect.upgrade.no_addons">Вы не выбрали модули для обновления</item>  
+        <item lang="en" id="rus_connect.upgrade.no_addons">No add-ons are selected to be upgraded</item>
+        <item lang="ru" id="rus_connect.upgrade.no_files_permissions">Недостаточно прав для записи файлов.<![CDATA[<br/><a href="[link]">Перейдите к настройкам FTP доступа</a>]]></item>
+        <item lang="ru" id="rus_connect.upgrade.no_files_permissions">No writing permissions.<![CDATA[<br/><a href="[link]">Go to FTP access settings</a>]]></item>
+        <item lang="ru" id="rus_build_menu.rus_upgrade">Центр обновлений</item>
+        <item lang="en" id="rus_build_menu.rus_upgrade">Upgrade center</item>
+        <item lang="ru" id="rus_build_menu.rus_addons">Модули</item>
+        <item lang="en" id="rus_build_menu.rus_addons">Add-ons</item>
+        <item lang="ru" id="rus_build_menu.activate">Активация</item>
+        <item lang="en" id="rus_build_menu.activate">Activation</item>
+        <item lang="ru" id="rus_build_menu">Русская локализация</item>
+        <item lang="en" id="rus_build_menu">Russian localization for CS-Cart</item>
+        <item lang="ru" id="rus_connect.current_version">Текущая версия:</item>
+        <item lang="en" id="rus_connect.current_version">Current version:</item>
+        <item lang="ru" id="rus_connect.updates_available">Доступны новые обновления "Русской локализации CS-Cart"<![CDATA[<br/><a href="[link]">Перейдите в центр обновлений</a>]]></item>
+        <item lang="en" id="rus_connect.updates_available">Upgrades are available<![CDATA[<br/><a href="[link]">Go to the upgrade center</a>]]></item>
+        <item lang="ru" id="rus_connect.new_version">Актуальная версия:</item>
+        <item lang="en" id="rus_connect.new_version">The latest version:</item>
+        <item lang="ru" id="rus_connect.upgrade">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade">Upgrade</item>
+        <item lang="ru" id="rus_connect.download">Загрузить</item>
+        <item lang="en" id="rus_connect.download">Download</item>
+        <item lang="ru" id="rus_connect.check_upgrade">Проверить наличие обновлений</item>
+        <item lang="en" id="rus_connect.check_upgrade">Check for upgrades</item>
+        <item lang="ru" id="rus_connect.upgrade.addon">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade.addon">Upgrade</item>
+        <item lang="ru" id="rus_connect.upgrade.download">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade.download">Upgrade</item>
+        <item lang="ru" id="rus_connect.upgrade">Обновить</item>
+        <item lang="en" id="rus_connect.upgrade">Upgrade</item>
+        <item lang="ru" id="rus_connect.install_subheader">Установка модулей "Русской локализации CS-Cart"</item>
+        <item lang="en" id="rus_connect.install_subheader">Installation of the add-ons of "Russian localization for CS-Cart"</item>
+        <item lang="ru" id="rus_connect.install_text"><![CDATA[<p>Пожалуйста, выберите необходимые модули.</p><p>Модули будут загружены с сервера компании Simtech Development и будут доступны для установки и настройки.</p>]]></item>
+        <item lang="en" id="rus_connect.install_text"><![CDATA[<p>Please select the necessary add-ons.</p><p>They will be downloaded from Simtech Development server and available for installation.</p>]]></item>
+        <item lang="ru" id="rus_connect.install_subheader_instruction">Инструкция</item>
+        <item lang="en" id="rus_connect.install_subheader_instruction">Instructions</item>
+        <item lang="ru" id="rus_connect.deleted_addons">Старые версии модулей, которые будут удалены</item>
+        <item lang="en" id="rus_connect.deleted_addons">Old versions of add-ons to be removed</item>
+        <item lang="ru" id="rus_connect.upgrade.check_conflict_addons">Проверка конфликтующих аддонов</item>
+        <item lang="en" id="rus_connect.upgrade.check_conflict_addons">Checking for conflict add-ons</item>  
+        <item lang="ru" id="rus_connect.conflict_addons_subheader">Обнаружены устаревшие версии модулей</item>
+        <item lang="en" id="rus_connect.conflict_addons_subheader">Outdated versions of add-ons found</item>
+        <item lang="ru" id="rus_connect.conflict_addons_text"><![CDATA[Старые версии модулей могут конфликтовать с модулями "Русской локализации CS-Cart"<br/>Данные модули будут удалены или заменены на новые версии.<br/>Будут созданы резервные копии модулей<br/><b>Внимание!</b>Настройки некоторых модулей могут быть утеряны, по причине несовместимости с новой версией модуля.]]></item>
+        <item lang="en" id="rus_connect.conflict_addons_text"><![CDATA[Outdated versions of add-ons may conflict with other add-ons of "Russian localization of CS-Cart"<br/>These add-ons will be removed or replaced with new versions.<br/>Backup copies of add-ons will be created.<br/><b>Note!</b>Some settings may be lost due to incompatibility with new version of the add-on.]]></item>
+        <item lang="ru" id="rus_connect.upgrade.not_writable"><![CDATA[<p>Недостаточно прав на запись и изменение файлов и папок. <br/>Пожалуйста, установите права доступа на файлы и папки перечисленные ниже.<br/>Вы можете установить права доступа вручную или автоматически с помощью FTP. Для этого нажмите на кнопку перехода к настройкам FTP.]]></item>
+        <item lang="en" id="rus_connect.upgrade.not_writable"><![CDATA[<p>You do not have permissions to write and edit files and directories. <br/>Please set permissions to the files and directores listed below.<br/>You can set permissions manually or automatically using FTP. To do it, go to FTP settings.]]></item>
+        <item lang="ru" id="rus_connect.clear_access_id_header">Изменить лицензионный ключ</item>
+        <item lang="en" id="rus_connect.clear_access_id_header">Change license key</item>
+        <item lang="ru" id="rus_connect.clear_access_id">Повторить авторизацию</item>
+        <item lang="en" id="rus_connect.clear_access_id">Repeat authorization</item>
+        <item lang="ru" id="rus_connect.activate_title">Русская локализация - Активация</item>
+        <item lang="en" id="rus_connect.activate_title">Russian localization - Activation</item>
+        <item lang="ru" id="rus_connect.activate_subheader">Выполните активацию "Русской локализации CS-Cart"</item>
+        <item lang="en" id="rus_connect.activate_subheader">Activate "Russian localization for CS-Cart"</item>
+        <item lang="ru" id="rus_connect.license_key">Лицензионный ключ</item>
+        <item lang="en" id="rus_connect.license_key">License key</item>
+        <item lang="ru" id="rus_connect.license">Лицензия</item>
+        <item lang="en" id="rus_connect.license">License</item>
+        <item lang="ru" id="rus_connect.email_helpdesk">Ваш email</item>
+        <item lang="en" id="rus_connect.email_helpdesk">Your email</item>
+        <item lang="ru" id="rus_connect.please_enter_email">Введите email</item>
+        <item lang="en" id="rus_connect.please_enter_email">Enter email</item>
+        <item lang="ru" id="rus_connect.help_us_tooltip">Разрешить отправку анонимной статистики о функционировании "Русской локализации CS-Cart" разработчикам</item>
+        <item lang="en" id="rus_connect.help_us_tooltip">Allow sending statistics about "Russian localization for CS-Cart" to developers anonymously</item>
+        <item lang="ru" id="rus_connect.help_us">Помогите нам улучшить "Русскую локализацию"</item>
+        <item lang="en" id="rus_connect.help_us">Help us improve "Russian localization"</item>
+        <item lang="ru" id="rus_connect.terms_n_conditions">Я принимаю лицензионное соглашение "Русской локализации CS-Cart"</item>
+        <item lang="en" id="rus_connect.terms_n_conditions">I accept "Russian localization for CS-Cart" license agreement</item>
+        <item lang="ru" id="rus_connect.activate">Активировать</item>
+        <item lang="en" id="rus_connect.activate">Activate</item>
+        <item lang="ru" id="rus_connect.activate_popup_title">Необходима активация</item>
+        <item lang="en" id="rus_connect.activate_popup_title">Activation required</item>
+        <item lang="ru" id="rus_build_pack.install.dialog_title">Установка - Русская сборка - CS-Cart</item>
+        <item lang="en" id="rus_build_pack.install.dialog_title">Installation - Russian localization - CS-Cart</item>
+        <item lang="ru" id="rus_build_pack.install.function_title">Установка функций</item>
+        <item lang="en" id="rus_build_pack.install.function_title">Install functions</item>
+        <item lang="ru" id="rus_build_pack.install.function_text">Пожалуйста выберите функции которые необходимо установить</item>
+        <item lang="en" id="rus_build_pack.install.function_text">Please select functions to be installed</item>
+        <item lang="ru" id="rus_build_pack.install.currencies">Установить валюту "Российский рубль"</item>
+        <item lang="en" id="rus_build_pack.install.currencies">Set "Russian ruble" as currency</item>
+        <item lang="ru" id="rus_build_pack.install.currencies_tooltip">Будет создана новая валюта Российский рубль ("RUB"). Российский рубль будет установлен как основная валюта магазина. Это необходимо для корректной работы способов оплаты, доставки и интеграции с Яндекс</item>
+        <item lang="en" id="rus_build_pack.install.currencies_tooltip">New currency Russian ruble ("RUB") will be set. Russian ruble will be the main currency of the store. It is necessary for correct operation of payment and shipping methods and integration with Yandex</item>
+        <item lang="ru" id="rus_build_pack.install.currencies_sync">Синхронизировать курс валюты с ЦБРФ</item>
+        <item lang="en" id="rus_build_pack.install.currencies_sync">Synchronize currency rate with Bank of Russia</item>
+        <item lang="ru" id="rus_build_pack.install.currencies_sync_tooltip">Курсы валют будут синхронизированы в соответсвии с курсом валют Центрального банка Российской Федерации ( http://www.cbr.ru/ )</item>
+        <item lang="en" id="rus_build_pack.install.currencies_sync_tooltip">Currency rates will be synchronized according to the rates of Bank of Russia ( http://www.cbr.ru/ )</item>
+        <item lang="ru" id="rus_build_pack.install.payments">Установить методы оплаты</item>
+        <item lang="en" id="rus_build_pack.install.payments">Install payment methods</item>
+        <item lang="ru" id="rus_build_pack.install.payments_tooltip">Будут установлены платёжные процессоры для следующих способов оплаты: Robokassa, RBK Money, Qiwi, Сбербанк, Webmoney, PlatiDoma, Assist, Купи в кредит, Всё в кредит, YesCredit</item>
+        <item lang="en" id="rus_build_pack.install.payments_tooltip">the following payment methods will be installed: Robokassa, RBK Money, Qiwi, Sberbank, Webmoney, PlatiDoma, Assist, Kupi v kredit, Vse v kredit, YesCredit</item>
+        <item lang="ru" id="rus_build_pack.install.shippings">Установить методы доставки</item>
+        <item lang="en" id="rus_build_pack.install.shippings">Install shipping methods</item>
+        <item lang="ru" id="rus_build_pack.install.shippings_tooltip">Будут установлены способы доставки Почта РФ и EMS. Это позволит расчитывать стоимость доставки в режиме онлайн</item>
+        <item lang="en" id="rus_build_pack.install.shippings_tooltip">The Russian post and EMS shipping methods will be installed. It will allow to calculate shipping cost online</item>
+        <item lang="ru" id="rus_build_pack.install.final_text">Функции успешно установлены<![CDATA[<br />]]> Пожалуйста, выберите дополнительные модули которые Вам требуется установить</item>
+        <item lang="en" id="rus_build_pack.install.final_text">The functions are installed successfully<![CDATA[<br />]]> Please select additional add-ons to be installed</item>
+        <item lang="ru" id="rus_build_pack.install.final_title">Шаг 3 из 3. Установка дополнительных модулей</item>
+        <item lang="en" id="rus_build_pack.install.final_title">Step 3 of 3. Installation of additional add-ons</item>
+        <item lang="ru" id="rus_build_pack.install.addons_title">Установить модули</item>
+        <item lang="en" id="rus_build_pack.install.addons_title">Install add-ons</item>
+        <item lang="ru" id="rus_build_pack.buttons.function_button">Продолжить установку</item>
+        <item lang="en" id="rus_build_pack.buttons.function_button">Continue installation</item>
+        <item lang="ru" id="rus_build_pack.buttons.final_button">Завершить установку!</item>
+        <item lang="en" id="rus_build_pack.buttons.final_button">Complete installation!</item>
+        <item lang="ru" id="rus_build_pack.active_to">активен до</item>
+        <item lang="en" id="rus_build_pack.active_to">valid through</item>
+        <item lang="ru" id="rus_server.license_activate">Лицензионный ключ активирован</item>
+        <item lang="en" id="rus_server.license_activate">License key is activated</item>
+        <item lang="ru" id="rus_server.incorrect_key">Неправильный ключ!</item>  
+        <item lang="en" id="rus_server.incorrect_key">Incorrect key!</item>
+        <item lang="ru" id="rus_server.license_has_already_been_activated">Лицензионный ключ был активирован ранее</item>  
+        <item lang="en" id="rus_server.license_has_already_been_activated">License key has already been activated</item>
+        <item lang="ru" id="rus_connect.activate_true_text">Благодарим за Ваш выбор. Вам доступен функционал "Русской локацизиции CS-Cart"</item>
+        <item lang="en" id="rus_connect.activate_true_text">Thank you for your choice. Functionality of "Russian localization for CS-Cart" is available to you.</item>
+        <item lang="ru" id="rus_connect.activate_connect_error">Ошибка соединения с сервером</item>
+        <item lang="en" id="rus_connect.activate_connect_error">Server connection error</item>
+        <item lang="ru" id="rus_connect.activate_true_subheader">Лицензионный ключ активирован</item>  
+        <item lang="en" id="rus_connect.activate_true_subheader">License key is activated</item> 
+        <item lang="ru" id="rus_connect.upgrade.no_addons">Нет модулей для обновления</item> 
+        <item lang="en" id="rus_connect.upgrade.no_addons">No add-ons to upgrade</item> 
+        <item lang="ru" id="rus_connect.upgrade.no_schema">Не загружена схема для модуля: </item> 
+        <item lang="en" id="rus_connect.upgrade.no_schema">No add-on scheme is loaded: </item> 
+        <item lang="ru" id="rus_connect.upgrade.addons">Обновление модулей</item>
+        <item lang="en" id="rus_connect.upgrade.addons">Upgrading add-ons</item>  
+        <item lang="ru" id="rus_connect.upgrade.get_schemas">Получение схемы апгрейда</item> 
+        <item lang="en" id="rus_connect.upgrade.get_schemas">Retrieving upgrade sceme</item> 
+        <item lang="ru" id="rus_connect.upgrade.get_conflicts_schema">Загружаем схему конфликтующих аддонов</item> 
+        <item lang="en" id="rus_connect.upgrade.get_conflicts_schema">Loading conflict add-ons scheme</item> 
+        <item lang="ru" id="rus_connect.upgrade.generate_dirs">Генерируем пути к файлам и папкам</item>
+        <item lang="en" id="rus_connect.upgrade.generate_dirs">Creating paths to files and folders</item>      
+        <item lang="ru" id="rus_connect.upgrade.checking_permissions">Проверка прав доступа к файлам и папкам</item>  
+        <item lang="en" id="rus_connect.upgrade.checking_permissions">Checking for permissions of files and folders</item> 
+        <item lang="ru" id="rus_connect.upgrade.download_distr">Загрузка файлов</item>    
+        <item lang="en" id="rus_connect.upgrade.download_distr">Downloading files</item> 
+        <item lang="ru" id="rus_connect.upgrade.backup_files_conflict">Создание резервной копии конфликтных модулей</item> 
+        <item lang="en" id="rus_connect.upgrade.backup_files_conflict">Creating a backup copy of conflict add-ons</item> 
+        <item lang="ru" id="rus_connect.upgrade.backup_files">Создание резервной копии старой версии</item>  
+        <item lang="en" id="rus_connect.upgrade.backup_files">Creating a backup copy of the old version</item> 
+        <item lang="ru" id="rus_connect.upgrade.backup_settings">Создание резервной копии настроек</item>
+        <item lang="en" id="rus_connect.upgrade.backup_settings">Creating settings backup</item>   
+        <item lang="ru" id="rus_connect.upgrade.uninstall_conflict_addon">Удаление конфликтных аддонов</item> 
+        <item lang="en" id="rus_connect.upgrade.uninstall_conflict_addon">Removing conflict add-ons</item>
+        <item lang="ru" id="rus_connect.upgrade.remove_conflict_files">Удаление конфликтных файлов</item> 
+        <item lang="en" id="rus_connect.upgrade.remove_conflict_files">Removing conflict files</item> 
+        <item lang="ru" id="rus_connect.upgrade.uninstall_addon">Удаление модуля</item> 
+        <item lang="en" id="rus_connect.upgrade.uninstall_addon">Removing add-on</item>
+        <item lang="ru" id="rus_connect.upgrade.update_files">Обновление файлов модуля</item> 
+        <item lang="en" id="rus_connect.upgrade.update_files">Updating add-on files</item>
+        <item lang="ru" id="rus_connect.upgrade.install_addon">Установка модуля</item> 
+        <item lang="en" id="rus_connect.upgrade.install_addon">Installing add-on</item> 
+        <item lang="ru" id="rus_connect.check_conflict_title">Проверка конфигурации и конфликтов</item> 
+        <item lang="en" id="rus_connect.check_conflict_title">Checking configuration for conflicts</item>
+        <item lang="ru" id="rus_connect.button.check_conflict">Продолжить обновление</item>
+        <item lang="en" id="rus_connect.button.check_conflict">Continue upgrading</item>
+        <item lang="ru" id="rus_connect.backup_root">Папка резервной копии модуля:</item>
+        <item lang="en" id="rus_connect.backup_root">Add-on backup directory:</item>
+        <item lang="ru" id="rus_connect.upgrade.restore_settings">Востановление настроек</item>
+        <item lang="en" id="rus_connect.upgrade.restore_settings">Restoring settings</item>
+        <item lang="ru" id="rus_connect.check_install">Загрузка файлов</item> 
+        <item lang="en" id="rus_connect.check_install">Downloading files</item>
+        <item lang="ru" id="rus_connect.check_install_subheader">Файлы модулей загружены на Ваш сервер</item>
+        <item lang="en" id="rus_connect.check_install_subheader">Add-on files are uploaded to your server</item>
+        <item lang="ru" id="rus_connect.check_install_true"><![CDATA[На следующем шаге, будет выполнено: <br/>1. Проверка на наличие конфликтующих модулей<br/>2. Проверка прав доступа на запись файлов.<br/>Вы можете перейти к следующему шагу, при этом будут обновлятся модули со статусом "Успешно".]]></item>
+        <item lang="en" id="rus_connect.check_install_true"><![CDATA[At the next step the following will be done: <br/>1. Check for conflict add-ons<br/>2. Check for writing permissions.<br/>You can move to the next step, add-ons with the "Successful" status will be upgraded.]]></item>
+        <item lang="ru" id="rus_connect.check_install_text"><![CDATA[<br/>Если модуль не загрузился, то возможно мы подготавливаем новую версию данного модуля или на сервере производятся работы<br/>Вы можете продолжить установку, однако при этом будут установлены только загруженные модули.<br/> Для повторной загрузки нажмите "Повторить".]]></item>
+        <item lang="en" id="rus_connect.check_install_text"><![CDATA[<br/>If the add-on was not downloaded, a new version of this add-on may be in progress or the server is being maintained<br/>You can continue installation but only downloaded add-ons will be installed.<br/> To repeat downloading click "Reload".]]></item>
+        <item lang="ru" id="rus_connect.download_addons">Статус загрузки модулей</item>
+        <item lang="en" id="rus_connect.download_addons">Add-ons download status</item>
+        <item lang="ru" id="rus_connect.button.reload">Повторить загрузку</item>
+        <item lang="en" id="rus_connect.button.reload">Reload</item>
+        <item lang="ru" id="rus_connect.button.repeat_check_perm">Повторить проверку прав</item>
+        <item lang="en" id="rus_connect.button.repeat_check_perm">Repeat checking for permissions</item>
+        <item lang="ru" id="rus_connect.install_dir">Путь к файлам</item>
+        <item lang="en" id="rus_connect.install_dir">Path to files</item>
+        <item lang="ru" id="rus_connect.check_permissions_files">Права доступа на запись файлов и папок проверены (список файлов)</item>
+        <item lang="en" id="rus_connect.check_permissions_files">Writing permissions are checked (list of files)</item>
+        <item lang="ru" id="rus_connect.conflict_addons_text_true">Будут внесены изменения в следующие файлы и папки:</item>
+        <item lang="en" id="rus_connect.conflict_addons_text_true">The following files will be changed:</item>
+        <item lang="ru" id="rus_connect.conflict_addons_done"><![CDATA[<p>Конфликтующих модулей не обнаружено</p>]]></item>
+        <item lang="en" id="rus_connect.conflict_addons_done"><![CDATA[<p>No conflict add-ons are found</p>]]></item>
+        <item lang="ru" id="rus_connect.current_addons">Установленные версии модулей "Русской локализации"</item>
+        <item lang="en" id="rus_connect.current_addons">Installed versions of "Russian localization" add-ons</item>
+
+<!-- Payment system and method  -->
+        <item lang="ru" id="pay_all">Выбор на стороне сервиса</item>
+        <item lang="ru" id="pay_payanyway">PayAnyWay</item>
+        <item lang="ru" id="pay_banktransfer">Банковский перевод</item>
+        <item lang="ru" id="pay_ciberpay">CiberPay</item>
+        <item lang="ru" id="pay_comepay">Comepay</item>
+        <item lang="ru" id="pay_contact">Contact</item>
+        <item lang="ru" id="pay_elecsnet">Элекснет</item>
+        <item lang="ru" id="pay_euroset">Евросеть</item>
+        <item lang="ru" id="pay_svyaznoy">Связной</item>
+        <item lang="ru" id="pay_forward">ForwardMobil</item>
+        <item lang="ru" id="pay_gorod">Федеральная система ГОРОД</item>
+        <item lang="ru" id="pay_mcb">МосКредитБанк</item>
+        <item lang="ru" id="pay_moneta">Монета.Ру</item>
+        <item lang="ru" id="pay_moneymail">MoneyMail</item>
+        <item lang="ru" id="pay_novoplat">Novoplat</item>
+        <item lang="ru" id="pay_plastic">VISA, Master Card</item>
+        <item lang="ru" id="pay_bankcard">Банковская карта</item>
+        <item lang="ru" id="pay_platika">PLATiKA</item>
+        <item lang="ru" id="pay_postrus">Почта России</item>
+        <item lang="ru" id="pay_wallet">Единый кошелек</item>
+        <item lang="ru" id="pay_webmoney">WebMoney</item>
+        <item lang="ru" id="pay_yandex">Яндекс.Деньги</item>
+        <item lang="ru" id="pay_vtb24">ВТБ24</item>
+        <item lang="ru" id="pay_alfabank">Альфа-Банк</item>
+        <item lang="ru" id="pay_rsb">Банк Русский Стандар</item>
+        <item lang="ru" id="pay_beeline">Билайн</item>
+        <item lang="ru" id="pay_mts">МТС</item>
+        <item lang="ru" id="pay_megafon">Мегафон</item>
+        <item lang="ru" id="pay_rostelecom">Ростелеком</item>
+        <item lang="ru" id="pay_qiwi">QIWI кошелек</item>
+        <item lang="ru" id="pay_psb">ПромСвязьБанк</item>
+        <item lang="ru" id="pay_sberbank">Банковский платеж (сбербанк)</item>
+        <item lang="ru" id="pay_sberbank_spasibo">Сбербанк Спасибо</item>
+        <item lang="ru" id="pay_rbkmoney">Оплата с кошелька RBK Money</item>
+        <item lang="ru" id="pay_prepaidcard">Предоплаченная карта RBK Money</item>
+        <item lang="ru" id="pay_exchangers">Электронные платежные системы</item>
+        <item lang="ru" id="pay_terminals">Платежные терминалы</item>
+        <item lang="ru" id="pay_mobilestores">Салоны связи</item>
+        <item lang="ru" id="pay_transfers">Системы денежных переводов</item>
+        <item lang="ru" id="pay_ibank">Интернет банкинг</item>
+        <item lang="ru" id="pay_uralsib">Кассы Уралсиб</item>
+        <item lang="ru" id="pay_handybank">HandyBank</item>
+        <item lang="ru" id="pay_ocean">Океан банк</item>
+        <item lang="ru" id="pay_ibankuralsib">Интернет-банк Уралсиб</item>
+
+        <item lang="en" id="pay_rbkmoney">RBK Money account</item>
+        <item lang="en" id="pay_exchangers">Electronic payment systems</item>
+        <item lang="en" id="pay_terminals">Payment terminals</item>
+        <item lang="en" id="pay_prepaidcard">RBK Money prepaid card</item>
+        <item lang="en" id="pay_postrus">Russian Post</item>
+        <item lang="en" id="pay_mobilestores">Mobile stores</item>
+        <item lang="en" id="pay_transfers">Money transfer services</item>
+        <item lang="en" id="pay_ibank">Internet banking</item>
+        <item lang="en" id="pay_sberbank">Bank account (Sberbank)</item>
+        <item lang="en" id="pay_svyaznoy">Svyaznoi</item>
+        <item lang="en" id="pay_euroset">Evroset</item>
+        <item lang="en" id="pay_contact">Contact</item>
+        <item lang="en" id="pay_mts">MTS</item>
+        <item lang="en" id="pay_uralsib">Uralsib payment terminals</item>
+        <item lang="en" id="pay_handybank">HandyBank</item>
+        <item lang="en" id="pay_ocean">Okean bank</item>
+        <item lang="en" id="pay_ibankuralsib">Uralsib Internet Bank</item>
+
+<!-- Assist -->
+        <item lang="ru" id="text_assist_notice"><![CDATA[<p>Для корректной работы платежного модуля  'Assist' Вам нужно активировать опцию "Return to store by returning URL"  на сайте платежной системы  https://secure.assist.ru/members/  в секции "Design pages" .</p>]]></item>
+        <item lang="en" id="text_assist_notice"><![CDATA[<p>For successful work of the ''Assist'' payment method, you should activate the "Return to store by returning URL" option at https://secure.assist.ru/members/ in the "Design pages" section on the payment side.</p>]]></item>
+
+<!-- Platidoma -->
+        <item lang="ru" id="text_pd_notice"><![CDATA[Используйте следующие URL в настройках аккаунта Плати Дома<br />-&nbsp;<u>успешный платеж</u>: <b>[return_url]</b><br />-&nbsp;<u>отмена платежа</u>: <b>[return_url]</b><br />-&nbsp;<u>отказ от платежа</u>: <b>[cancel_url]</b>]]></item>
+        <item lang="en" id="text_pd_notice"><![CDATA[Use the following URLs in the Plati Doma account settings<br />-&nbsp;<u>successful payment</u>: <b>[return_url]</b><br />-&nbsp;<u>cancel payment</u>: <b>[return_url]</b><br />-&nbsp;<u>decline payment</u>: <b>[cancel_url]</b>]]></item>
+        <item lang="ru" id="pay_at_home">Плати Дома</item>
+        <item lang="ru" id="pd_declined">Во время оплаты произошел отказ от оплаты.</item>
+        <item lang="ru" id="pd_gate_password">Платежный пароль</item>
+        <item lang="ru" id="pd_gate_password_notice"><![CDATA[<b>Платежный пароль:&nbsp;</b>Используется для формирования подписи запросов и ответов]]></item>
+        <item lang="ru" id="pd_login">Логин магазина в системе</item>
+        <item lang="ru" id="pd_nonpaid">Платеж не оплачен.</item>
+        <item lang="ru" id="pd_paid">Платеж оплачен.</item>
+        <item lang="ru" id="pd_refund">Возврат платежа.</item>
+        <item lang="ru" id="pd_reverse">Платеж отменен.</item>
+        <item lang="ru" id="pd_shop_id">Код магазина в системе</item>
+        <item lang="ru" id="pd_shop_id_notice"><![CDATA[<b>Код магазина в системе:&nbsp;</b>Присваивается Магазину при регистрации в Системе. Используется для формирования подписи запросов и ответов</item>
+        <item lang="en" id="text_pd_notice"><![CDATA[Use the following URLs in the Plati Doma account settings<br />-&nbsp;<u>Successful payment</u>: <b>[return_url]</b><br />-&nbsp;<u>cancel payment</u>: <b>[cancel_url]</b><br />-&nbsp;<u>decline payment</u>: <b>[decline_url]</b>]]></item>
+        <item lang="en" id="pay_at_home">Plati Doma</item>
+        <item lang="en" id="pd_shop_id">Store code</item>
+        <item lang="en" id="pd_login">Store login</item>
+        <item lang="en" id="pd_gate_password">Payment password</item>
+        <item lang="en" id="pd_shop_id_notice"><![CDATA[<b>Store code:&nbsp;</b>Attached to the store on registration. Used for request and response signing]]></item>
+        <item lang="en" id="pd_gate_password_notice"><![CDATA[<b>Payment password:&nbsp;</b>Used for request and response signing]]></item>
+        <item lang="en" id="pd_nonpaid">Payment failed.</item>
+        <item lang="en" id="pd_paid">Successful payment.</item>
+        <item lang="en" id="pd_reverse">Payment canceled.</item>
+        <item lang="en" id="pd_refund">Payment returned.</item>
+        <item lang="en" id="pd_declined">Payment declined during processing.</item>
+        <item lang="zh" id="text_pd_notice"><![CDATA[在Plati Doma帐户设置中使用以下URLs<br />-&nbsp;<u>成功支付</u>: <b>[return_url]</b><br />-&nbsp;<u>取消支付</u>: <b>[cancel_url]</b><br />-&nbsp;<u>拒绝支付</u>: <b>[decline_url]</b>]]></item>
+
+<!-- Qiwi -->
+        <item lang="ru" id="qiwi_select_location">Сервер Qiwi</item>
+        <item lang="ru" id="qiwi">Qiwi</item>
+        <item lang="ru" id="qiwi_mobile_example">Мобильный телефон (пример: 9057772233)</item>
+        <item lang="ru" id="qiwi_alarm_notify"><![CDATA[<b>Внимание!</b> Рассылка уведомлений платна и доступна только магазинам, зарегистрированным по схеме "Именной кошелёк"]]></item>
+        <item lang="ru" id="qiwi_select_alarm">Выберите тип уведомления покупателя</item>
+        <item lang="ru" id="qiwi_no_alarm">Не уведомлять</item>
+        <item lang="ru" id="qiwi_sms_alarm">Послать СМС</item>
+        <item lang="ru" id="qiwi_call_alarm">Сделать звонок</item>
+        <item lang="ru" id="qiwi_lifetime">Время жизни счета</item>
+        <item lang="ru" id="qiwi_select_lifetime">Выберите время жизни счета</item>
+        <item lang="ru" id="qiwi_soap_attention"><![CDATA[<b>Внимание!</b> Для корректной работы QIWI-кошелька требуется установленный модуль PHP-SOAP. Вы можете уточнить наличие данного модуля у администратора сервера.]]></item>
+        <item lang="ru" id="qiwi_login_notice">В поле "Логин" и "Пароль" используйте логин и пароль к QIWI-кошельку на сайте http://ishop.qiwi.ru </item>
+        <item lang="ru" id="qiwi_url_notice"><![CDATA[Укажите в настройках аккаунта "QIWI-Кошелёк":<br />URL для отправки в случае успешной оплаты счёта:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[success_url]</b><br />URL для отправки в случае ошибки:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[fail_url]</b><br />URL в секции SOAP-протокол в личном кабинете QIWI:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[qiwi_url]</b>]]></item>
+        <item lang="ru" id="qiwi_order_status_50">Выставлен</item>
+        <item lang="ru" id="qiwi_order_status_52">Проводится</item>
+        <item lang="ru" id="qiwi_order_status_60">Оплачен</item>
+        <item lang="ru" id="qiwi_order_status_150">Отменен (ошибка на терминале)</item>
+        <item lang="ru" id="qiwi_order_status_151">Отменен (ошибка авторизации: недостаточно средств на балансе, отклонен абонентом при оплате с лицевого счета оператора сотовой связи и т.п.)</item>
+        <item lang="ru" id="qiwi_order_status_160">Отменен</item>
+        <item lang="ru" id="qiwi_order_status_161">Отменен (истекло время)</item>
+        <item lang="ru" id="qiwi_result_status_0">Успех</item>
+        <item lang="ru" id="qiwi_result_status_13">Сервер занят, повторите запрос позже</item>
+        <item lang="ru" id="qiwi_result_status_150">Ошибка авторизации (неверный логин/пароль)</item>
+        <item lang="ru" id="qiwi_result_status_210">Счет не найден</item>
+        <item lang="ru" id="qiwi_result_status_215">Счет с таким номером уже существует</item>
+        <item lang="ru" id="qiwi_result_status_241">Сумма слишком мала</item>
+        <item lang="ru" id="qiwi_result_status_242">Превышена максимальная сумма платежа - 15 000р.</item>
+        <item lang="ru" id="qiwi_result_status_278">Превышение максимального интервала получения списка счетов</item>
+        <item lang="ru" id="qiwi_result_status_298">Агента не существует в системе</item>
+        <item lang="ru" id="qiwi_result_status_300">Неизвестная ошибка</item>
+        <item lang="ru" id="qiwi_result_status_330">Ошибка шифрования</item>
+        <item lang="ru" id="qiwi_result_status_370">Превышено максимальное количество одновременно выполняемых запросов</item>
+        <item lang="en" id="qiwi">QIWI</item>
+        <item lang="en" id="qiwi_mobile_example">Mobile phone (e.g. 555-123-45-67)</item>
+        <item lang="en" id="qiwi_alarm_notify"><![CDATA[<b>Warning!</b> Sending notifications is available only for the stores registered by the "Named wallet" scheme]]></item>
+        <item lang="en" id="qiwi_select_alarm">Select customer notification type</item>
+        <item lang="en" id="qiwi_no_alarm">Do not notify</item>
+        <item lang="en" id="qiwi_sms_alarm">Send an SMS</item>
+        <item lang="en" id="qiwi_call_alarm">Make a call</item>
+        <item lang="en" id="qiwi_lifetime">Account lifetime</item>
+        <item lang="en" id="qiwi_select_lifetime">Set account lifetime</item>
+        <item lang="en" id="qiwi_soap_attention"><![CDATA[<b>Warning!</b> The module PHP-SOAP must be installed on the server for QIWI Wallet to work correctly. Please consult with the server system administrator.]]></item>
+        <item lang="en" id="qiwi_login_notice">Enter the QIWI Wallet (http://ishop.qiwi.ru) login and password in the fields "Login" and "Password" respectively</item>
+        <item lang="en" id="qiwi_url_notice"><![CDATA[Set in the following QIWI Wallet settings:<br />Successful transaction URL:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[success_url]</b><br />Failed transaction URL:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[fail_url]</b><br />URL defined in the QIWI Wallet account SOAP protocol section:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[qiwi_url]</b>]]></item>
+        <item lang="en" id="qiwi_order_status_50">Open</item>
+        <item lang="en" id="qiwi_order_status_52">Processed</item>
+        <item lang="en" id="qiwi_order_status_60">Paid</item>
+        <item lang="en" id="qiwi_order_status_150">Canceled (error on terminal)</item>
+        <item lang="en" id="qiwi_order_status_151">Canceled (authorization error: account balance not sufficient, declined by subscriber on mobile phone payment etc.)</item>
+        <item lang="en" id="qiwi_order_status_160">Canceled</item>
+        <item lang="en" id="qiwi_order_status_161">Canceled (timed out)</item>
+        <item lang="en" id="qiwi_result_status_0">Success</item>
+        <item lang="en" id="qiwi_result_status_13">Server is busy, please try later</item>
+        <item lang="en" id="qiwi_result_status_150">Authorization error (wrong login or/and password)</item>
+        <item lang="en" id="qiwi_result_status_210">Account not found</item>
+        <item lang="en" id="qiwi_result_status_215">An account with this number already exists</item>
+        <item lang="en" id="qiwi_result_status_241">The amount is too low</item>
+        <item lang="en" id="qiwi_result_status_242">Maximal payment amount limit (15 000 RUB) exceeded.</item>
+        <item lang="en" id="qiwi_result_status_278">Account list fetching timed out</item>
+        <item lang="en" id="qiwi_result_status_298">The agent is not registered in the system</item>
+        <item lang="en" id="qiwi_result_status_300">Unknown error</item>
+        <item lang="en" id="qiwi_result_status_330">Encryption error</item>
+        <item lang="en" id="qiwi_result_status_370">Maximal number of simultaneously processed requests exceeded</item>
+        <item lang="zh" id="qiwi_alarm_notify"><![CDATA[<b>警告!</b>发送的通知仅适用于通过"Named wallet"计划在商店注册的用户]]></item>
+        <item lang="zh" id="qiwi_call_alarm">拨打电话</item>
+        <item lang="zh" id="qiwi_lifetime">帐户生命周期</item>
+        <item lang="zh" id="qiwi_login_notice">在"用户"和"密码"区域分别输入QIWI Wallet (http://ishop.qiwi.ru)用户和密码</item>
+        <item lang="zh" id="qiwi_mobile_example">手机号码(如 555-123-45-67)</item>
+        <item lang="zh" id="qiwi_no_alarm">不提示</item>
+        <item lang="zh" id="qiwi_order_status_150">取消的 (终端上的错误)</item>
+        <item lang="zh" id="qiwi_order_status_151">取消的 (授权错误: 帐户余额不足,订阅拒绝在手机上支付等.)</item>
+        <item lang="zh" id="qiwi_order_status_160">取消的 </item>
+        <item lang="zh" id="qiwi_order_status_161">取消的 (超时)</item>
+        <item lang="zh" id="qiwi_order_status_50">打开</item>
+        <item lang="zh" id="qiwi_order_status_52">处理的</item>
+        <item lang="zh" id="qiwi_order_status_60">已支付</item>
+        <item lang="zh" id="qiwi_result_status_0">成功</item>
+        <item lang="zh" id="qiwi_result_status_13">服务器繁忙,请再试一次</item>
+        <item lang="zh" id="qiwi_result_status_150">授权错误(登录或/和密码错误)</item>
+        <item lang="zh" id="qiwi_result_status_210">没有找到帐户</item>
+        <item lang="zh" id="qiwi_result_status_215">这个数字已经存在帐户</item>
+        <item lang="zh" id="qiwi_result_status_241">数量太低</item>
+        <item lang="zh" id="qiwi_result_status_242">超过最大支付限额(15 000 RUB).</item>
+        <item lang="zh" id="qiwi_result_status_278">帐户列表获取超时</item>
+        <item lang="zh" id="qiwi_result_status_298">代理未在系统中登记</item>
+        <item lang="zh" id="qiwi_result_status_300">未知错误</item>
+        <item lang="zh" id="qiwi_result_status_330">加密错误</item>
+        <item lang="zh" id="qiwi_result_status_370">超过同时处理的请求的最大数目</item>
+        <item lang="zh" id="qiwi_select_alarm">选择通知客户类型</item>
+        <item lang="zh" id="qiwi_select_lifetime">设置的生命周期</item>
+        <item lang="zh" id="qiwi_sms_alarm">发送短信息</item>
+        <item lang="zh" id="qiwi_soap_attention"><![CDATA[<b>警告!</b>为确保QIWI Wallet正确工作PHP-SOAP模块必须安装在服务器.请联系系统管理员.]]></item>
+        <item lang="zh" id="qiwi_url_notice"><![CDATA[设置以下QIWI Wallet配置:<br />交易成功URL:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[success_url]</b><br />交易失败URL:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[fail_url]</b><br />在QIWI Wallet帐户的SOAP protocol区域定义URL:<br />&nbsp;&nbsp;&nbsp;&nbsp;<b>[qiwi_url]</b>]]></item>
+
+<!-- RBK -->
+        <item lang="ru" id="rbk_select_pay_method">Выберите способ оплаты</item>
+        <item lang="ru" id="rbk">RBK Money</item>
+        <item lang="ru" id="rbk_login">Логин</item>
+        <item lang="ru" id="rbk_secretKey">Секретный ключ</item>
+        <item lang="ru" id="rbk_secretKey_notice">Выбор алгоритма вычисления контрольной подписи производится в личном кабинете, в разделе редактирования магазина. Используйте алгоритм MD5</item>
+        <item lang="ru" id="rbk_login_notice">В качестве логина используйте идентификатор (ID) вашего магазина. Идентификатор находится в личном кабинете, в разделе [Магазины]</item>
+        <item lang="ru" id="rbk_serviceName">Оплата заказа</item>
+        <item lang="ru" id="rbk_language">Язык интерфейса оплаты на сайте RBK Money</item>
+        <item lang="ru" id="text_rbk_notice"><![CDATA[Используйте следующие URL в настройках аккаунта RBK Money<br />-&nbsp;<u>оповещение о платеже</u>: <b>[result_url]</b>]]></item>
+        <item lang="ru" id="rbk_status3">Операция принята на обработку</item>
+        <item lang="ru" id="rbk_status5">Операция исполнена</item>
+        <item lang="en" id="rbk_select_pay_method">Select payment method</item>
+        <item lang="en" id="rbk">RBK Money</item>
+        <item lang="en" id="rbk_login">Login</item>
+        <item lang="en" id="rbk_secretKey">Secret key</item>
+        <item lang="en" id="rbk_secretKey_notice">You can choose a checksum calculation algorithm on your Personal account page in the Edit store section. Please use the MD5 algorithm</item>
+        <item lang="en" id="rbk_login_notice">Use your Store ID as login. You can find the ID on your Personal account page</item>
+        <item lang="en" id="rbk_serviceName">Order payment</item>
+        <item lang="en" id="rbk_language">RBK Money website payment interface language</item>
+        <item lang="en" id="text_rbk_notice"><![CDATA[Use the following URLs in the RBK Money account settings<br />-&nbsp;<u>payment notification</u>: <b>[result_url]</b>]]></item>
+        <item lang="en" id="rbk_status3">Transaction accepted for processing</item>
+        <item lang="en" id="rbk_status5">Transaction complete</item>
+        <item lang="zh" id="pd_declined">在处理过程中付款被拒收.</item>
+        <item lang="zh" id="pd_gate_password">支付密码</item>
+        <item lang="zh" id="pd_gate_password_notice"><![CDATA[<b>支付密码:&nbsp;</b>用于请求和响应签名]]></item>
+        <item lang="zh" id="pd_login">商店登录</item>
+        <item lang="zh" id="pd_nonpaid">支付失败.</item>
+        <item lang="zh" id="pd_paid">支付成功.</item>
+        <item lang="zh" id="pd_refund">支付退回.</item>
+        <item lang="zh" id="pd_reverse">支付拒绝.</item>
+        <item lang="zh" id="pd_shop_id">商店代码</item>
+        <item lang="zh" id="pd_shop_id_notice"><![CDATA[<b>商店代码:&nbsp;</b>隶属于商店注册.用于请求和响应签名]]></item>
+        <item lang="zh" id="rbk_language">RBK Money 网站支付接口语言</item>
+        <item lang="zh" id="rbk_login">登录</item>
+        <item lang="zh" id="rbk_login_notice">使用您的商店ID登录.您可以在您的个人帐户页面上找到ID</item>
+        <item lang="zh" id="rbk_secretKey">密匙</item>
+        <item lang="zh" id="rbk_secretKey_notice">在您个人帐户页面的编辑商店部分您可以选择计算校验算法.请使用MD5算法</item>
+        <item lang="zh" id="rbk_select_pay_method">选择支付方式</item>
+        <item lang="zh" id="rbk_serviceName">订单支付</item>
+        <item lang="zh" id="rbk_status3">处理交易接受</item>
+        <item lang="zh" id="rbk_status5">交易完成</item>
+        <item lang="zh" id="text_rbk_notice"><![CDATA[在RBK Money帐户设置是使用以下URLs<br />-&nbsp;<u>通知支付</u>: <b>[result_url]</b>]]></item>
+
+<!-- Robokassa -->
+        <item lang="ru" id="payments.robokassa.get_currencies">Получить валюты</item>
+        <item lang="ru" id="text_robokassa_notice"><![CDATA[Пожалуйста, добавьте следующие URL на странице конфигурации Robokassa:<br/><br/><b>Result URL:</b><br/>[r_url]<br/><br/><b>Success URL:</b><br/>[p_url]<br/><br/><b>Fail URL:</b><br/>[f_url]]]></item>
+        <item lang="ru" id="password1">Пароль1</item>
+        <item lang="ru" id="password2">Пароль2</item>
+        <item lang="ru" id="control_summ_wrong">Неверная контрольная сумма</item>
+        <item lang="en" id="payments.robokassa.get_currencies">Get currencies</item>
+        <item lang="en" id="text_robokassa_notice"><![CDATA[Please add these URL fields in your Robokassa configuration:<br/><br/><b>Result URL:</b><br/>[r_url]<br/><br/><b>Success URL:</b><br/>[p_url]<br/><br/><b>Fail URL:</b><br/>[f_url]]]></item>
+        <item lang="en" id="password1">Password1</item>
+        <item lang="en" id="password2">Password2</item>
+        <item lang="en" id="control_summ_wrong">Wrong control summ</item>
+        <item lang="zh" id="text_robokassa_notice"><![CDATA[请在您的Robokassa配置中添加这些URL区域:<br/><br/><b>结果 URL:</b><br/>[r_url]<br/><br/><b>成功 URL:</b><br/>[p_url]<br/><br/><b>失败 URL:</b><br/>[f_url]]]></item>
+        <item lang="zh" id="password1">密码1</item>
+        <item lang="zh" id="password2">密码2</item>
+        <item lang="it" id="text_robokassa_notice"><![CDATA[Si prega di aggiungere questo campo URL nella configurazione Robokassa:<br/><br/><b>Result URL:</b><br/>[r_url]<br/><br/><b>Success URL:</b><br/>[p_url]<br/><br/><b>Fail URL:</b><br/>[f_url]]]></item>
+
+<!-- Сбербанк -->
+    <item lang="ru" id="sbrf_account_id">л/сч. получателя</item>
+    <item lang="en" id="sbrf_account_id">beneficiary account</item>
+        <item lang="ru" id="sbrf_bank">Банк</item>
+    <item lang="en" id="sbrf_bank">Bank</item>
+        <item lang="ru" id="sbrf_bik">БИК</item>
+    <item lang="en" id="sbrf_bik">BIK</item>
+        <item lang="ru" id="sbrf_cor_account">Кор. счет</item>
+    <item lang="en" id="sbrf_cor_account">Account</item>
+        <item lang="ru" id="sbrf_g">г.</item>
+    <item lang="en" id="sbrf_g">city</item>
+        <item lang="ru" id="sbrf_inn">ИНН</item>
+    <item lang="en" id="sbrf_inn">INN</item>
+        <item lang="ru" id="sbrf_kbk">КБК</item>
+    <item lang="en" id="sbrf_kbk">KBK</item>
+        <item lang="ru" id="sbrf_kop">коп.</item>
+    <item lang="en" id="sbrf_kop">kop.</item>
+    <item lang="ru" id="sbrf_kpp">КПП</item>
+        <item lang="en" id="sbrf_kpp">KPP code</item>
+        <item lang="ru" id="sbrf_notification">Извещение</item>
+    <item lang="en" id="sbrf_notification">Aviso</item>
+        <item lang="ru" id="sbrf_okato_code">Код ОКТМО</item>
+    <item lang="en" id="sbrf_okato_code">ОКТМО code</item>
+        <item lang="ru" id="sbrf_payer">Плательщик</item>
+    <item lang="en" id="sbrf_payer">Payer</item>
+        <item lang="ru" id="sbrf_payer_account_id">№ л/сч. плательщика</item>
+    <item lang="en" id="sbrf_payer_account_id">Payer's account number</item>
+        <item lang="ru" id="sbrf_payer_address">Адрес плательщика</item>
+    <item lang="en" id="sbrf_payer_address">Payer's address</item>
+        <item lang="ru" id="sbrf_payer_inn">ИНН Плательщика</item>
+    <item lang="en" id="sbrf_payer_inn">Payer's INN</item>
+        <item lang="ru" id="sbrf_payment">Платёж</item>
+    <item lang="en" id="sbrf_payment">Payment</item>
+        <item lang="ru" id="sbrf_print_receipt">Распечатать квитанцию Сбербанка РФ</item>
+    <item lang="en" id="sbrf_print_receipt">Print Sberbank receipt</item>
+        <item lang="ru" id="sbrf_receipt">Квитанция Сбербанка РФ</item>
+    <item lang="en" id="sbrf_receipt">Sberbank receipt</item>
+        <item lang="ru" id="sbrf_receipt_">Квитанция</item>
+    <item lang="en" id="sbrf_receipt_">Receipt</item>
+        <item lang="ru" id="sbrf_recepient">Получатель</item>
+    <item lang="en" id="sbrf_recepient">Beneficiary</item>
+        <item lang="ru" id="sbrf_recepient_name">Наименование получателя</item>
+    <item lang="en" id="sbrf_recepient_name">Beneficiary name</item>
+        <item lang="ru" id="sbrf_rub">руб.</item>
+    <item lang="en" id="sbrf_rub">RUB</item>
+        <item lang="ru" id="sbrf_settlement_account">Расчетный счет</item>
+    <item lang="en" id="sbrf_settlement_account">Settlement account</item>
+        <item lang="ru" id="sbrf_summ">Сумма</item>
+    <item lang="en" id="sbrf_summ">Total</item>
+        <item lang="ru" id="sbrf_payment_data">Платёжные данные</item>
+    <item lang="en" id="sbrf_payment_data">Payment data</item>
+        <item lang="ru" id="sbrf_bank_summ">Сумма оплаты услуг банка</item>
+    <item lang="en" id="sbrf_bank_summ">Bank charges</item>
+        <item lang="ru" id="sbrf_order_payment">Оплата заказа</item>
+    <item lang="en" id="sbrf_order_payment">Order payment</item>
+        <item lang="ru" id="sbrf_print">Печать</item>
+    <item lang="en" id="sbrf_print">Print</item>
+        <item lang="ru" id="sbrf_information_not_found">Информация не найдена</item>
+    <item lang="en" id="sbrf_information_not_found">Information is not found</item>
+
+<!-- Всё в кредит -->
+        <item lang="ru" id="vsevcredit_shop_id">Идентификатор магазина</item>
+        <item lang="ru" id="vsevcredit_secret">Секретное слово</item>
+        <item lang="ru" id="vsevkredit_url_notice"><![CDATA[Пожалуйста выставьте настройки в администраторской зоне Всевкредит следующим образом:<br /><b>URL для API взаимодействия:</b> [api_url]<br /><b>URL перенаправления в случае успешного завершения заказа:</b> [return_url]]]></item>
+        <item lang="en" id="vsevcredit_shop_id">Shop ID</item>
+        <item lang="en" id="vsevcredit_secret">Secret word</item>
+        <item lang="en" id="vsevkredit_url_notice"><![CDATA[Please set the following URLs in the Vsevkredit admin area:<br /><b>URL for API:</b> [api_url]<br /><b>Return URL:</b> [return_url]]]></item>
+
+<!-- Webmoney -->
+        <item lang="ru" id="lmi_payee_purse">Кошелек аккаунта</item>
+        <item lang="ru" id="lmi_payer_purse">Кошелек плательщика</item>
+        <item lang="ru" id="lmi_payer_wm">WM плательщика</item>
+        <item lang="ru" id="lmi_sim_mode">Sim режим</item>
+        <item lang="ru" id="lmi_sys_invs_no">Номер WebMoney Invoice</item>
+        <item lang="ru" id="lmi_sys_trans_date">Дата транзацкии</item>
+        <item lang="ru" id="lmi_sys_trans_no">Номер транзакции</item>
+        <item lang="ru" id="text_webmoney_notice"><![CDATA[Для того, чтобы настроить способ оплаты WebMoney, Вы должны настроить Web Merchant Interface для обработки платежей следующим образом:<br /><br />1. Выбрать опцию "Send parameters in the pre-request" ;<br />2. Выбрать опцию "Allow overriding URL from Payment Request Form";<br />3. Установить значение  "MD5" в поле  "Signature algorithm".<br />]]></item>
+        <item lang="ru" id="text_lmi_payment_desc">Тестовый сайт. Заказ #:</item>
+        <item lang="ru" id="wm_combine_mode">Комбинированный режим</item>
+        <item lang="ru" id="wm_error_mode">Режим ошибок</item>
+        <item lang="ru" id="wm_rt_differ_hash_in_notification_request">Хеш-значение, полученное в уведомлении запроса платежа, отличается от хеш-значения, полученного в CS-Cart;</item>
+        <item lang="ru" id="wm_rt_differ_mode_in_notification_request">Полученное значение режима в уведомлении запроса платежа отличается от общей суммы заказа CS-Cart;</item>
+        <item lang="ru" id="wm_rt_differ_mode_in_prerequest">Полученное значение режима в предварительном запросе отличается от заданного в администраторской панели; </item>
+        <item lang="ru" id="wm_rt_differ_payee_purse_in_notification_request">Полученное в уведомлении запроса платежа значение кошелька продавца не совпадает с суммой заказа в CS-Cart; </item>
+        <item lang="ru" id="wm_rt_differ_payee_purse_in_prerequest">Полученное в предварительном запросе значение кошелька продавца не совпадает со значением, заданным в администраторской панели; </item>
+        <item lang="ru" id="wm_rt_differ_payment_amount_in_notification_request">Полученная сумма платежа в уведомлении запроса платежа отличается от общей суммы заказа;</item>
+        <item lang="ru" id="wm_rt_differ_payment_amount_in_prerequest">Полученная сумма платежа в предварительном запросе отличается от общей суммы заказа CS-Cart;</item>
+        <item lang="ru" id="wm_success_mode">Успешный режим</item>
+        <item lang="ru" id="text_wm_error_many_requests">Обнаружено слишком много отправленных СМС без совершения платежей для данного телефона</item>
+
+        <item lang="en" id="text_webmoney_notice"><![CDATA[In order to set up WebMoney payment method, you should set up Web Merchant Interface for processing payments in the following way:<br /><br />1. Check the "Send parameters in the pre-request" checkbox;<br />2. Check the "Allow overriding URL from Payment Request Form" checkbox;<br />3. Set the "MD5" value in the "Signature algorithm" field.<br />]]></item>
+        <item lang="en" id="lmi_payee_purse">Payee purse</item>
+        <item lang="en" id="lmi_sim_mode">Sim mode</item>
+        <item lang="en" id="wm_success_mode">Success mode</item>
+        <item lang="en" id="wm_error_mode">Error mode</item>
+        <item lang="en" id="wm_combine_mode">Combine mode</item>
+        <item lang="en" id="lmi_payer_wm">Payer''s WM</item>
+        <item lang="en" id="lmi_payer_purse">Payer''s purse</item>
+        <item lang="en" id="lmi_sys_invs_no">WebMoney Invoice number</item>
+        <item lang="en" id="lmi_sys_trans_no">Transaction number</item>
+        <item lang="en" id="lmi_sys_trans_date">Transaction date</item>
+        <item lang="en" id="text_lmi_payment_desc">Test Site. Order #:</item>
+        <item lang="en" id="wm_rt_differ_payment_amount_in_prerequest">The payment amount value received in the prerequest differs from CS-Cart order total amount</item>
+        <item lang="en" id="wm_rt_differ_payee_purse_in_prerequest">The payee purse value received in the prerequest differs from the one defined for your payment details in the admin panel</item>
+        <item lang="en" id="wm_rt_differ_mode_in_prerequest">The mode value received in the prerequest differs from the one defined for your payment details in the admin panel</item>
+        <item lang="en" id="wm_rt_differ_hash_in_notification_request">The hash value received in the notification of payment request differs from the one received in CS-Cart system</item>
+        <item lang="en" id="wm_rt_differ_payment_amount_in_notification_request">The payment amount value received in the notification of payment request differs from CS-Cart order total amount</item>
+        <item lang="en" id="wm_rt_differ_payee_purse_in_notification_request">The payee purse value received in the notification of payment request differs from CS-Cart order total amount</item>
+        <item lang="en" id="wm_rt_differ_mode_in_notification_request">The mode value received in the notification of payment request differs from CS-Cart order total amount</item>
+        <item lang="en" id="text_wm_error_many_requests">Too mach SMS without payments found for specified phone</item>
+
+<!-- YesCredit -->
+        <item lang="ru" id="text_yc_transaction_accepted">Заявка принята</item> 
+        <item lang="ru" id="text_yc_transaction_rejected">Отклонено :</item> 
+        <item lang="ru" id="text_yc_name_empty">Не заполнено поле ФИО</item> 
+        <item lang="ru" id="text_yc_phone_code_empty">Не заполнено поле Код номера для связи</item> 
+        <item lang="ru" id="text_yc_phone_code_invalid">поле Код номера для связи заполнено некорректно</item> 
+        <item lang="ru" id="text_yc_phone_number_empty">Не заполнено поле Номер для связи</item> 
+        <item lang="ru" id="text_yc_phone_number_invalid">поле Номер для связи заполнено некорректно</item> 
+        <item lang="ru" id="text_yc_not_approved">Вы должны согласиться с условиями Соглашения</item> 
+        <item lang="ru" id="yc_name">Фамилия Имя Отчество</item> 
+        <item lang="ru" id="yc_phone">Контактный телефон</item> 
+        <item lang="ru" id="yc_phone_code">Код</item> 
+        <item lang="ru" id="yc_phone_number">Номер телефона</item> 
+        <item lang="ru" id="yc_time_credit">Срок, месяцев</item>
+        <item lang="ru" id="yc_sum">Сумма, руб</item> 
+        <item lang="ru" id="yc_first_payment">Первоначальный взнос, %</item>
+        <item lang="ru" id="yc_district">Регион регистрации</item> 
+        <item lang="ru" id="yc_agreed_with">Согласен с </item> 
+        <item lang="ru" id="yc_agreed_cond">условиями Соглашения</item> 
+        <item lang="ru" id="yc_credit">Кредит</item> 
+        <item lang="ru" id="yc_installment">Рассрочка</item> 
+        <item lang="ru" id="yc_submit">Послать заявку</item> 
+        <item lang="ru" id="text_yc_faq"><![CDATA[<li><i>Я выбрал товар и хочу приобрести его в кредит.</i><br />
+        Заполните кредитную заявку и нажмите кнопку «Отправить заявку».</li>
+        <li><i>Я заполнил и отправил кредитную заявку на сайте интернет-магазина. Что дальше?</i><br />
+        В течение часа ваша заявка будет обработана, после чего с вами свяжется кредитный менеджер.<br />
+        Вам нужно будет ответить на несколько стандартных вопросов и подтвердить свои паспортные данные.</li>
+        <li><i>Кредитный менеджер позвонил мне.</i><br />
+        После звонка ваша заявка будет рассматриваться банком.<br />
+        Решение будет сообщено вам в течение 2-х часов.</li>
+        <li><i>Мне позвонили и сообщили, что банк одобрил мою заявку. Что дальше?</i><br />
+        Вам позвонит кредитный менеджер и договорится о времени приезда к вам для подписания платежных документов.<br />
+        После подписания договора Вы ожидаете доставки вашей покупки и при получении оплачиваете первоначальный взнос.</li>
+        ]]></item>
+        <item lang="ru" id="text_yc_faq_note">Заявки, принятые после 19:00 рабочего дня и в выходные, обрабатываются с 10:00 первого рабочего дня.</item>
+        <item lang="ru" id="yc_dialog_title">Заявка на кредит, не выходя из дома</item>
+        <item lang="ru" id="yc_place_credit">Оформить Кредит</item>
+        <item lang="ru" id="yc_refuse">Отказаться</item>
+        <item lang="ru" id="text_yes_credit_notice">Для корректного функционирования системы Yes Credit необходимо использовать валюту *Российский рубль*</item>
+        <item lang="ru" id="text_yc_commission"><![CDATA[В сумму включена единоразовая комиссия за оформление кредита &ndash; 5% от стоимости товара. В случае выбора рассрочки комиссия не взимается. БЕЗ СКРЫТЫХ КОМИССИЙ И ПЛАТЫ ЗА ВЫДАЧУ.]]></item>
+
+<!-- PayMaster -->
+        <item lang="en" id="text_paymaster_notice">On the site Paymaster it is necessary to set in the site details in the `Callbacks`section: Payment notification - POST request, Success redirect - GET request, Failure redirect - GET request, Invoice confirmation - GET request and select the `Allow custom URLs` check box. Also it is necessary to enter the secret key in the `Technical parameters` section with selecting the MD5 signature type. This key should also be entered into the `Secret key` field in the store.</item>
+        <item lang="en" id="paymaster_key">Secret key</item>
+        <item lang="en" id="text_paymaster_sms_code">Введите пожалуйста sms code</item>
+        <item lang="en" id="text_paymaster_error_valid_phone">Please enter a valid phone number</item>
+        <item lang="en" id="paymaster_unknown_error">Unknown error</item>
+        <item lang="en" id="paymaster_invalid_sign">Invalid request signature</item>
+        <item lang="en" id="paymaster_unsupported_currency">Unsupported currency</item>
+        <item lang="en" id="paymaster_sms">SMS</item>
+        <item lang="en" id="paymaster_ussd">USSD</item>
+        <item lang="en" id="paymaster_smstype">SMS type</item>
+        <item lang="en" id="paymaster_smscode">SMS code</item>
+
+        <item lang="ru" id="pay_select_paymaster">Выбор на PayMaster</item>
+        <item lang="ru" id="text_paymaster_notice">На сайте `Paymaster` необходимо установить в деталях сайта в разделе `Обратные вызовы`: Payment notification - POST запрос, Success redirect - GET запрос, Failure redirect - GET запрос, Invoice confirmation - GET запрос и установить чекбокс `Разрешена замена URL`. Также необходимо ввести секретный ключ в разделе `Технические параметры`, выбрав тип шифрования MD5. Этот ключ необходимо ввести также в магазине в поле `Секретный ключ`.</item>
+        <item lang="ru" id="paymaster_key">Секретный ключ</item>
+        <item lang="ru" id="text_paymaster_sms_code">Введите пожалуйста sms code</item>
+        <item lang="ru" id="text_paymaster_error_valid_phone">Введите, пожалуйста, правильный номер телефона</item>
+        <item lang="ru" id="paymaster_unknown_error">Неизвестая ошибка</item>
+        <item lang="ru" id="paymaster_invalid_sign">неверная подпись запроса</item>
+        <item lang="ru" id="paymaster_unsupported_currency">Неподдерживаемая валюта</item>
+        <item lang="ru" id="paymaster_sms">SMS</item>
+        <item lang="ru" id="paymaster_ussd">USSD</item>
+        <item lang="ru" id="paymaster_smstype">Тип SMS</item>
+        <item lang="ru" id="paymaster_smscode">SMS код</item>
+
+<!-- EMS -->
+        <item lang="ru" id="carrier_ems">EMS</item>
+        <item lang="ru" id="ems_activation_error">Для активации процессора доставки EMS валюта Российский Рубль (RUB) должна быть активна и назначена основной.</item>
+        <item lang="ru" id="ems_country_error">Способ доставки EMS доступен только для Российской Федерации. Вы можете изменить настройки стран (Настройки -> Компания).</item>
+        <item lang="ru" id="ems_mode">Цена доставки рассчитана согласно</item>
+
+        <item lang="en" id="carrier_ems">EMS</item>
+        <item lang="en" id="ems_activation_error">To activate the EMS shipping processor you must have the Russian Rouble (RUB) currency enabled and set primary.</item>
+        <item lang="en" id="ems_mode">Shipping fees are calculated based on</item>
+        <item lang="en" id="ems_country_error">The EMS shopping method is available only for deliveries from Russia. You can change company country under Settings -> Company.</item>
+
+<!-- Yandex Money -->
+        <item lang="en" id="shop_id">ShopID</item>
+        <item lang="en" id="scid">SCID</item>
+        <item lang="en" id="md5_shoppassword">MD5 shopPassword</item>
+        <item lang="en" id="yandex_money_currency_error">It is possible to make payment in rubles only using this payment method.</item>
+        <item lang="en" id="select_yandex_payment">Select pay method</item>
+        <item lang="en" id="yandex_money_payment_yandex">Yandex.Money</item>
+        <item lang="en" id="yandex_money_payment_card">Credit card</item>
+        <item lang="en" id="yandex_money_payment_terminal">Terminal</item>
+        <item lang="en" id="yandex_money_payment_phone">Mobile phone</item>
+        <item lang="en" id="yandex_payment_types">Payment methods</item>
+        <item lang="en" id="yandex_payment_type">Payment method</item>
+
+        <item lang="ru" id="shop_id">ShopID</item>
+        <item lang="ru" id="scid">SCID</item>
+        <item lang="ru" id="md5_shoppassword">MD5 shopPassword</item>
+        <item lang="ru" id="yandex_money_currency_error">Оплата с использованием данного способа оплаты возможна только в рублях.</item>
+        <item lang="ru" id="select_yandex_payment">Выберите способ оплаты</item>
+        <item lang="ru" id="yandex_payment_yandex">Яндекс.Деньги</item>
+        <item lang="ru" id="yandex_payment_card">Банковская карта</item>
+        <item lang="ru" id="yandex_payment_terminal">Терминал</item>
+        <item lang="ru" id="yandex_payment_phone">Мобильный телефон</item>
+        <item lang="ru" id="yandex_payment_types">Способы оплат</item>
+        <item lang="en" id="yandex_payment_type">Способ оплаты</item>
+
+        <item lang="en" id="yandex_payment_webmoney">WebMoney</item>
+        <item lang="ru" id="yandex_payment_webmoney">WebMoney</item>
+
+        <item lang="ru" id="text_yandex_money_urls"><![CDATA[Используйте следующие URL в настройках Yandex Money<br />-&nbsp;<u>paymentAvisioURL</u>: <b>[avisio_url]</b><br />-&nbsp;<u>checkURL</u>: <b>[check_url]</b>]]></item>
+        <item lang="en" id="text_yandex_money_urls"><![CDATA[Use the following URLs in Yandex Money settings<br />-&nbsp;<u>paymentAvisioURL</u>: <b>[avisio_url]</b><br />-&nbsp;<u>checkURL</u>: <b>[check_url]</b>]]></item>
+
+<!-- Avangard -->
+        <item lang="en" id="avangard_shop_id">Shop ID</item>
+        <item lang="en" id="avangard_shop_name">Shop Name</item>
+        <item lang="en" id="avangard_site">Site</item>
+        <item lang="en" id="avangard_password">Password</item>
+        <item lang="ru" id="avangard_shop_id">ID магазина</item>
+        <item lang="ru" id="avangard_shop_name">Имя магазина</item>
+        <item lang="ru" id="avangard_site">Сайт</item>
+        <item lang="ru" id="avangard_password">Пароль</item>
+
+<!-- Post -->
+        <item lang="ru" id="express">Экспресс-доставка</item>
+        <item lang="en" id="express">Express-shipping</item>
+        <item lang="ru" id="carrier_russian_post">Почта России</item>
+        <item lang="en" id="carrier_russian_post">Russian post</item>
+        <item lang="ru" id="carrier_russian_post_calc">Почта России</item>
+        <item lang="en" id="carrier_russian_post_calc">Russian post</item>
+        <item lang="ru" id="russian_post_activation_error">Для активации процессора доставки Почта России вы должны иметь в качестве основной валюты Российский Рубль (RUB).</item>
+        <item lang="en" id="russian_post_activation_error">To activate Russian post shipping processor Russian ruble (RUB) should be the main currency.</item>
+        <item lang="ru" id="russian_post_consuming_error">Расчет стоимости доставки для Почты России может занимать длительное время.</item>
+        <item lang="en" id="russian_post_consuming_error">Calculation of shipping cost for Russian post may take a long time.</item>
+        <item lang="ru" id="russian_post_shipping_type">Способ пересылки</item>
+        <item lang="en" id="russian_post_shipping_type">Shipping type</item>
+        <item lang="ru" id="russian_post_package_type">Вид отправления</item>
+        <item lang="en" id="russian_post_package_type">Package type</item>
+        <item lang="ru" id="zak_band">Заказная бандероль</item>
+        <item lang="en" id="zak_band">Registered parcel</item>
+        <item lang="ru" id="zak_pis">Заказное Письмо</item>
+        <item lang="en" id="zak_pis">Registered letter</item>
+        <item lang="ru" id="cen_band">Ценная Бандероль</item>
+        <item lang="en" id="cen_band">Insured box</item>
+        <item lang="ru" id="cen_pos">Ценная Посылка</item>
+        <item lang="en" id="cen_pos">Insured parcel</item>
+        <item lang="ru" id="cen_pis">Ценное Письмо</item>
+        <item lang="en" id="cen_pis">Insured letter</item>
+        <item lang="ru" id="ground">Наземная Перевозка</item>
+        <item lang="en" id="ground">Carriage by land</item>
+        <item lang="ru" id="air">Авиаперевозка</item>
+        <item lang="en" id="air">Carriage by air</item>
+        <item lang="ru" id="combin">Комбинированная Перевозка</item>
+        <item lang="en" id="combin">Combined shipping</item>
+        <item lang="ru" id="russian_post_country_error">Способ доставки Почта России доступен только для Российской Федерации. Вы можете изменить настройки стран (Настройки -> Компания).</item>
+        <item lang="en" id="russian_post_country_error">Russian post shipping method is available only for Russian Federation. You can change country settings (Settings -> Company).</item>
+        <item lang="ru" id="russian_post_city_error">Способ доставки Почта России доступен только для Москвы. Вы можете изменить настройки на странице "Настройки -> Компания".</item>
+        <item lang="en" id="russian_post_city_error">Russian post shipping method is available only for Moscow. You can change the settings on the "Settings -> Company" page.</item>
+        <item lang="en" id="carrier_russian_post">RusPOST</item>
+
+        <item lang="en" id="ship_russianpost_shipping_type_rp_main">Value parcel, regular mail sent by Russian Post</item>
+        <item lang="en" id="ship_russianpost_shipping_type_rp_1class">Russian Post, first class</item>
+        <item lang="en" id="russianpost_shipping_type">Mail type</item>
+
+        <item lang="ru" id="ship_russianpost_shipping_type_rp_main">Ценная Посылка, обычное отправление Почтой России</item>
+        <item lang="ru" id="ship_russianpost_shipping_type_rp_1class">Почта России 1 Класс</item>
+        <item lang="ru" id="russianpost_shipping_type">Тип отправления</item>
+
+        <item lang="ru" id="ship_russianpost_register_text">Ключ авторизации и пароль Вы можете получить на сайте <![CDATA[<a href="http://russianpostcalc.ru" target="_blank">russianpostcalc.ru</a>]]></item>
+
+<!-- Сurrencies -->
+        <item lang="en" id="cs_info">Information</item>
+        <item lang="ru" id="cs_info">Информация</item>
+        <item lang="ru" id="rub_info_title">Настройки валюты</item>
+        <item lang="en" id="rub_info_title">Currency settings</item>
+        <item lang="en" id="auto_info">Use this link to update currency exchange rates automatically via cron:</item>
+        <item lang="ru" id="auto_info">Используйте эту ссылку для автоматического обновления курсов валют через CRON:</item>
+        <item lang="en" id="auto_instruction_data">Notes: 1) The data on the site of the central bank of Russia is updated every day at 3:00 PM Moscow time (UTC+4);</item>
+        <item lang="ru" id="auto_instruction_data"><![CDATA[Замечания: <br />1) Информация на сайте центрального банка России обновляется ежедневно в 15.00 по Московскому времени;]]></item>
+        <item lang="en" id="auto_instruction_data_end">2) As a currency designation, please use only three-character designation RCC (Russian Classification of Currencies)</item>
+        <item lang="ru" id="auto_instruction_data_end">2) В качестве обозначения валюты используйте только трехбуквенное обозначение OKB</item>
+        <item lang="ru" id="sbrf_currencies_successfully_sync">Синхронизация валют прошла успешно.</item>
+        <item lang="en" id="sbrf_currencies_successfully_sync">Currencies are synchronized successfully.</item>
+        <item lang="ru" id="sbrf_currencies_unsuccessfully_sync">При синхронизации валют произошла ошибка.</item>
+        <item lang="en" id="sbrf_currencies_unsuccessfully_sync">An error occurred during currency synchronization.</item>
+        <item lang="ru" id="symbol_rub_create">Создана новая валюта (Рубли)</item>
+        <item lang="en" id="symbol_rub_create">New currency is created (Rubles)</item>
+        <item lang="ru" id="symbol_rub_no_currency_rub">Валюта с кодом "RUB" не существует.</item>
+        <item lang="en" id="symbol_rub_no_currency_rub">No currency with the "RUB" code.</item>
+        <item lang="ru" id="symbol_rub_ok">Символ рубля обновлён.</item>
+        <item lang="en" id="symbol_rub_ok">Ruble sign is updeted.</item>
+        <item lang="ru" id="rub_info_symbol_update">Нажмите на эту кнопку, чтобы обновить символ рубля сейчас</item>
+        <item lang="en" id="rub_info_symbol_update">Click this button to update ruble sign now</item>
+        <item lang="ru" id="rub_info_symbol_update_button">Обновить символ рубля</item>
+        <item lang="en" id="rub_info_symbol_update_button">Update ruble sign</item>
+        <item lang="en" id="rub_info_currency_sync">Click this button to synchronize currency exchange rates now.</item>
+        <item lang="ru" id="rub_info_currency_sync">Нажмите на эту кнопку, чтобы синхронизировать курсы валют сейчас</item>
+        <item lang="ru" id="rub_info_currency_sync_auto">Автоматическое обновление курсов валют через CRON</item>
+        <item lang="en" id="rub_info_currency_sync_auto">Automatic currency rate update via CRON</item>
+        <item lang="ru" id="currencies_sync_info"><![CDATA[Курс валюты будет синхронизирован с Центральным банком Российской Федерации ( <a href="http://www.cbr.ru/">www.cbr.ru</a> )]]></item>
+        <item lang="en" id="currencies_sync_info"><![CDATA[Currency rate will be synchronized with Central bank of Russia ( <a href="http://www.cbr.ru/">www.cbr.ru</a> )]]></item>
+        <item lang="ru" id="rub_info_currency_sync_button">Обновить курс валюты</item>
+        <item lang="en" id="rub_info_currency_sync_button">Update currency rates</item>
+    </language_variables>
+</addon>

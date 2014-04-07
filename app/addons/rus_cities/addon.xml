@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+	<id>rus_cities</id>
+	<version>2.2.2</version>
+	<name>Русская локализация - Города</name>
+	<description>Модуль добавляет новый функционал - города, для автодоплнения поля "Город" на странице оформления заказа и создания профиля.</description>
+	<priority>4600</priority>
+    <status>active</status>
+    <default_language>ru</default_language>
+    <translations> 
+        <item for="name" lang="en">Russian localization - Сities</item>
+        <item for="description" lang="en">The add-on provides new functionality – cities to be added automatically to the order placing page.</item>
+    </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="instruction" >
+                <name>Инструкции</name>
+                <translations>
+                    <item lang="en">Instructions</item>
+                </translations>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+	<language_variables>
+        <item lang="en" id="select_state_instruction">To create a new city, you should select country and region, click the “Search” button and create a city using the “+” button. If there are no regions for the country, they should be created.</item>
+        <item lang="ru" id="select_state_instruction">Для создания нового города необходимо выбрать страну и регион, нажать кнопку "Поиск", создать город с помощью кнопки "+". Если у страны нет регионов, необходимо их создать.</item>
+        <item lang="ru" id="add_city">Добавить новый город</item>
+        <item lang="en" id="add_city">Add new city</item>
+        <item lang="ru" id="new_city">Новый город</item>
+        <item lang="en" id="new_city">New city</item>
+        <item lang="ru" id="select_city">Выберите город</item>
+        <item lang="en" id="select_city">Select city</item>
+        <item lang="ru" id="empty_state">Нет созданных областей</item>
+        <item lang="en" id="empty_state">No states created</item>
+        <item lang="ru" id="not_selected_state">Не выбрана область</item>
+        <item lang="en" id="not_selected_state">No state selected</item>
+        <item lang="ru" id="other_town">другой город</item>
+        <item lang="en" id="other_town">another city</item>
+        <item lang="ru" id="new_city_state">Создать новый регион</item>
+        <item lang="en" id="new_city_state">Create new state</item>
+    </language_variables>
+	<queries>
+		<item for="install" type='file'>database/cscart_rus_cities.sql</item>
+		<item for="install" type='file'>database/cscart_rus_city_descriptions.sql</item>
+	</queries>
+	<functions>
+		<item for="uninstall">fn_rus_cities_uninstall</item>
+    </functions>
+</addon>

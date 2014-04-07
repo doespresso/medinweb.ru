@@ -1,0 +1,7 @@
+Feature name;Feature ID;Language;Type;Group;Description;Categories;Show on the features tab;Show in product list;Show in product header;Position;Status;Store;Feature code;Variants;Prefix;Suffix;Comparsion
+"Единица измерения";"23";"ru";"S";"";"";"";"Y";"Y";"N";"0";"A";"Simtech";"";"бут., канист., капс., кг, компл., м, наб., пар., пач., рул., шт., уп.";"";"";"N"
+"Объём";"19";"ru";"T";"";"";"";"Y";"Y";"N";"0";"A";"Simtech";"boxqnt";"";"";"ед.";"N"
+"Производитель";"18";"ru";"E";"";"";"";"N";"N";"Y";"0";"A";"Simtech";"";"";"";"";"N"
+"Оптовая цена";"24";"ru";"O";"";"";"";"Y";"N";"N";"0";"A";"Simtech";"";"";"";"руб.";"N"
+"Срок годности";"25";"ru";"D";"";"";"";"Y";"N";"N";"0";"A";"Simtech";"";"";"";"";"N"
+"Страна";"26";"ru";"S";"";"";"";"N";"N";"N";"0";"A";"Simtech";"";"";"";"";"N"

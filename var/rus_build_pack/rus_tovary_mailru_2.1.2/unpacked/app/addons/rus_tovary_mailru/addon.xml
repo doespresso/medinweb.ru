@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--  rus_build_mailru dbazhenov -->
+<addon scheme='2.0'>
+    <id>rus_tovary_mailru</id>
+    <version>2.1.2</version>
+    <name>Русская локализация - Экспорт в Товары@mail.ru</name>
+    <description>Экспорт продуктов в Товары@mail.ru</description>
+    <priority>3200</priority>
+    <position>6</position>
+    <status>active</status>
+    <default_language>ru</default_language>
+        <translations> 
+            <item for="name" lang="en">Russian localization - torg.mail.ru export</item>
+            <item for="description" lang="en">Export products to the torg.mail.ru catalog</item>
+        </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <name>General settings</name>
+                <translations>
+                    <item lang="ru" for="name">Общие настройки</item>
+                </translations>
+                <items>
+                    <item id="shop_name">
+                        <type>input</type>
+                        <name>Shop name</name>
+                        <translations>
+                            <item lang="ru" for="name">Название магазина</item>
+                        </translations>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction">
+                <name>Инструкции</name>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <language_variables>
+        <item lang="en" id="mailru_export_unsuccessfull">The following products were not exported because of zero price:</item>
+        <item lang="ru" id="mailru_export_unsuccessfull">Экспорт следующих товаров не удался из-за нулевой цены:</item>
+        <item lang="en" id="mailru_vendor_not_specified">Vendor not specified</item>
+        <item lang="ru" id="mailru_vendor_not_specified">Производитель не указан</item>
+        <item lang="en" id="mailru">Tovary@Mail.Ru</item>
+        <item lang="ru" id="mailru">Товары@Mail.Ru</item>
+        <item lang="en" id="mailru_brand">TM Brand</item>
+        <item lang="ru" id="mailru_brand">TM Бренд</item>
+        <item lang="en" id="mailru_products_filename">mailru_products</item>
+        <item lang="ru" id="mailru_products_filename">mailru_products</item>
+        <item lang="en" id="mailru_mcp">TM The maximum cost per click in rubles</item>
+        <item lang="ru" id="mailru_mcp">TM Максимальная цена клика в рублях</item>
+        <item lang="en" id="mailru_export">TM Export product to Tovary@Mail.Ru</item>
+        <item lang="ru" id="mailru_export">TM Экспортировать товар в Товары@mail.ru</item>
+        <item lang="en" id="mailru_true">Yes</item>
+        <item lang="ru" id="mailru_true">Да</item>
+        <item lang="en" id="mailru_false">No</item>
+        <item lang="ru" id="mailru_false">Нет</item>
+    </language_variables>
+    <queries>
+        <item for="install">ALTER TABLE `?:products` ADD `mailru_brand` VARCHAR(96) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:products` ADD `mailru_mcp` int(11) NOT NULL DEFAULT '0';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `mailru_export` CHAR(1) NOT NULL DEFAULT 'Y';</item>
+<!--    <item for="uninstall">
+            ALTER TABLE `?:products`
+                DROP `mailru_brand`,
+                DROP `mailru_mcp`,
+                DROP `mailru_export`;
+        </item> -->
+    </queries>
+</addon>

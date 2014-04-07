@@ -1,0 +1,13 @@
+/*  rus_build_loginza dbazhenov */
+
+/* Rouble sign */
+@font-face {
+    font-family: 'ALSRubl-Arial';
+    src: url('../media/fonts/addons/rus_build_pack/alsrubl-arial-regular.eot');
+    src: url('../media/fonts/addons/rus_build_pack/alsrubl-arial-regular.eot?#iefix') format('../../../media/fonts/addons/rus_build_pack/embedded-opentype'),url('../../../media/fonts/addons/rus_build_pack/alsrubl-arial-regular.woff') format('woff'), url('../../../media/fonts/addons/rus_build_pack/alsrubl-arial-regular.ttf') format('truetype'), url('../../../media/fonts/addons/rus_build_pack/alsrubl-arial-regular.svg#ALSRublArialRegular') format('svg');
+}
+.b-rub {
+    font-family: 'ALSRubl-Arial', Arial, sans-serif;
+}
+
+/* /Rouble sign */

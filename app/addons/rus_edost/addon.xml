@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!-- rus_build_edost dbazhenov  -->
+<addon scheme='2.0'>
+	<id>rus_edost</id>
+	<version>2.1.2</version>
+	<name>Русская локализация - Наложенный платеж ( eDost.ru )</name>
+	<description>Службы доставки: Почта России, EMS, DHL, UPS, СПСР-Экспресс, Пони экспресс, Гарантпост, Мегаполис, СДЭК, Деловые линии, Автотрейдинг, ПЭК, Желдорэкспедиция, boxberry, Энергия</description>
+	<priority>4600</priority>
+    <status>active</status>
+    <default_language>ru</default_language>
+        <translations> 
+            <item for="name" lang="en">Russian localization - Payment on delivery ( eDost.ru )</item>
+            <item for="description" lang="en">Shipping services: Russian Post, EMS, DHL, UPS, SPSR Express, Pony Express, Garantpost, Megapolis, CDEK, Delovye linii, Avtotrejding, PEK, Zheldorekspeditsiya, boxberry, Energy</item>
+        </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="instruction" >
+                <name>Инструкции</name>
+                <translations>
+                    <item lang="en">Instructions</item>
+                </translations>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>    
+	<language_variables>
+        <item lang="ru" id="server_password">Пароль для доступа к серверу расчетов</item>
+        <item lang="en" id="server_password">Access password to calculations server</item>
+        <item lang="ru" id="edost_activation_error">Для активации процессора доставки eDost валюта Российский Рубль (RUB) должна быть активна и назначена основной.</item>
+        <item lang="en" id="edost_activation_error">To activate the eDost shipping processor, the Russian rouble currency (RUB) must be active and defined as base.</item>
+        <item lang="ru" id="edost_warning">Предупреждение</item>
+        <item lang="en" id="edost_warning">Warning</item>
+        <item lang="ru" id="edost_warning1">Почтового отделения с указанным индексом НЕ существует! Без правильного индекса доставка почтой НЕ возможна!</item>
+        <item lang="en" id="edost_warning1">A post office with the zip code defined DOES NOT exist. Postal delivery is IMPOSSIBLE without correct zip code.</item>
+        <item lang="ru" id="edost_warning2">В вашем регионе НЕ найдено почтового отделения с указанным индексом! Без правильного индекса доставка почтой НЕ возможна!</item>
+        <item lang="en" id="edost_warning2">NO post office with the zip code defined has been found in your state. Postal delivery is IMPOSSIBLE without correct zip code.</item>
+        <item lang="ru" id="edost_country_error">Способ доставки eDost доступен только для Российской Федерации. Вы можете изменить настройки стран (Настройки -> Компания).</item>
+        <item lang="en" id="edost_country_error">The eDost shipping method is available for the Russian Federation only. You can change settings of countries (Settings -> Company).</item>
+        <item lang="ru" id="edost_code_error">Доставка не может быть выполнена в указанный адрес методом eDost.</item>
+        <item lang="en" id="edost_code_error">Product cannot be shipped to the defined address by the eDost shipping method.</item>
+        <item lang="ru" id="edostcod_naloz_plus">Стоимость доставки увеличится на </item>
+        <item lang="en" id="edostcod_naloz_plus">Shipping cost will increase by </item>
+        <item lang="ru" id="edostcod_naloz_transfer">+ доплатить при получении за денежный перевод: </item>
+        <item lang="en" id="edostcod_naloz_transfer">+ pay surcharge on delivery for money transfer: </item>
+        <item lang="ru" id="edostcod_naloz_total">Итого переплата за наложенный платеж: </item>
+        <item lang="en" id="edostcod_naloz_total">Total surcharge paid for payment on delivery: </item>
+        <item lang="ru" id="carrier_edost">eDost</item>
+        <item lang="ru" id="store_id">ID магазина</item>
+        <item lang="bg" id="store_id">Магазин ID</item>
+        <item lang="da" id="store_id">Butik ID</item>
+        <item lang="de" id="store_id">Webshop ID</item>
+        <item lang="el" id="store_id">Ταυτότητα καταστήματος</item>
+        <item lang="en" id="store_id">Store ID</item>
+        <item lang="es" id="store_id">ID de la tienda</item>
+        <item lang="fr" id="store_id">ID Boutique</item>
+        <item lang="it" id="store_id">ID negozio</item>
+        <item lang="nl" id="store_id">Winkel ID</item>
+        <item lang="no" id="store_id">Butikk ID</item>
+        <item lang="ro" id="store_id">ID-ul magazinului</item>
+        <item lang="sl" id="store_id">Identifikacija trgovine</item>
+        <item lang="zh" id="store_id">商店 ID</item>
+    </language_variables>
+	<functions>
+        <item for="install">fn_rus_edost_install</item>
+        <item for="uninstall">fn_rus_edost_uninstall</item>
+    </functions>
+</addon>

@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<!--  rus_build_yandex_market dbazhenov -->
+<addon scheme='2.0' edition_type="ROOT,MSE:VENDOR">
+    <id>rus_yandex_market</id>
+    <version>2.2.1</version>
+    <default_language>ru</default_language>
+    <name>Русская локализация - Яндекс.Маркет экспорт</name>
+    <description>Экспорт товаров в Яндекс.Маркет</description>
+    <priority>8</priority>
+    <status>active</status>
+    <translations>
+        <item for="name" lang="en">Russian localization - Yandex.Market export</item>
+        <item for="description" lang="en">Export products to the Yandex.Market catalog</item>
+    </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general" edition_type="ROOT,ULT:VENDOR">
+                <name>Общие настройки</name>
+                <translations>
+                    <item lang="en" for="name">General settings</item>
+                </translations>
+                <items>
+                    <item id="export_type">
+                        <type>selectbox</type>
+                        <tooltip><![CDATA[Больще информации о типах экспорта на сайте Яндекс.Маркета <a href="http://help.yandex.ru/partnermarket/offers.xml">Примеры и описания элементов</a>]]></tooltip>
+                        <name>Тип описания предложений товаров</name>
+                        <translations>
+                            <item lang="en" for="tooltip"><![CDATA[More information about export types you can find on the Yandex.Market website <a href="http://help.yandex.ru/partnermarket/offers.xml">Examples and descriprions of elements</a>]]></item>
+                            <item lang="en" for="name">Product offer description type</item>
+                        </translations>
+                        <variants>
+                            <item id="simple">
+                                <name>Упрощенное</name>
+                                <translations>
+                                    <item lang="en" >Simplified</item>
+                                </translations>
+                            </item>
+                            <item id="vendor_model">
+                                <name>vendor.model</name>                        
+                            </item>
+                        </variants>
+                        <default_value>simple</default_value>
+                    </item>
+                    <item id="shop_name">
+                        <type>input</type>
+                        <name>Название магазина</name>
+                        <translations>
+                            <item lang="en">Store name</item>
+                        </translations>
+                    </item>
+                    <item id="export_stock">
+                        <type>checkbox</type>
+                        <tooltip>Из экспорта будут исключены товары с количеством равным или меньшим 0.</tooltip>
+                        <name>Экспортировать только товары, которые есть на складе</name>
+                        <translations>
+                            <item lang="en" for="tooltip">Products with the quantity equal to 0 or less will be excluded from export.</item>
+                            <item lang="en" for="name">Export in-stock products only</item>
+                        </translations>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="notify_disable_products">
+                        <type>checkbox</type>
+                        <name>Включить уведомления о причинах исключения товаров из экспорта.</name>
+                        <translations>
+                            <item lang="en" for="name">Enable notifications about the reasons of excluding products from export.</item>
+                        </translations>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="disable_cat_d">
+                        <type>checkbox</type>
+                        <tooltip>Будут экспортированы товары только из активных и скрытых категорий.</tooltip>
+                        <name>Исключить выключенные категории</name>
+                        <translations>
+                            <item lang="en" for="tooltip">Products from active and hidden categories only will be exported.</item>
+                            <item lang="en" for="name">Exclude disabled categories</item>
+                        </translations>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="feature_for_brand">
+                        <name>Названия характеристик для использования в поле "brand"</name>
+                        <tooltip>Используется для типа размещения "vendor.model". Выберите название характеристики значение которой будет использовано для поля "brand". Возможно использовать только характеристики типа "Бренд/Производитель"</tooltip>
+                        <type>multiple checkboxes</type>
+                        <translations>
+                            <item lang="en" for="tooltip">Used for the "vendor.model" format type. Choose the name of the feature which value will be used for the "brand" field. Only features of the "Brand/Manufacturer"type can be used.</item>
+                            <item lang="en" for="name">Feature names for using in the "brand" field</item>
+                        </translations>
+                    </item> 
+                    <item id="type_prefix">
+                        <name>Использовать в поле "typePrefix"</name>
+                        <tooltip>Используется для типа размещения "vendor.model". Название товара формируется по формуле: "typePrefix" + "brand" + "model" . Если у товара не задано значение поля "typePrefix" будет использовано название категории.</tooltip>
+                        <type>checkbox</type>                        
+                        <translations>
+                            <item lang="en" for="tooltip">Used for the "vendor.model" format type. Product name is formed by the formula: "typePrefix" + "brand" + "model". If the value of the "typePrefix" field is not set for a product, the category name will be used.</item>
+                            <item lang="en" for="name">Use in the "typePrefix" field</item>
+                        </translations>
+                    </item> 
+                    <item id="market_category">
+                        <name>Использовать поле "market_category". </name>
+                        <tooltip><![CDATA[For a product offer, it is recommended to specify the category/section in which it should be placed on Yandex.Market. In this element, it is allowed to specify names of categories only from <a href="http://cards2.yandex.net/hlp-get/6213/xls/category_tree-.xls"> the product categories tree of Yandex.Market</a>.<br/>The <market_category> element is not required]]></tooltip>
+                         <type>checkbox</type>
+                        <translations>
+                            <item lang="en" for="tooltip">Used for the "vendor.model" format type. Product name is formed by the formula: "typePrefix" + "brand" + "model". If the value of the "typePrefix" field is not set for a product, the category name will be used.</item>
+                            <item lang="en" for="name">Use the "market_category" field.</item>
+                        </translations>
+                    </item>
+                    <item id="market_category_object">
+                        <type>selectbox</type>
+                        <tooltip>При экспорте товара будет использована настройка "market_category" индивидуально каждого товара или всей категории.</tooltip>
+                        <name>Использовать значение для поля "market_category" из</name>
+                        <translations>
+                            <item lang="en" for="tooltip">At product export, the "market_category" setting of each product individually or of the whole category will be used.</item>
+                            <item lang="en" for="name">Use the value for the "market_category" field from</item>
+                        </translations>
+                        <variants>
+                            <item id="product">
+                                <name>товар</name>
+                                <translations>
+                                    <item lang="en">product</item>
+                                </translations>
+                            </item>
+                            <item id="category">
+                                <name>категория</name> 
+                                <translations>
+                                    <item lang="en">category</item>
+                                </translations>                       
+                            </item>
+                        </variants>
+                        <default_value>product</default_value>
+                    </item>
+                    <item id="export_encoding">
+                        <type>selectbox</type>
+                        <name>Кодировка экспортируемого файла</name>
+                        <translations>
+                            <item lang="en" for="name">Encoding of the exported file</item>
+                        </translations>
+                        <variants>
+                            <item id="utf-8">
+                                <name>utf8</name>
+                            </item>
+                            <item id="windows-1251">
+                                <name>windows-1251</name>
+                            </item>
+                        </variants>
+                        <default_value>utf8</default_value>
+                    </item>
+                </items>
+            </section>
+            <section id="auto_settings" edition_type="ULT:VENDOR">
+                <name>Автоматический экспорт</name>
+                <translations>
+                    <item lang="en">Automatic export</item>
+                </translations>    
+                <items>                 
+                    <item id="cron_key">
+                        <type>input</type>
+                        <name>Ключ доступа для автоматического экспорта ([cron_key])</name>
+                        <translations>
+                            <item lang="en">Access key for automatic export ([cron_key])</item>
+                        </translations>  
+                        <default_value>testKey</default_value>
+                    </item>
+                    <item id="cron_filename">
+                        <type>input</type>
+                        <name>Имя файла для автоматического экспорта (файл будет сохранён в папку /var/exim/)</name>
+                        <translations>
+                            <item lang="en">File name for automatic export (the file will be saved to the directory /var/exim/)</item>
+                        </translations>  
+                        <default_value>export_yandex.yml</default_value>
+                    </item>
+                    <item id="auto_url">
+                        <name>URL для автоматического обновления</name>
+                        <translations>
+                            <item lang="en">URL for automatic update</item>
+                        </translations>  
+                        <type>info</type>
+                        <handler>fn_rus_yandex_market_url_auto</handler>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction" edition_type="ROOT,ULT:VENDOR">
+                <name>Инструкции</name>
+                <translations>
+                    <item lang="en">Instructions</item>
+                </translations>  
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <language_variables>
+        <item lang="ru" id="yml_market_category_list_title">Список категорий Яндекс.Маркет</item>
+        <item lang="en" id="yml_market_category_list_title">Categories list of Yandex.Market</item>
+        <item lang="ru" id="yml_market_category_list_text"><![CDATA[<p>Для товарного предложения рекомендуется указывать категорию, в которой оно должно быть размещено на Яндекс.Маркете. Категория передается с помощью элемента <market_category> в описании товарного предложения. В этом элементе допустимо указывать названия категорий только из товарного дерева категорий Яндекс.Маркета.</p><p>
+Больше информации и список категорий в фомате xls на сайте Яндекс <a href="http://help.yandex.ru/partnermarket/guides/clothes.xml#h6">Категория товарного предложения</a></p><br/><p>Выберите категорию из списка</p><br/>]]></item>
+        <item lang="en" id="yml_market_category_list_text"><![CDATA[<p>For a product offer, it is recommended to specify the category in which it should be placed on Yandex.Market. The category is conveyed using the <market_category> element in the product offer description. In this element, it is allowed to specify names of categories only from the product categories tree of Yandex.Market.</p><p>
+More information and the categories list in xls format you can find on the Yandex website <a href="http://help.yandex.ru/partnermarket/guides/clothes.xml#h6">Porduct offer category</a></p><br/><p>Select a category from the list</p><br/>]]></item>
+        <item lang="ru" id="yml_market_category_link">Список категорий и подсказка</item>
+        <item lang="en" id="yml_market_category_link">Categories list and tooltip</item>
+        <item lang="ru" id="yml_export_export_true"><![CDATA[<br/><b>Экспортировано в Яндекс.Маркет: [count] товаров</b><br/>]]></item>
+        <item lang="en" id="yml_export_export_true"><![CDATA[<br/><b>Exported in Yandex.Market: [count] products</b><br/>]]></item>
+        <item lang="ru" id="yml_export_error_cron_key">Экспорт в Яндекс.Маркет не выполнен: Неправильный ключ</item>
+        <item lang="en" id="yml_export_error_cron_key">Export in Yandex.Market failed: Wrong key</item>
+        <item lang="ru" id="yml_export_error_cron">Экспорт в Яндекс.Маркет завершился ошибкой</item>
+        <item lang="en" id="yml_export_error_cron">Export in Yandex.Market resulted in an error</item>
+        <item lang="ru" id="yml_export_auto_info_header">Необходимо выбрать витрину и сохранить настройки для экспортируемого магазина.</item>
+        <item lang="en" id="yml_export_auto_info_header">It is necessary to select a storefront and save the settings for the export store.</item>
+        <item lang="ru" id="yml_export_auto_info">Используйте следующий URL для автоматического экспорта:</item>
+        <item lang="en" id="yml_export_auto_info">Use the following URL for automatic export:</item>
+        <item lang="ru" id="yml_export_auto_info_bottom">Для экспорта товаров из различных витрин необходимо использовать различное имя файла.</item>
+        <item lang="en" id="yml_export_auto_info_bottom">For exporting products from various storefronts it is required to use various file names.</item>
+        <item lang="ru" id="yml_export_auto_info_end">Параметр "switch_company_id" отвечает за выбор экспортируемой витрины. При "switch_company_id=0" будут экспортированы товары всех витрин.</item>
+        <item lang="en" id="yml_export_auto_info_end">The "switch_company_id" option is responsible for selecting the export sotrefront. If "switch_company_id=0", products of all the storefronts will be exported.</item>
+        <item lang="en" id="yml_export_auto_info_header">Необходимо выбрать витрину и сохранить настройки для экспортируемого магазина.</item>
+        <item lang="en" id="yml_export_auto_info_header">It is necessary to select a storefront and save the settings for the export store.</item>
+        <item lang="en" id="yml_export_auto_info">Используйте следующий URL для автоматического экспорта.</item>
+        <item lang="en" id="yml_export_auto_info">Use the following URL for automatic export.</item>
+        <item lang="en" id="yml_export_auto_info_bottom">Для экспорта товаров из различных витрин необходимо использовать различное имя файла.</item>
+        <item lang="en" id="yml_export_auto_info_bottom">For exporting products from various storefronts it is required to use various file names.</item>
+        <item lang="en" id="yml_export_auto_info_end">Параметр "switch_company_id" отвечает за выбор экспортируемой витрины. При "switch_company_id=0" будут экспортированы товары всех витрин.</item>
+        <item lang="en" id="yml_export_auto_info_end">The "switch_company_id" option is responsible for selecting the export sotrefront. If "switch_company_id=0", products of all the storefronts will be exported.</item>
+        <item lang="ru" id="yml_export_auto_info_file">Файл будет сохранён в папку:</item>
+        <item lang="en" id="yml_export_auto_info_file">The file will be saved to the directory:</item>
+        <item lang="en" id="yml_export_unsuccessfull_products_zero_price">The following products were not exported because of zero price:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_products_zero_price">Экспорт следующих товаров не удался изза нулевой цены:</item>
+        <item lang="en" id="yml_export_unsuccessfull_disabled_products">The following products were not exported because they are disabled:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_disabled_products">Экспорт следующих товаров не удался изза неактивного статуса товара:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_out_of_stock">Экспорт следующих товаров не удался изза отсутствия товара на складе:</item>
+        <item lang="en" id="yml_export_unsuccessfull_out_of_stock">The following products were not exported because the products are out of stock:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_empty_brand">Экспорт следующих товаров не удался изза пустого поля бренд:</item>
+        <item lang="en" id="yml_export_unsuccessfull_empty_brand">The following products were not exported because the "Brand" field is empty:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_empty_model">Экспорт следующих товаров не удался изза пустого поля Модель:</item>
+        <item lang="en" id="yml_export_unsuccessfull_empty_model">The following products were not exported because the "Model" field is empty:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_disable_cat_list">Экспорт следующих товаров не удался изза исключённой категории:</item>
+        <item lang="en" id="yml_export_unsuccessfull_disable_cat_list">The following products were not exported because of the excluded category:</item>
+        <item lang="ru" id="yml_export_unsuccessfull_disable_cat_list_d">Экспорт следующих товаров не удался изза выключенной категории:</item>
+        <item lang="en" id="yml_export_unsuccessfull_disable_cat_list_d">The following products were not exported because of the disabled category:</item>
+        <item lang="en" id="yml_vendor_not_specified">Vendor not specified</item>
+        <item lang="ru" id="yml_vendor_not_specified">Производитель не указан</item>
+        <item lang="ru" id="yml_rur_absent">Для установки аддона необходимо добавить валюту с кодом RUR.</item>
+        <item lang="en" id="yml_rur_absent">To install the add-on, it is required to add a currency with the code RUR.</item>
+        <item lang="en" id="yml_market_category">YM Value of "market_category" field</item>
+        <item lang="ru" id="yml_market_category">YM Значение поля "market_category"</item>
+        <item lang="en" id="market_category_option">Select a category from the list</item>
+        <item lang="ru" id="market_category_option">Выберите категорию из списка</item>
+        <item lang="en" id="yml">Yandex.Market</item>
+        <item lang="ru" id="yml">Яндекс.Маркет</item>
+        <item lang="en" id="yml_type_prefix">YM Product group/category (typePrefix)</item>
+        <item lang="ru" id="yml_type_prefix">YM Группа товаров/категория (typePrefix)</item>
+        <item lang="en" id="yml_brand">YM Brand</item>
+        <item lang="ru" id="yml_brand">YM Бренд</item>
+        <item lang="en" id="yml_model">YM Model</item>
+        <item lang="ru" id="yml_model">YM Модель</item>
+        <item lang="en" id="yml_country">YM Country of origin</item>
+        <item lang="ru" id="yml_country">YM Страна производитель</item>
+        <item lang="en" id="yml_export_fields">Export fields</item>
+        <item lang="ru" id="yml_export_fields">Экспортируемые поля</item>
+        <item lang="en" id="yml_delivery">YM Allow delivery</item>
+        <item lang="ru" id="yml_delivery">YM Возможность доставки товара</item>
+        <item lang="en" id="yml_store">YM Allow retail store purchase</item>
+        <item lang="ru" id="yml_store">YM Возможность купить товар в розничном магазине</item>
+        <item lang="en" id="yml_pickup">YM Allow booking and self delivery</item>
+        <item lang="ru" id="yml_pickup">YM Возможность зарезервировать товар и забрать его самостоятельно</item>
+        <item lang="en" id="yml_true">Yes</item>
+        <item lang="ru" id="yml_true">Да</item>
+        <item lang="en" id="yml_false">No</item>
+        <item lang="ru" id="yml_false">Нет</item>
+        <item lang="en" id="yml_sales_notes">YM Sales notes</item>
+        <item lang="ru" id="yml_sales_notes">YM Sales notes</item>
+        <item lang="ru" id="yml_export_in_stock">Только товары в наличии</item>
+        <item lang="en" id="yml_export_in_stock">In stock products only</item>
+        <item lang="ru" id="yml_export_in_stock_description">Количество товара должно быть больше 0</item>
+        <item lang="en" id="yml_export_in_stock_description">Product quantity must be greater than 0</item>
+        <item lang="en" id="yml_origin_not_specified">Not specified</item>
+        <item lang="ru" id="yml_origin_not_specified">Не указана</item>
+        <item lang="en" id="yml_products_filename">ym_products</item>
+        <item lang="ru" id="yml_products_filename">ym_products</item>
+        <item lang="en" id="yml_select_shop">Select store</item>
+        <item lang="ru" id="yml_select_shop">Выберите магазин</item>
+        <item lang="en" id="yml_bid">YM Basic bid</item>
+        <item lang="ru" id="yml_bid">YM Основная ставка</item>
+        <item lang="en" id="yml_cbid">YM Card bid</item>
+        <item lang="ru" id="yml_cbid">YM Ставка для карточек</item>
+        <item lang="en" id="market">Yandex.Market</item>
+        <item lang="ru" id="market">Яндекс.Маркет</item>
+        <item lang="ru" id="yml_disable_cat">YM Исключить товары категории из экспорта в Яндекс.Маркет</item>
+        <item lang="en" id="yml_disable_cat">YM Exclude the category products from export in Yandex.Market</item>
+        <item lang="en" id="tt_addons_yandex_market_hooks_products_detailed_content_post_yml_model">Leave empty to use product code</item>
+        <item lang="ru" id="tt_addons_yandex_market_hooks_products_detailed_content_post_yml_model">Если оставить незаполненным, будет использован артикул</item>
+        <item lang="ru" id="yml_export_yes">YM Экспортировать товар в Яндекс.Маркет</item>
+        <item lang="en" id="yml_export_yes">YM Export the product in Yandex.Market</item>
+    </language_variables>
+    <queries>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_brand` VARCHAR(96) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_origin_country` VARCHAR(64) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_store` CHAR(1) NOT NULL DEFAULT 'N';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_pickup` CHAR(1) NOT NULL DEFAULT 'N';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_delivery` CHAR(1) NOT NULL DEFAULT 'Y';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_export_yes` CHAR(1) NOT NULL DEFAULT 'Y';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_bid` int(11) NOT NULL DEFAULT '0';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_cbid` int(11) NOT NULL DEFAULT '0';</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_model` VARCHAR(96) NOT NULL ;</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_sales_notes` VARCHAR(50) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_type_prefix` VARCHAR(55) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:products` ADD `yml_market_category` VARCHAR(255) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:categories` ADD `yml_market_category` VARCHAR(255) NOT NULL;</item>
+        <item for="install">ALTER TABLE `?:categories` ADD `yml_disable_cat` CHAR(1) NOT NULL DEFAULT 'N';</item>
+<!--    <item for="uninstall">
+            ALTER TABLE `?:products`
+                DROP `yml_brand`,
+                DROP `yml_origin_country`,
+                DROP `yml_store`,
+                DROP `yml_pickup`,
+                DROP `yml_delivery`,
+                DROP `yml_export_yes`,
+                DROP `yml_bid`,
+                DROP `yml_cbid`,
+                DROP `yml_model`;
+                DROP `yml_market_category`;
+                DROP `yml_type_prefix`;
+                DROP `yml_sales_notes`;
+            ALTER TABLE `?:categories` DROP `yml_disable_cat`;
+            ALTER TABLE `?:categories` DROP `yml_market_category`;
+        </item> -->
+    </queries>
+</addon>

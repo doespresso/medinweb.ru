@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!-- rus_build_loginza dbazhenov -->
+<addon scheme="2.0">
+    <id>rus_loginza</id>
+    <name>Русская локализация - Loginza</name>
+    <description>Добавляет возможность авторизации покутелей в через социальные сети (VK, Facebook, Twitter, и т.д.) c помощью сервиса Loginza</description>
+    <version>2.1.2</version>
+    <priority>100500</priority>
+    <default_language>ru</default_language>
+    <compatibility>
+        <conflicts>janrain,hybrid_auth</conflicts>
+    </compatibility>
+    <dependencies/>
+        <translations> 
+            <item for="name" lang="en">Russian localization - Loginza</item>
+            <item for="description" lang="en">Loginza plug-ins allow users to log in to your website using their accounts with popular web portails such as Yandex, Google, Rambler, Mail.ru and LiveJournal, social networks including VKontakte and Facebook.</item>
+        </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <name>Настройки</name>
+                <items>
+					<item id="meta_content">
+                        <name>Meta content</name>
+                        <type>input</type>
+                        <translations>
+                            <item lang="ru">Meta content</item>
+                        </translations>
+                    </item>
+					<item id="widget_id">
+                        <name>Widget ID</name>
+                        <type>input</type>
+                        <translations>
+                            <item lang="ru">ID виджета</item>
+                        </translations>
+                    </item>
+                    <item id="secret_key">
+                        <name>Secret Key</name>
+                        <type>input</type>
+                        <translations>
+                            <item lang="ru">Секретный ключ</item>
+                        </translations>
+                    </item>
+                    <item id="buttons_type">
+                        <type>selectbox</type>
+                        <name>Тип кнопок</name>
+                        <variants>
+                            <item id="text_link">
+                                <name>Текстовая ссылка</name>
+                            </item>
+                            <item id="one_button">
+                                <name>Кнопка виджета Loginza</name>                        
+                            </item>
+                            <item id="buttons">
+                                <name>Набор иконок провайдеров</name>                        
+                            </item>
+                        </variants>
+                        <translations>
+                            <item lang="en">Buttons type</item>
+                        </translations>
+                    </item>
+                    <item id="socials_box">
+                        <name>Selectable box</name>
+                        <type>selectable_box</type>
+                        <default_value><![CDATA[#M#yandex=Y&google=Y&vkontakte=Y&facebook=Y&odnoklassniki=Y&mailru=Y]]></default_value>
+                        <translations>
+                            <item lang="ru">Двухпанельный список мультивыбора</item>
+                        </translations>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction" edition_type="ROOT">
+                <name>Инструкции</name>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings> 
+    <language_variables>
+        <item lang="ru" id="loginza_social_login.small_buttons_text">Также Вы можете войти используя:</item>
+        <item lang="en" id="loginza_social_login.small_buttons_text">You can also log in using:</item>
+        <item lang="en" id="loginza_social_login">Social login</item>
+        <item lang="en" id="loginza_need_update_profile">The "Password" field and some other mandatory fields are empty at the moment. Please update your profile.</item>
+        <item lang="en" id="server_not_respond">Server of the 'Loginza' service does not respond.</item>
+        <item lang="en" id="loginza_cant_create_profile"><![CDATA[
+Unfortunately, we failed to create a customer and log in to the store due to one of the following reasons:<br />
+- You logged in to our store earlier using some other OpenID provider in which the same email is used.<br />
+- You have already registered in our store using your email.<br />
+Please contact the store owner to resolve the problems.
+]]></item>
+<item lang="en" id="request_validation_error"><![CDATA[
+Unfortunately, we have failed to create a user and authorize in the store due to the authorization request validity check-up error.<br />
+Please contact the owner of the store to resolve this problem.
+        ]]></item>
+        <item lang="ru" id="loginza_cant_create_profile"><![CDATA[
+К сожалению, не удалось создать пользователя и авторизоваться в магазине по одной из следующих причин:<br />
+- Вы ранее авторизовались в магазине, используя другой сервис OpenID, в котором используется тот же email адрес.<br />
+- Вы уже зарегистрированы в нашем магазине с использованием этого email адреса.<br />
+Пожалуйста, свяжитесь с владельцем магазина для разрешения данной проблемы.
+        ]]></item>
+        <item lang="ru" id="request_validation_error"><![CDATA[
+К сожалению, не удалось создать пользователя и авторизоваться в магазине из-за ошибки проверки достоверности запроса авторизации.<br />
+Пожалуйста, свяжитесь с владельцем магазина для разрешения данной проблемы.
+        ]]></item>
+        <item lang="ru" id="loginza_need_update_profile">Поле "Пароль" и некоторые другие обязательные для заполнения поля пустые. Пожалуйста, обновите Ваш профиль.</item>
+        <item lang="ru" id="social_login">Авторизация через социальную сеть</item>
+        <item lang="ru" id="loginza_social_login">Авторизация через социальную сеть с помощью Loginza</item>
+        <item lang="ru" id="server_not_respond">Нет ответа от сервера сервиса 'Loginza'.</item>
+
+        <item lang="ru" id="loginza_password_generated">Рады сообщить Вам, что Вы были успешно зарегистрированы в магазине. Для Вас был сгененирован пароль</item>
+        <item lang="ru" id="loginza_change_password">Сменить пароль Вы можете по ссылке</item>
+        <item lang="ru" id="loginza_password_send">Сгенерированый пароль был отправлен на почту</item>
+
+        <item lang="ru" id="loginza_google">Google</item>
+        <item lang="ru" id="loginza_yandex">Яндекс</item>
+        <item lang="ru" id="loginza_mailruapi">Mail.ru API</item>
+        <item lang="ru" id="loginza_mailru">Mail.ru</item>
+        <item lang="ru" id="loginza_vkontakte">ВКонтакте</item>
+        <item lang="ru" id="loginza_facebook">Facebook</item>
+        <item lang="ru" id="loginza_odnoklassniki">Одноклассники</item>
+        <item lang="ru" id="loginza_livejournal">LiveJournal</item>
+        <item lang="ru" id="loginza_twitter">Twitter</item>
+        <item lang="ru" id="loginza_linkedin">LinkedIn</item>
+        <item lang="ru" id="loginza_loginza">Loginza</item>
+        <item lang="ru" id="loginza_myopenid">myOpenId</item>
+        <item lang="ru" id="loginza_webmoney">WebMoney</item>
+        <item lang="ru" id="loginza_rambler">Rambler</item>
+        <item lang="ru" id="loginza_flickr">Flickr</item>
+        <item lang="ru" id="loginza_lastfm">Last.fm</item>
+        <item lang="ru" id="loginza_verisign">VeriSign</item>
+        <item lang="ru" id="loginza_aol">AOL</item>
+        <item lang="ru" id="loginza_steam">Steam</item>
+        <item lang="ru" id="loginza_openid">OpenId</item>
+
+        <item lang="en" id="loginza_yandex">Yandex</item>
+        <item lang="en" id="loginza_mailruapi">Mail.ru API</item>
+        <item lang="en" id="loginza_mailru">Mail.ru</item>
+        <item lang="en" id="loginza_vkontakte">VKontakte</item>
+        <item lang="en" id="loginza_facebook">Facebook</item>
+        <item lang="en" id="loginza_odnoklassniki">Odnoklassniki</item>
+        <item lang="en" id="loginza_livejournal">LiveJournal</item>
+        <item lang="en" id="loginza_twitter">Twitter</item>
+        <item lang="en" id="loginza_linkedin">LinkedIn</item>
+        <item lang="en" id="loginza_loginza">Loginza</item>
+        <item lang="en" id="loginza_myopenid">myOpenId</item>
+        <item lang="en" id="loginza_webmoney">WebMoney</item>
+        <item lang="en" id="loginza_rambler">Rambler</item>
+        <item lang="en" id="loginza_flickr">Flickr</item>
+        <item lang="en" id="loginza_lastfm">Last.fm</item>
+        <item lang="en" id="loginza_verisign">VeriSign</item>
+        <item lang="en" id="loginza_aol">AOL</item>
+        <item lang="en" id="loginza_steam">Steam</item>
+        <item lang="en" id="loginza_openid">OpenId</item>
+
+        <item lang="ru" id="promotion_cond_social_users">Пользователь соц. сети</item>
+        <item lang="en" id="promotion_cond_social_users">Social user</item>
+
+    </language_variables>
+    <queries>
+        <item>ALTER TABLE `?:users` ADD `loginza_identifier` varchar(255) NOT NULL default ''</item>
+<!--        <item for="uninstall">ALTER TABLE  `?:users` DROP `loginza_identifier`</item> -->
+    </queries>
+</addon>

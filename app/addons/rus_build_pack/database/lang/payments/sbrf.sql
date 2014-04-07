@@ -1,0 +1,31 @@
+-- rus_build_pack dbazhenov
+
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_account_id', 'л/сч. получателя');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_bank', 'Банк');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_bik', 'БИК');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_cor_account', 'Кор. счет');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_g', 'г.');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_inn', 'ИНН');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_kbk', 'КБК');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_kop', 'коп.');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_kpp', 'КПП');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_notification', 'Извещение');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_okato_code', 'Код ОКАТО');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_payer', 'Плательщик');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_payer_account_id', '№ л/сч. плательщика');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_payer_address', 'Адрес плательщика');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_payer_inn', 'ИНН Плательщика');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_payment', 'Платёж');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_print_receipt', 'Распечатать квитанцию Сбербанка РФ');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_receipt', 'Квитанция Сбербанка РФ');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_receipt_', 'Квитанция');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_recepient', 'Получатель');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_recepient_name', 'Наименование получателя');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_rub', 'руб.');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_settlement_account', 'Расчетный счет');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_summ', 'Сумма');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_payment_data', 'Платёжные данные');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_bank_summ', 'Сумма оплаты услуг банка');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_order_payment', 'Оплата заказа');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_print', 'Печать');
+REPLACE INTO cscart_language_values (`lang_code`, `name`, `value`) VALUES ('ru', 'sbrf_information_not_found', 'Информация не найдена');

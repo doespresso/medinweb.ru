@@ -1,0 +1,1 @@
+<meta name='loginza-verification' content={$addons.rus_loginza.meta_content} />

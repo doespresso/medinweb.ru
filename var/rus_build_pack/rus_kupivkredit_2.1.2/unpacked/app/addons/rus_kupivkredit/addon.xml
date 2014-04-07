@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!-- rus_build_kupivkredit dbazhenov  -->
+<addon scheme="2.0">
+    <id>rus_kupivkredit</id>
+    <name>Русская локализация - Купи В Кредит</name>
+    <description>Модуль позволяющий покупать продукты в кредит через систему Купи В Кредит</description>
+    <version>2.1.2</version>
+    <priority>4400</priority>
+    <position>0</position>
+    <status>active</status>
+    <default_language>ru</default_language>
+    <translations>
+        <item for="description" lang="en">Allows purchases on credit via the Kupi V Kredit service</item>
+        <item for="name" lang="en">Russian localization - Kupi V Kredit</item>
+    </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="instruction">
+                <name>Инструкции</name>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <language_variables>
+        <item lang="en" id="kvk_order_id">Kupi v kredit order id</item>
+        <item lang="ru" id="kvk_order_id">Номер заказа в системе Купи в кредит</item>
+        <item lang="ru" id="kupivkredit_shop_id">Идентификатор магазина</item>
+        <item lang="en" id="kupivkredit_shop_id">Store ID</item>
+        <item lang="en" id="kupivkredit_api_key">API Key</item>
+        <item lang="ru" id="kupivkredit_api_key">API ключ</item>
+        <item lang="en" id="kupivkredit_secret">Secret word</item>
+        <item lang="ru" id="kupivkredit_secret">Секретная строка</item>
+        <item lang="en" id="kupivkredit_button">Kupi v kredit</item>
+        <item lang="ru" id="kupivkredit_button">Купи в кредит</item>
+        <item lang="en" id="kupivkredit">Kupi V Kredit</item>
+        <item lang="ru" id="kupivkredit">Купи в кредит</item>
+        <item lang="en" id="kupivkredit_widget_closed">The widget has been closed by the customer</item>
+        <item lang="ru" id="kupivkredit_widget_closed">Виджет был закрыт покупателем</item>
+        <item lang="en" id="kupivkredit_cancel_order">Cancel order</item>
+        <item lang="ru" id="kupivkredit_cancel_order">Купи в кредит - Отменить заказ</item>
+        <item lang="en" id="kupivkredit_complete_order">Sign order</item>
+        <item lang="ru" id="kupivkredit_complete_order">Купи в кредит - Подписать заказ</item>
+        <item lang="en" id="kupivkredit_confirm_order">Confirn order</item>
+        <item lang="ru" id="kupivkredit_confirm_order">Купи в кредит - Подтвердить заказ</item>
+        <item lang="en" id="kupivkredit_cancel_order_status">Declined by the store</item>
+        <item lang="ru" id="kupivkredit_cancel_order_status">Отказ магазина</item>
+        <item lang="en" id="kupivkredit_widget_incomplete">The request is incomplete</item>
+        <item lang="ru" id="kupivkredit_widget_incomplete">Заявка не заполнена до конца</item>
+        <item lang="en" id="kupivkredit_widget_bank_reject">Request declined by bank</item>
+        <item lang="ru" id="kupivkredit_widget_bank_reject">Заявка отклонена банком</item>
+        <item lang="en" id="kupivkredit_widget_open">Your request is pre-approved</item>
+        <item lang="ru" id="kupivkredit_widget_open">Ваша заявка предварительно одобрена</item>
+        <item lang="en" id="kupivkredit_widget_processed">Congratulations! Your request is approved.</item>
+        <item lang="ru" id="kupivkredit_widget_processed">Ваша заявка одобрена! Поздравляем!</item>
+        <item lang="en" id="kupivkredit_order_confirmed">Order confirmation sent to bank</item>
+        <item lang="ru" id="kupivkredit_order_confirmed">В банк отправлено подтверждение заказа</item>
+        <item lang="ru" id="kvk_registration_instructions"><![CDATA[Подробную информацию о регистрации интернет-магазина в системе онлайн кредитования "Купи в Кредит" вы можете найти на веб-сайте <a href="https://www.kupivkredit.ru/main/internet_shops">https://www.kupivkredit.ru/main/internet_shops</a>]]></item>
+        <item lang="en" id="kvk_registration_instructions"><![CDATA[You can find detailed information about registration in KupiVkredit system on the <a href="https://www.kupivkredit.ru/main/internet_shops">https://www.kupivkredit.ru/main/internet_shops</a>]]></item>
+        <item lang="en" id="kvk_payment_disabled">Some payments use the Kupi V Kredit processor. They have been disabled and cannot be activated unless the Kupi V Kredit processor is active.</item>
+        <item lang="ru" id="kvk_payment_disabled">Методы оплаты, использующие модуль Купи в кредит, были отключены. Для того чтобы их включить, необходимо, чтобы модуль Купи в кредит был активен.</item>
+        <item lang="en" id="kvk_has_disabled_payments"><![CDATA[Some payments use Kupi V Kredit processor. You can now activate them on the <a href="[url]">Payment methods</a> page.]]></item>
+        <item lang="ru" id="kvk_has_disabled_payments"><![CDATA[Некоторые методы оплаты использут модуль Купи в кредит. Вы можете активировать их на странице <a href="[url]">Методы оплаты</a>.]]></item>
+    </language_variables>
+    <functions>
+        <item for="uninstall">fn_rus_kupivkredit_delete_payment</item>
+        <item for="install">fn_rus_kupivkredit_install_payment</item>
+    </functions>
+</addon>

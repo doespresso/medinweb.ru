@@ -1,0 +1,3012 @@
+<?xml version="1.0" encoding="utf8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2014-04-04 22:04">
+<shop>
+<name>Simtech</name>
+<company>Simtech</company>
+<url>http://medinweb.ru</url>
+<currencies>
+    <currency id="RUB" rate="1.00000"/>
+</currencies>
+<categories>
+    <category id="271">Бинты</category>
+    <category id="273" parentId="271">Бинты гипсовые</category>
+    <category id="272" parentId="271">Бинты марлевые</category>
+    <category id="274" parentId="271">Бинты эластичные</category>
+    <category id="267">Бумага</category>
+    <category id="268" parentId="267">Бумага для видеопринтеров</category>
+    <category id="269" parentId="267">Бумага для ЭКГ</category>
+    <category id="270">Вата</category>
+    <category id="275">Гель для УЗИ и ЭКГ</category>
+    <category id="277">Гинекология</category>
+    <category id="283" parentId="277">Амниотом, зажим пупочный</category>
+    <category id="279" parentId="277">Зеркала</category>
+    <category id="278" parentId="277">Зонды урогенитальные</category>
+    <category id="280" parentId="277">Наборы гинекологические</category>
+    <category id="282" parentId="277">Презервативы для УЗИ</category>
+    <category id="281" parentId="277">Тесты для определения беременности</category>
+    <category id="306">Дезинфекция, крафт-пакеты и тесты для стерилизации</category>
+    <category id="284">Катетеры, зонды</category>
+    <category id="285">Контейнеры для сбора биологических жидкостей</category>
+    <category id="286">Лейкопластыри</category>
+    <category id="287">Марля, марлевые отрезы</category>
+    <category id="288">Маски, шапочки, фартуки</category>
+    <category id="307">Пакеты для утилизации медицинских и бытовых отходов</category>
+    <category id="289">Памперсы для взрослых</category>
+    <category id="290">Перчатки</category>
+    <category id="295" parentId="290">Перчатки акушерские</category>
+    <category id="293" parentId="290">Перчатки нитриловые нестерильные и стерильные</category>
+    <category id="294" parentId="290">Перчатки сверхпрочные</category>
+    <category id="291" parentId="290">Перчатки смотровые опудренные и неопудренные</category>
+    <category id="292" parentId="290">Перчатки хирургические нестерильные и стерильные</category>
+    <category id="296" parentId="290">Перчатки хозяйственные</category>
+    <category id="297">Простыни, пеленки, одноразовая одежда</category>
+    <category id="308">Разное</category>
+    <category id="298">Салфетки</category>
+    <category id="300" parentId="298">Салфетки марлевые</category>
+    <category id="299" parentId="298">Салфетки спиртовые</category>
+    <category id="301">Термометры</category>
+    <category id="303" parentId="301">Термометры жидкокристалические</category>
+    <category id="302" parentId="301">Термометры ртутные</category>
+    <category id="304">Шпатели, мундштуки</category>
+    <category id="305">Шприцы</category>
+    <category id="276">Электроды</category>
+    <category id="166">Electronics</category>
+    <category id="167" parentId="166">Computers</category>
+    <category id="168" parentId="167">Desktops</category>
+    <category id="169" parentId="167">Laptops</category>
+    <category id="165" parentId="167">Tablets</category>
+    <category id="170" parentId="167">Monitors</category>
+    <category id="171" parentId="167">Networking</category>
+    <category id="172" parentId="167">Printers &amp; Scanners</category>
+    <category id="201" parentId="167">Processors</category>
+    <category id="175" parentId="166">Car Electronics</category>
+    <category id="176" parentId="175">GPS &amp; Navigation</category>
+    <category id="185" parentId="175">In-Dash Stereos</category>
+    <category id="186" parentId="175">Speakers</category>
+    <category id="202" parentId="175">Subwoofers</category>
+    <category id="187" parentId="175">Amplifiers</category>
+    <category id="188" parentId="175">Car DVD &amp; Video</category>
+    <category id="189" parentId="175">Radar Detectors</category>
+    <category id="174" parentId="166">TV &amp; Video</category>
+    <category id="190" parentId="174">LED TVs</category>
+    <category id="191" parentId="174">Plasma TVs</category>
+    <category id="193" parentId="174">3D TVs</category>
+    <category id="194" parentId="174">DVD &amp; Blu-ray Players</category>
+    <category id="195" parentId="174">Home Theater Systems</category>
+    <category id="234" parentId="166">Cell Phones</category>
+    <category id="235" parentId="234">Apple iPhone</category>
+    <category id="236" parentId="234">HTC</category>
+    <category id="240" parentId="234">Motorola</category>
+    <category id="238" parentId="234">Nokia</category>
+    <category id="237" parentId="234">Samsung</category>
+    <category id="177" parentId="166">MP3 Players</category>
+    <category id="178" parentId="177">iPods</category>
+    <category id="182" parentId="177">Android</category>
+    <category id="179" parentId="177">MP3 Players</category>
+    <category id="180" parentId="177">MP3 Speaker Systems</category>
+    <category id="181" parentId="177">Headphones</category>
+    <category id="196" parentId="166">Cameras &amp; Photo</category>
+    <category id="198" parentId="196">Digital Cameras</category>
+    <category id="197" parentId="196">DSLR Cameras</category>
+    <category id="199" parentId="196">Camcorders</category>
+    <category id="200" parentId="196">Lenses</category>
+    <category id="203">Sports &amp; Outdoors</category>
+    <category id="204" parentId="203">Bikes</category>
+    <category id="210" parentId="204">Comfort &amp; Cruisers</category>
+    <category id="209" parentId="204">Road Bikes</category>
+    <category id="208" parentId="204">Mountain Bikes</category>
+    <category id="211" parentId="203">Golf</category>
+    <category id="212" parentId="211">Golf Clubs</category>
+    <category id="213" parentId="211">Golf Balls</category>
+    <category id="214" parentId="211">Golf Bags &amp; Carts</category>
+    <category id="215" parentId="203">Camping</category>
+    <category id="216" parentId="215">Backpacks</category>
+    <category id="217" parentId="215">Sleeping Bags</category>
+    <category id="218" parentId="215">Tents</category>
+    <category id="223">Apparel</category>
+    <category id="224" parentId="223">Men&#039;s Clothing</category>
+    <category id="225" parentId="223">Women&#039;s Clothing</category>
+    <category id="226" parentId="223">Shoes</category>
+    <category id="227" parentId="223">Watches &amp; Jewelry</category>
+    <category id="228">Music</category>
+    <category id="229" parentId="228">Blues</category>
+    <category id="230" parentId="228">Classical</category>
+    <category id="231" parentId="228">Jazz</category>
+    <category id="232" parentId="228">Rock</category>
+    <category id="241">Movies &amp; TV</category>
+    <category id="242" parentId="241">Blu-ray Discs</category>
+    <category id="243" parentId="241">Movies (DVD)</category>
+    <category id="244" parentId="241">TV Shows (DVD)</category>
+    <category id="245">Video Games</category>
+    <category id="246" parentId="245">Nintendo Wii</category>
+    <category id="247" parentId="245">PlayStation 3</category>
+    <category id="249" parentId="245">PlayStation Vita</category>
+    <category id="248" parentId="245">Xbox 360</category>
+    <category id="250">Office Supplies</category>
+    <category id="251" parentId="250">Calculators</category>
+    <category id="252" parentId="250">Desk Accessories</category>
+    <category id="253" parentId="250">Safes</category>
+    <category id="254">Бахилы</category>
+    <category id="266" parentId="254">Бахилы нетканные</category>
+    <category id="264" parentId="254">Бахилы полиэтиленовые в индивидуальной упаковке</category>
+    <category id="265" parentId="254">Бахилы полиэтиленовые в капсулах</category>
+    <category id="263" parentId="254">Бахилы полиэтиленовые в общей упаковке</category>
+</categories>
+<offers>
+<offer id="1" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/led-tvs/65-class-64.5-diag.-led-8000-series-smart-tv.html</url>
+    <price>5399.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">190</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/d85_smartTV.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>65&amp;quot; Class (64.5&amp;quot; Diag.) LED 8000 Series Smart TV</name>
+    <vendorCode>D00014MK1P</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="4" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/led-tvs/40-class-40.0-diag.-led-5003-series-tv.html</url>
+    <price>699.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">190</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/UN40D5003BFXZA.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>40&amp;quot; Class (40.0&amp;quot; Diag.) LED 5003 Series TV</name>
+    <vendorCode>E0004UBR1Y</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="5" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/plasma-tvs/46-class-45.9-diag.-lcd-610-series-tv.html</url>
+    <price>899.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">191</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/LCD_610_Sailing_Frt_3.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>46&amp;quot; Class (45.9&amp;quot; Diag.) LCD 610 Series TV</name>
+    <vendorCode>B0005QJH6U</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="6" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/plasma-tvs/toshiba-32c120u-32-class-720p-hd-lcd-tv.html</url>
+    <price>329.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">191</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/lcd-tv-32C120-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba 32C120U 32&amp;quot; Class 720P HD LCD TV</name>
+    <vendorCode>T0006UROBG</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="7" available="true">
+    <url>http://medinweb.ru/apparel/mens-clothing/trefoil-hoodie.html</url>
+    <price>55.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">224</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/X41185_01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Trefoil Hoodie</name>
+    <vendorCode>A0007DQ1TL</vendorCode>
+    <param name="Производитель">Adidas</param>
+</offer>
+<offer id="8" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/led-tvs/toshiba-32tl515u-32-class-1080p-3d-led-hd-tv.html</url>
+    <price>849.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">193</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/194/detailed/0/led-tv-32TL515-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba 32TL515U 32&amp;quot; Class 1080P 3D LED HD TV</name>
+    <vendorCode>W0008TGVI1</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="9" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/led-tvs/toshiba-42tl515u-42-class-1080p-3d-led-hd-tv.html</url>
+    <price>999.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">193</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/194/detailed/0/led-tv-42TL515-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba 42TL515U 42&amp;quot; Class 1080P 3D LED HD TV</name>
+    <vendorCode>F0009ORD06</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="10" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/led-tvs/toshiba-47tl515u-47-class-1080p-3d-led-hd-tv.html</url>
+    <price>1199.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">193</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/47tl515.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba 47TL515U 47&amp;quot; Class 1080P 3D LED HD TV</name>
+    <vendorCode>L00102FQ97</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="11" available="true">
+    <url>http://medinweb.ru/apparel/mens-clothing/collegiate-72-tee.html</url>
+    <price>30.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">224</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/X32444_01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Collegiate 72 Tee</name>
+    <vendorCode>Z0011CZSNI</vendorCode>
+    <param name="Производитель">Adidas</param>
+</offer>
+<offer id="12" available="true">
+    <url>http://medinweb.ru/apparel/mens-clothing/100g-pants.html</url>
+    <price>30.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">224</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/173283_0113298267324f438bac97eaf.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>100g Pants</name>
+    <vendorCode>U0012O5AF0</vendorCode>
+    <param name="Производитель">Фармстандарт</param>
+</offer>
+<offer id="14" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/plasma-tvs/toshiba-40e220u-40-class-1080p-hd-lcd-tv.html</url>
+    <price>499.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">191</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/40e220u.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba 40E220U 40&amp;quot; Class 1080P HD LCD TV</name>
+    <vendorCode>M0014IVPFH</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="15" available="true">
+    <url>http://medinweb.ru/apparel/mens-clothing/nike-chambray-super-runner-mens-jacket.html</url>
+    <price>150.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">224</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/186/detailed/0/452499_010_A.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nike Chambray Super Runner Men&amp;#039;s Jacket</name>
+    <vendorCode>H0015EXYM6</vendorCode>
+    <param name="Производитель">Nike</param>
+</offer>
+<offer id="16" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/dvd-and-blu-ray-players/3d-blu-ray-disc-player-bd-d7500.html</url>
+    <price>349.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">194</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/BD-D7500_01-copy_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>3D Blu-ray Disc™ Player (BD-D7500)</name>
+    <vendorCode>H00162EP2P</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="18" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/dvd-and-blu-ray-players/3d-blu-ray-disc-player-bd-d7000.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">194</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/BD-D7000_F_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>3D Blu-ray Disc™ Player (BD-D7000)</name>
+    <vendorCode>W0018W504I</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="19" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/dvd-and-blu-ray-players/toshiba-bdx2150-blu-ray-player.html</url>
+    <price>79.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">194</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/bluray-bdx2150-600-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba BDX2150 Blu-ray Player</name>
+    <vendorCode>J001933ZYZ</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="21" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/dvd-and-blu-ray-players/toshiba-sd3300-dvd-player.html</url>
+    <price>29.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">194</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/dvd-player-sd3300-600-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Toshiba SD3300 DVD Player</name>
+    <vendorCode>J00216UKRV</vendorCode>
+    <param name="Производитель">Toshiba</param>
+</offer>
+<offer id="22" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/home-theater-systems/7.1-channel-blu-ray-3d-home-theater-system.html</url>
+    <price>799.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">195</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/198/detailed/0/HT_D6730W_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>7.1 Channel Blu-ray 3D Home Theater System</name>
+    <vendorCode>F0022TLB3Q</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="23" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/home-theater-systems/5.1-channel-blu-ray-3d-home-theater-system.html</url>
+    <price>599.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">195</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/HTD6500WF1_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>5.1 Channel Blu-ray 3D Home Theater System</name>
+    <vendorCode>G0023968XZ</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="24" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/home-theater-systems/5.1-channel-blu-ray-3d-home-theater-system-ru.html</url>
+    <price>449.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">195</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/HT-D5500_FRONT-copy_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>5.1 Channel Blu-ray 3D Home Theater System</name>
+    <vendorCode>R0024KODQ2</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="25" available="true">
+    <url>http://medinweb.ru/electronics/tv-and-video/home-theater-systems/hw-d7000-av-receiver-with-built-in-blu-ray-disc-player.html</url>
+    <price>599.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">195</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/HWD7000Fopen_6.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>HW-D7000 AV Receiver with built-in Blu-ray Disc® Player</name>
+    <vendorCode>R0025KFF65</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="27" available="true">
+    <url>http://medinweb.ru/apparel/womens-clothing/trefoil-logo-hoodie.html</url>
+    <price>55.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">225</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/V31582_01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Trefoil Logo Hoodie</name>
+    <vendorCode>G0027IR79N</vendorCode>
+    <param name="Производитель">Adidas</param>
+</offer>
+<offer id="28" available="true">
+    <url>http://medinweb.ru/apparel/womens-clothing/run-perf-7-8-ti.html</url>
+    <price>100.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">225</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/X35533_01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Run Perf 7/8 Ti</name>
+    <vendorCode>R0028P1EHQ</vendorCode>
+    <param name="Производитель">Adidas</param>
+</offer>
+<offer id="29" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/gps-and-navigation/tomtom-go-live-top-gear-edition.html</url>
+    <price>199.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">176</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/195/detailed/0/TT_VIALIVE135_FRONT-GENERIC_image_tcm137-14537.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>TomTom GO LIVE Top Gear edition</name>
+    <vendorCode>T0029EAW9R</vendorCode>
+    <param name="Производитель">TomTom</param>
+</offer>
+<offer id="30" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/gps-and-navigation/go-2535-tm-wte.html</url>
+    <price>349.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">176</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/mount_angle_500_tcm137-7794.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>GO 2535 TM WTE</name>
+    <vendorCode>H00305TUE7</vendorCode>
+    <param name="Производитель">TomTom</param>
+</offer>
+<offer id="31" available="true">
+    <url>http://medinweb.ru/apparel/womens-clothing/nike-classic-solid-womens-jersey-shorts.html</url>
+    <price>32.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">225</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/186/detailed/0/450676_063_A.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nike Classic Solid Women&amp;#039;s Jersey Shorts</name>
+    <vendorCode>D0031VJD0L</vendorCode>
+    <param name="Производитель">Nike</param>
+</offer>
+<offer id="32" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/gps-and-navigation/nuvi-3450.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">176</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/cf-lg.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>nüvi® 3450</name>
+    <vendorCode>T0032Q3082</vendorCode>
+    <param name="Производитель">Garmin</param>
+</offer>
+<offer id="33" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/gps-and-navigation/nuvi-2455lt.html</url>
+    <price>169.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">176</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/rf-lg.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>nüvi® 2455LT</name>
+    <vendorCode>W00336L5NA</vendorCode>
+    <param name="Производитель">Garmin</param>
+</offer>
+<offer id="34" available="true">
+    <url>http://medinweb.ru/apparel/womens-clothing/nike-untouchable-womens-tank-top.html</url>
+    <price>25.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">225</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/186/detailed/0/451160_063_A.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nike &amp;quot;Untouchable&amp;quot; Women&amp;#039;s Tank Top</name>
+    <vendorCode>W00341JAWN</vendorCode>
+    <param name="Производитель">Nike</param>
+</offer>
+<offer id="37" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/in-dash-stereos/dpx308u.html</url>
+    <price>159.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">185</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1951_800_550.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DPX308U</name>
+    <vendorCode>L00379540B</vendorCode>
+    <param name="Производитель">Kenwood</param>
+</offer>
+<offer id="38" available="true">
+    <url>http://medinweb.ru/apparel/womens-clothing/nike-futura-unravel-womens-t-shirt.html</url>
+    <price>16.97</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">225</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/186/detailed/0/437394_010_A.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nike Futura Unravel Women&amp;#039;s T-Shirt</name>
+    <vendorCode>U003826PEJ</vendorCode>
+    <param name="Производитель">Nike</param>
+</offer>
+<offer id="39" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/in-dash-stereos/deh-80prs.html</url>
+    <price>419.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">185</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/DEH-80PRS_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DEH-80PRS</name>
+    <vendorCode>X0039CB6XW</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="40" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/in-dash-stereos/deh-p8400bh.html</url>
+    <price>229.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">185</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/103/detailed/0/DEH-P8400BH_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DEH-P8400BH</name>
+    <vendorCode>A0040LYF7M</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="42" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/in-dash-stereos/deh-1300mp.html</url>
+    <price>79.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">185</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/DEH-1300MP_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DEH-1300MP</name>
+    <vendorCode>K0042BKTKR</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="43" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/in-dash-stereos/fh-p8000bt.html</url>
+    <price>369.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">185</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/FH-P8000BT_main_Lrg.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>FH-P8000BT</name>
+    <vendorCode>N0043XCGKY</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="47" available="true">
+    <url>http://medinweb.ru/video-games/playstation-3/marvel-vs.-capcom-3-fate-of-two-worlds-special-edition-ps3.html</url>
+    <price>29.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">247</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/MvC3_PS3CE_moreboxshot.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>MARVEL® VS. CAPCOM® 3: FATE OF TWO WORLDS SPECIAL EDITION (PS3)</name>
+    <vendorCode>J0047KCW09</vendorCode>
+</offer>
+<offer id="48" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/speakers/ts-mr2040.html</url>
+    <price>180.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">186</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/95531493TS-MR2040_Front_med.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>TS-MR2040</name>
+    <vendorCode>O0048N7QAG</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="49" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/speakers/ts-mr1640.html</url>
+    <price>120.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">186</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/66349997TS-MR1640_front_med.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>TS-MR1640</name>
+    <vendorCode>Q0049IN199</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="50" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/speakers/ts-d1720c.html</url>
+    <price>220.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">186</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/TS-D1720C_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>TS-D1720C</name>
+    <vendorCode>V0050M1GB0</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="51" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/speakers/ts-d6902r.html</url>
+    <price>180.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">186</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/TS-D6902R_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>TS-D6902R</name>
+    <vendorCode>H0051EAJD8</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="52" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/subwoofers/kfc-w3013ps.html</url>
+    <price>139.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">202</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/1967_675_600.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>KFC-W3013PS</name>
+    <vendorCode>I0052GDLN3</vendorCode>
+    <param name="Производитель">Kenwood</param>
+</offer>
+<offer id="53" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/subwoofers/kfc-w3012.html</url>
+    <price>38.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">202</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1150_570_600.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>KFC-W3012</name>
+    <vendorCode>B0053N10L0</vendorCode>
+    <param name="Производитель">Kenwood</param>
+</offer>
+<offer id="54" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/subwoofers/ts-w3002d2d4.html</url>
+    <price>269.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">202</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/TS-W3002D2D4_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>TS-W3002D2|D4</name>
+    <vendorCode>I0054QMMPO</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="55" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/amplifiers/prs-d800.html</url>
+    <price>359.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">187</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/PRS-D800_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>PRS-D800</name>
+    <vendorCode>N005510VYI</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="56" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/amplifiers/gm-6500f.html</url>
+    <price>220.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">187</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/GM-6500F_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>GM-6500F</name>
+    <vendorCode>L0056LL3EL</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="57" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/amplifiers/gm-d8500m.html</url>
+    <price>309.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">187</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/157/detailed/0/GM-D8500M_angle_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>GM-D8500M</name>
+    <vendorCode>R0057SFAR6</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="58" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/car-dvd-and-video/avh-p8400bh.html</url>
+    <price>779.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">188</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/AVH-P8400BH_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AVH-P8400BH</name>
+    <vendorCode>I0058SG177</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="59" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/car-dvd-and-video/avh-p4400bh.html</url>
+    <price>599.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">188</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/AVH-P4400BH_large.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AVH-P4400BH</name>
+    <vendorCode>Q0059PALYI</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="60" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/gps-and-navigation/avic-z130bt.html</url>
+    <price>1499.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">176</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/AVIC-Z130BT_reg.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AVIC-Z130BT</name>
+    <vendorCode>O0060X7Y9Y</vendorCode>
+    <param name="Производитель">Pioneer</param>
+</offer>
+<offer id="62" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/radar-detectors/xrs-9945.html</url>
+    <price>209.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">189</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/XRS9945_LRG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>XRS 9945</name>
+    <vendorCode>F00620YZ55</vendorCode>
+    <param name="Производитель">Cobra</param>
+</offer>
+<offer id="63" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/radar-detectors/xrs-9770.html</url>
+    <price>189.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">189</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/173/detailed/0/XRS9770_MD.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>XRS 9770</name>
+    <vendorCode>J0063Z8JWN</vendorCode>
+    <param name="Производитель">Cobra</param>
+</offer>
+<offer id="64" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/radar-detectors/xrs-9745.html</url>
+    <price>189.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">189</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/XRS9745_LRG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>XRS 9745</name>
+    <vendorCode>V0064ZVR98</vendorCode>
+    <param name="Производитель">Cobra</param>
+</offer>
+<offer id="65" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/radar-detectors/xrs-9370.html</url>
+    <price>99.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">189</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/173/detailed/0/XRS9370_MD.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>XRS 9370</name>
+    <vendorCode>O0065SHTHB</vendorCode>
+    <param name="Производитель">Cobra</param>
+</offer>
+<offer id="66" available="true">
+    <url>http://medinweb.ru/electronics/car-electronics/radar-detectors/xrs-9970g.html</url>
+    <price>389.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">189</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/XRS9970G_R-med.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>XRS 9970G</name>
+    <vendorCode>B00666E71X</vendorCode>
+    <param name="Производитель">Cobra</param>
+</offer>
+<offer id="67" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/htc/htc-wildfire-s-white-t-mobile.html</url>
+    <price>339.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">236</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/wildfires-metropcs-MoreViews-2985.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>HTC Wildfire S - White (T-Mobile)</name>
+    <vendorCode>J00670N9NC</vendorCode>
+    <param name="Производитель">HTC</param>
+</offer>
+<offer id="68" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/htc/titan.html</url>
+    <price>799.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">236</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/340/detailed/0/titan-att-MoreViews-3012.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Titan</name>
+    <vendorCode>U00684Y11J</vendorCode>
+    <param name="Производитель">HTC</param>
+</offer>
+<offer id="69" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/htc/rhyme.html</url>
+    <price>529.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">236</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/rhyme-verizon-MoreViews-2645.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Rhyme</name>
+    <vendorCode>U0069R50SC</vendorCode>
+    <param name="Производитель">HTC</param>
+</offer>
+<offer id="70" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/htc/evo-design-4g.html</url>
+    <price>499.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">236</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/331/detailed/0/evodesign4g-sprint-MoreViews-2839.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>EVO Design 4G</name>
+    <vendorCode>Y0070SQYFT</vendorCode>
+    <param name="Производитель">HTC</param>
+</offer>
+<offer id="71" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/htc/droid-incredible-2.html</url>
+    <price>529.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">236</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/261/detailed/0/incredible2-verizon-MoreViews-1922.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DROID INCREDIBLE 2</name>
+    <vendorCode>O0071FR7HZ</vendorCode>
+    <param name="Производитель">HTC</param>
+</offer>
+<offer id="72" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/motorola/droid-razr.html</url>
+    <price>599.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">240</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/31igDkhoUNL._SX220_.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DROID RAZR</name>
+    <vendorCode>N007221KA0</vendorCode>
+    <param name="Производитель">Motorola</param>
+</offer>
+<offer id="73" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/motorola/droid-bionic.html</url>
+    <price>589.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">240</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/21HZgrCmlnL._SX220_.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DROID BIONIC</name>
+    <vendorCode>M0073Q30SG</vendorCode>
+    <param name="Производитель">Motorola</param>
+</offer>
+<offer id="74" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/motorola/droid-3.html</url>
+    <price>524.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">240</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/21Y7tnPMVHL._SX220_.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Droid 3</name>
+    <vendorCode>S0074AE6U7</vendorCode>
+    <param name="Производитель">Motorola</param>
+</offer>
+<offer id="75" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/motorola/droid-pro.html</url>
+    <price>489.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">240</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/21ey9KYVJBL._SX220_.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DROID PRO</name>
+    <vendorCode>B00755AJUD</vendorCode>
+    <param name="Производитель">Motorola</param>
+</offer>
+<offer id="76" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/motorola/flipside-with-motoblur.html</url>
+    <price>439.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">240</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/217Lf0Ah3rL._SX220_.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>FLIPSIDE with MOTOBLUR</name>
+    <vendorCode>W00769N690</vendorCode>
+    <param name="Производитель">Motorola</param>
+</offer>
+<offer id="78" available="true">
+    <url>http://medinweb.ru/apparel/shoes/adizero-rush-shoes.html</url>
+    <price>100.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">226</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/G48874_01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>adizero Rush Shoes</name>
+    <vendorCode>L0078RO9Y9</vendorCode>
+    <param name="Производитель">Adidas</param>
+</offer>
+<offer id="79" available="true">
+    <url>http://medinweb.ru/apparel/shoes/adizero-tempaia-shoes.html</url>
+    <price>96.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">226</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/U42918_01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>adiZero Tempaia Shoes</name>
+    <vendorCode>Z0079TIUPW</vendorCode>
+    <param name="Производитель">Adidas</param>
+</offer>
+<offer id="80" available="true">
+    <url>http://medinweb.ru/apparel/shoes/nike-tenkay-slip-txtl-womens-shoe.html</url>
+    <price>55.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">226</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/186/detailed/0/476750_003_A.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nike Tenkay Slip TXTL Women&amp;#039;s Shoe</name>
+    <vendorCode>M0080Z1B49</vendorCode>
+    <param name="Производитель">Nike</param>
+</offer>
+<offer id="81" available="true">
+    <url>http://medinweb.ru/apparel/shoes/minnetonka-original-cowhide-driving-moc.html</url>
+    <price>49.50</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">226</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/313/detailed/0/7210_4815_200_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Minnetonka Original Cowhide Driving Moc</name>
+    <vendorCode>Y0081TT6SI</vendorCode>
+</offer>
+<offer id="82" available="true">
+    <url>http://medinweb.ru/video-games/nintendo-wii/legend-of-the-guardians-the-owls-of-gahoole-vg.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">246</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/382/detailed/0/2817406.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Legend of the Guardians: the Owls of Ga&amp;#039;hoole(VG)</name>
+    <vendorCode>S0082Z8OYM</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="83" available="true">
+    <url>http://medinweb.ru/video-games/nintendo-wii/speed-racer-the-videogame-wii.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">246</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/1907188.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Speed Racer: The Videogame (Wii)</name>
+    <vendorCode>X0083AILW7</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="84" available="true">
+    <url>http://medinweb.ru/video-games/nintendo-wii/lego-batman-wii.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">246</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/396/detailed/0/2083726.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Lego Batman (Wii)</name>
+    <vendorCode>P0084TFPRL</vendorCode>
+    <param name="Производитель">Warner Bros.</param>
+</offer>
+<offer id="85" available="true">
+    <url>http://medinweb.ru/video-games/nintendo-wii/looney-tunes-acme-arsenal-wii.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">246</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000009496_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Looney Tunes: Acme Arsenal (Wii)</name>
+    <vendorCode>W0085XKO7V</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="86" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/nokia/nokia-700.html</url>
+    <price>359.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">238</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/700-red-front-png13286885734f322dbde9ae7.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nokia 700</name>
+    <vendorCode>I0086KA0W2</vendorCode>
+    <param name="Производитель">Nokia</param>
+</offer>
+<offer id="87" available="true">
+    <url>http://medinweb.ru/video-games/nintendo-wii/sesame-street-cookies-counting-carnival-wii.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">246</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2817655.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Sesame Street:Cookie&amp;#039;s Counting Carnival (Wii)</name>
+    <vendorCode>U008775P3X</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="88" available="true">
+    <url>http://medinweb.ru/video-games/playstation-3/lord-of-the-rings-war-in-the-north-ps3.html</url>
+    <price>39.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">247</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/3086390.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Lord of the Rings: War in the North(PS3)</name>
+    <vendorCode>E0088Z4YB8</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="89" available="true">
+    <url>http://medinweb.ru/video-games/playstation-3/green-lantern-rise-of-the-manhunters-ps3.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">247</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2954384.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Green Lantern: Rise of the Manhunters (PS3)</name>
+    <vendorCode>O0089OKQAX</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="90" available="true">
+    <url>http://medinweb.ru/video-games/playstation-3/f.e.a.r.-3-ps3-mx.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">247</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000202232_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>F.E.A.R. 3 (PS3) MX</name>
+    <vendorCode>Y0090CLU50</vendorCode>
+    <param name="Производитель">Warner Bros.</param>
+</offer>
+<offer id="91" available="true">
+    <url>http://medinweb.ru/apparel/watches-and-jewelry/montblanc-nicolas-rieussec-chronograph-automatic.html</url>
+    <price>10700.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">227</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/102337_l.ashx.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Montblanc Nicolas Rieussec Chronograph Automatic</name>
+    <vendorCode>W00918CYVW</vendorCode>
+    <param name="Производитель">Montblanc</param>
+</offer>
+<offer id="92" available="true">
+    <url>http://medinweb.ru/apparel/watches-and-jewelry/montblanc-timewalker-automatic.html</url>
+    <price>3225.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">227</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/101551_l.ashx.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Montblanc TimeWalker Automatic</name>
+    <vendorCode>I00927PN4T</vendorCode>
+    <param name="Производитель">Montblanc</param>
+</offer>
+<offer id="93" available="true">
+    <url>http://medinweb.ru/video-games/xbox-360/scene-it-bright-lights-big-screen-x360.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">248</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2423577.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Scene It? Bright Lights! Big Screen(X360)</name>
+    <vendorCode>Y0093T69G8</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="94" available="true">
+    <url>http://medinweb.ru/video-games/xbox-360/batman-arkham-city-x360.html</url>
+    <price>59.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">248</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/380/detailed/0/1000176186_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Batman: Arkham City (X360)</name>
+    <vendorCode>A0094VY6U3</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="95" available="true">
+    <url>http://medinweb.ru/video-games/xbox-360/game-party-in-motion-x360.html</url>
+    <price>19.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">248</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/2832686.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Game Party: In Motion (X360)</name>
+    <vendorCode>S0095VELIH</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="96" available="true">
+    <url>http://medinweb.ru/video-games/xbox-360/batman-arkham-city-x360-ce.html</url>
+    <price>99.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">248</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000235553_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Batman: Arkham City (X360) CE</name>
+    <vendorCode>C0096T88CH</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="97" available="true">
+    <url>http://medinweb.ru/movies-and-tv/blu-ray-discs/harry-potter-and-the-deathly-hallows-part-2-blu-raydvdultraviolet-digital-copy-combo-pack.html</url>
+    <price>14.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">242</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000156676_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Harry Potter and the Deathly Hallows - Part 2 (Blu-ray+DVD+UltraViolet Digital Copy Combo Pack)</name>
+    <vendorCode>T0097H98EI</vendorCode>
+    <param name="Производитель">Warner Bros.</param>
+</offer>
+<offer id="112" available="true">
+    <url>http://medinweb.ru/movies-and-tv/movies-dvd/gone-with-the-wind-2-disc-special-edition.html</url>
+    <price>8.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">243</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/2419089.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Gone with The Wind: 2-Disc Special Edition</name>
+    <vendorCode>E011296HKW</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="113" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/samsung/sgh-i677.html</url>
+    <price>449.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">237</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/i677_600x600_xlarge_cf.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>SGH-I677</name>
+    <vendorCode>P011376198</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="100" available="true">
+    <url>http://medinweb.ru/movies-and-tv/blu-ray-discs/the-hangover-part-ii-blu-ray.html</url>
+    <price>22.70</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">242</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000156675_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>The Hangover Part II (Blu-ray)</name>
+    <vendorCode>V0100ZBORU</vendorCode>
+    <param name="Производитель">Warner Bros.</param>
+</offer>
+<offer id="101" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/nokia/nokia-x3-02.html</url>
+    <price>188.88</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">238</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/X3-02-white-front-png.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nokia X3-02</name>
+    <vendorCode>E01010TOGW</vendorCode>
+    <param name="Производитель">Nokia</param>
+</offer>
+<offer id="102" available="true">
+    <url>http://medinweb.ru/apparel/watches-and-jewelry/pr-100-womens-white-quartz-watch.html</url>
+    <price>295.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">227</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/t049_210_11_017_00.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>PR 100 Women&amp;#039;s White Quartz Watch</name>
+    <vendorCode>E01027HIDS</vendorCode>
+    <param name="Производитель">Tissot</param>
+</offer>
+<offer id="103" available="true">
+    <url>http://medinweb.ru/movies-and-tv/blu-ray-discs/fringe-the-complete-third-season-blu-ray.html</url>
+    <price>23.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">242</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/411/detailed/0/2980245.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Fringe: The Complete Third Season (Blu-Ray)</name>
+    <vendorCode>S0103G26P3</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="104" available="true">
+    <url>http://medinweb.ru/movies-and-tv/blu-ray-discs/final-destination-5-blu-ray.html</url>
+    <price>29.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">242</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/383/detailed/0/3083326.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Final Destination 5 (Blu-ray)</name>
+    <vendorCode>N0104CXAWS</vendorCode>
+    <param name="Производитель">Warner Bros.</param>
+</offer>
+<offer id="105" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/nokia/nokia-lumia-800.html</url>
+    <price>169.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">238</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/Searay-white-Front-png.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nokia Lumia 800</name>
+    <vendorCode>M01052HXOG</vendorCode>
+    <param name="Производитель">Nokia</param>
+</offer>
+<offer id="106" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/nokia/nokia-e5-00.html</url>
+    <price>179.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">238</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/E5-black-front-black-png13286888164f322eb054f4c.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nokia E5-00</name>
+    <vendorCode>C0106D3GWB</vendorCode>
+    <param name="Производитель">Nokia</param>
+</offer>
+<offer id="107" available="true">
+    <url>http://medinweb.ru/apparel/watches-and-jewelry/montblanc-classic-collection-money-clip.html</url>
+    <price>465.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">227</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/03804_l.ashx.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Montblanc Classic Collection Money Clip</name>
+    <vendorCode>F01072HXUI</vendorCode>
+    <param name="Производитель">Montblanc</param>
+</offer>
+<offer id="108" available="true">
+    <url>http://medinweb.ru/movies-and-tv/blu-ray-discs/due-date-blu-ray.html</url>
+    <price>12.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">242</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/356/detailed/0/2891878.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Due Date (Blu-ray)</name>
+    <vendorCode>I0108TD8BL</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="109" available="true">
+    <url>http://medinweb.ru/apparel/watches-and-jewelry/montblanc-contemporary-collection-key-ring-with-montblanc-emblem.html</url>
+    <price>140.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">227</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/101796_l.ashx.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Montblanc Contemporary Collection Key Ring with Montblanc emblem</name>
+    <vendorCode>C01099FRFC</vendorCode>
+    <param name="Производитель">Montblanc</param>
+</offer>
+<offer id="110" available="true">
+    <url>http://medinweb.ru/movies-and-tv/movies-dvd/roots-30th-anniversary-special-edition-dvd.html</url>
+    <price>15.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">243</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/1565865.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Roots 30th Anniversary Special Edition (DVD)</name>
+    <vendorCode>E01105O46P</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="111" available="true">
+    <url>http://medinweb.ru/movies-and-tv/movies-dvd/last-samurai-the-dvd-ws.html</url>
+    <price>6.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">243</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/2411125.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Last Samurai, The (DVD) (WS)</name>
+    <vendorCode>F0111O12WW</vendorCode>
+</offer>
+<offer id="114" available="true">
+    <url>http://medinweb.ru/movies-and-tv/movies-dvd/birds-of-prey-the-complete-series-dvd.html</url>
+    <price>14.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">243</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/309/detailed/0/1917865.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Birds of Prey: The Complete Series (DVD)</name>
+    <vendorCode>U0114N9X4E</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="115" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/mountain-bikes/evolve-sst.2-x9-complete-bike-10spd-12.html</url>
+    <price>4595.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">208</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/183/detailed/0/CB-evolve.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Evolve SST.2 X9 Complete Bike 10SPD &amp;#039;12</name>
+    <vendorCode>N0115R3FDX</vendorCode>
+</offer>
+<offer id="116" available="true">
+    <url>http://medinweb.ru/movies-and-tv/movies-dvd/i-am-legend-dvd-ws.html</url>
+    <price>6.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">243</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/1837696.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>I Am Legend (DVD) (WS)</name>
+    <vendorCode>P01160R6WH</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="117" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/samsung/sch-i515.html</url>
+    <price>729.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">237</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/i515_400x400_large1_cf_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>SCH-I515</name>
+    <vendorCode>C0117E8CC7</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="118" available="true">
+    <url>http://medinweb.ru/movies-and-tv/tv-shows-dvd/smallville-the-complete-tenth-season.html</url>
+    <price>30.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">244</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000173538_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Smallville: The Complete Tenth Season</name>
+    <vendorCode>H0118GRDLH</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="119" available="true">
+    <url>http://medinweb.ru/movies-and-tv/tv-shows-dvd/the-big-bang-theory-the-complete-fourth-season.html</url>
+    <price>17.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">244</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/310/detailed/0/2957882.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>The Big Bang Theory: The Complete Fourth Season</name>
+    <vendorCode>R0119703TC</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="120" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/samsung/samsung-galaxy-s-ii-epic-4g-touch-black.html</url>
+    <price>199.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">237</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/d710_600x600_xlarge_cf.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy S II, Epic 4G Touch (Black)</name>
+    <vendorCode>B0120TBX2K</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="121" available="true">
+    <url>http://medinweb.ru/movies-and-tv/tv-shows-dvd/fringe-the-complete-third-season.html</url>
+    <price>17.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">244</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/2980261.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Fringe: The Complete Third Season</name>
+    <vendorCode>L012149RZH</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="122" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/mountain-bikes/evolution-sst.2-xo-complete-bike-10spd12.html</url>
+    <price>5695.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">208</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/183/detailed/0/CB-evolution.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Evolution SST.2 XO Complete Bike 10SPD12</name>
+    <vendorCode>J01223DYAH</vendorCode>
+</offer>
+<offer id="123" available="true">
+    <url>http://medinweb.ru/movies-and-tv/tv-shows-dvd/supernatural-the-complete-sixth-season.html</url>
+    <price>17.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">244</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/1000172227_f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Supernatural: The Complete Sixth Season</name>
+    <vendorCode>C0123RSXUU</vendorCode>
+    <param name="Производитель">Warner Home Video </param>
+</offer>
+<offer id="124" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/mountain-bikes/truth-sst.2-x9-complete-bike-10spd-12.html</url>
+    <price>4595.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">208</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/183/detailed/0/CB-truth.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Truth SST.2 X9 Complete Bike 10SPD &amp;#039;12</name>
+    <vendorCode>D01245K7FF</vendorCode>
+</offer>
+<offer id="125" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/samsung/samsung-galaxy-s-ii.html</url>
+    <price>149.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">237</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/i777_400x400_large1_cf_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy S II</name>
+    <vendorCode>Y01252CY9O</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="126" available="true">
+    <url>http://medinweb.ru/office-supplies/calculators/casio-prizm-fx-cg10.html</url>
+    <price>129.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">251</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/296/detailed/0/fx-cg10_xlarge.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Casio PRIZM fx-CG10</name>
+    <vendorCode>F01262AH0T</vendorCode>
+    <param name="Производитель">Casio</param>
+</offer>
+<offer id="127" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/road-bikes/fore-cr5-sram-red.html</url>
+    <price>4779.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">209</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/226/detailed/0/1312496083_CR5-2011-315-sram.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Fore CR5 SRAM Red</name>
+    <vendorCode>A0127P1V0T</vendorCode>
+</offer>
+<offer id="128" available="true">
+    <url>http://medinweb.ru/office-supplies/calculators/casio-fx-115es.html</url>
+    <price>17.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">251</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/296/detailed/0/fx-115es_xlarge.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Casio FX-115ES</name>
+    <vendorCode>K0128RATX3</vendorCode>
+    <param name="Производитель">Casio</param>
+</offer>
+<offer id="129" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/road-bikes/fore-cr1.html</url>
+    <price>1799.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">209</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/226/detailed/0/1316633534_CR1-2012-315.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Fore CR1</name>
+    <vendorCode>O0129GKRU9</vendorCode>
+</offer>
+<offer id="130" available="true">
+    <url>http://medinweb.ru/office-supplies/calculators/casio-dr-210tm.html</url>
+    <price>49.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">251</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/277/detailed/0/dr-210tmbk_xlarge.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Casio DR-210TM</name>
+    <vendorCode>T0130501N7</vendorCode>
+    <param name="Производитель">Casio</param>
+</offer>
+<offer id="131" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/road-bikes/catania.html</url>
+    <price>1249.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">209</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/226/detailed/0/1316556371_CA-2012-45.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Catania</name>
+    <vendorCode>I0131TAKCI</vendorCode>
+</offer>
+<offer id="132" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/samsung-galaxy-player-5.0.html</url>
+    <price>269.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">182</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/WiFi_Galaxy5_front3_4.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy Player 5.0</name>
+    <vendorCode>S0132PANHE</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="133" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/android/samsung-galaxy-player-4.0.html</url>
+    <price>229.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">179</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/Wifi_Galaxy_Player_4_front2_14.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy Player 4.0</name>
+    <vendorCode>I0133JJ7IC</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="134" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/creative-zen-style-m300-mp3-player-16gb-black.html</url>
+    <price>89.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">182</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/41rz1TVrQdL.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Creative ZEN Style M300 MP3 Player 16GB (Black)</name>
+    <vendorCode>Y0134XZKTS</vendorCode>
+    <param name="Производитель">Creative</param>
+</offer>
+<offer id="140" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-speaker-systems/yamaha-pdx-11-db.html</url>
+    <price>99.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">180</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/p149239z.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Yamaha PDX-11 DB</name>
+    <vendorCode>C0140WY5XY</vendorCode>
+    <param name="Производитель">Yamaha</param>
+</offer>
+<offer id="141" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-speaker-systems/yamaha-pdx-11-gr.html</url>
+    <price>99.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">180</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/p149240z.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Yamaha PDX-11 GR</name>
+    <vendorCode>Y01413SJOB</vendorCode>
+    <param name="Производитель">Yamaha</param>
+</offer>
+<offer id="142" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-speaker-systems/yamaha-tsx-130wh.html</url>
+    <price>399.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">180</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/p95910z.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Yamaha TSX-130WH</name>
+    <vendorCode>H0142DQBME</vendorCode>
+    <param name="Производитель">Yamaha</param>
+</offer>
+<offer id="143" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-speaker-systems/yamaha-pdx-30pi.html</url>
+    <price>79.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">180</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/p98947z.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Yamaha PDX-30PI</name>
+    <vendorCode>Z01433JOK5</vendorCode>
+    <param name="Производитель">Yamaha</param>
+</offer>
+<offer id="144" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-speaker-systems/yamaha-pdx-30bu.html</url>
+    <price>99.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">180</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/p98945z.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Yamaha PDX-30BU</name>
+    <vendorCode>M0144TJFHE</vendorCode>
+    <param name="Производитель">Yamaha</param>
+</offer>
+<offer id="145" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/sansa-fuze-mp3-player-red-4gb.html</url>
+    <price>79.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">179</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/Fuzeplusred_210.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Sansa Fuze+ MP3 Player (Red) - 4GB</name>
+    <vendorCode>Y0145WPLX9</vendorCode>
+    <param name="Производитель">SanDisk</param>
+</offer>
+<offer id="146" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/sansa-clip-mp3-player-blue-4gb.html</url>
+    <price>44.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">179</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/clip_plus_black.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Sansa Clip+ MP3 Player (Blue) - 4GB</name>
+    <vendorCode>A0146P0NT5</vendorCode>
+    <param name="Производитель">SanDisk</param>
+</offer>
+<offer id="147" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/sansa-clip-mp3-player-red-4gb.html</url>
+    <price>44.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">179</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/clip_plus_red.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Sansa Clip+ MP3 Player (Red) - 4GB</name>
+    <vendorCode>Q014797842</vendorCode>
+    <param name="Производитель">SanDisk</param>
+</offer>
+<offer id="148" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/16gb-a-series-walkman-video-mp3.html</url>
+    <price>219.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">179</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/NWZA865BLK.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>16GB A Series Walkman Video MP3</name>
+    <vendorCode>H0148VPS1T</vendorCode>
+    <param name="Производитель">Sony</param>
+</offer>
+<offer id="149" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/mp3-players-ru/8gb-e-series-walkman-video-mp3.html</url>
+    <price>89.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">179</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/NWZE464RED.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>8GB E Series Walkman Video MP3</name>
+    <vendorCode>E0149D04B9</vendorCode>
+    <param name="Производитель">Sony</param>
+</offer>
+<offer id="150" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/comfort-and-cruisers/wildwood-city-classic.html</url>
+    <price>600.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">210</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/183/detailed/0/DB_2011_WILDWOOD-CITI_Blue_LG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Wildwood city classic</name>
+    <vendorCode>K01502P8VF</vendorCode>
+</offer>
+<offer id="151" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/comfort-and-cruisers/wildwood-classic.html</url>
+    <price>500.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">210</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/185/detailed/0/DB_2011_WILDWOOD-CITI_Black_LG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Wildwood classic</name>
+    <vendorCode>C0151LG8CS</vendorCode>
+</offer>
+<offer id="152" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/comfort-and-cruisers/drifter-2.html</url>
+    <price>700.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">210</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/179/detailed/0/DB_2011_DRIFTER-2_Grey_LG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Drifter 2</name>
+    <vendorCode>D0152X65HT</vendorCode>
+</offer>
+<offer id="153" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/headphones/ur55-full-size-headphones.html</url>
+    <price>49.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">181</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13286977924f3251c3f2695.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>UR55 Full Size Headphones</name>
+    <vendorCode>Q0153SHXQ0</vendorCode>
+    <param name="Производитель">Koss</param>
+</offer>
+<offer id="154" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/headphones/jr900-wireless-headphones.html</url>
+    <price>399.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">181</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13286980754f3252e10c119.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>JR900 Wireless Headphones</name>
+    <vendorCode>T0154F3MKH</vendorCode>
+    <param name="Производитель">Koss</param>
+</offer>
+<offer id="155" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/headphones/porta-pro-ktc-on-ear-headphone.html</url>
+    <price>79.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">181</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13286981734f3253431b01f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Porta Pro KTC On-Ear Headphone</name>
+    <vendorCode>N01552LVJT</vendorCode>
+    <param name="Производитель">Koss</param>
+</offer>
+<offer id="156" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/headphones/extra-bass-headphones--70mm.html</url>
+    <price>299.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">181</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/MDRXB1000.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Extra Bass Headphones – 70mm</name>
+    <vendorCode>F01564IPN2</vendorCode>
+    <param name="Производитель">Sony</param>
+</offer>
+<offer id="157" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/headphones/studio-monitor-headphones.html</url>
+    <price>499.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">181</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/MDRZ1000.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Studio Monitor Headphones</name>
+    <vendorCode>G0157AX10M</vendorCode>
+    <param name="Производитель">Sony</param>
+</offer>
+<offer id="158" available="true">
+    <url>http://medinweb.ru/office-supplies/safes/aiko-safe-model-economy-as-30-home-safe-with-single-key.html</url>
+    <price>4750.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">253</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/icon-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AIKO SAFE Model Economy (AS 30) Home Safe, with single key</name>
+    <vendorCode>N0158NC3UY</vendorCode>
+    <param name="Производитель">Aiko</param>
+</offer>
+<offer id="159" available="true">
+    <url>http://medinweb.ru/office-supplies/safes/aiko-safe-model-as-53-home-safe-horizontal-model-with-one-tray.html</url>
+    <price>11375.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">253</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/cs-53.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AIKO SAFE Model AS 53 Home Safe, Horizontal Model with one tray</name>
+    <vendorCode>L0159TYZDW</vendorCode>
+    <param name="Производитель">Aiko</param>
+</offer>
+<offer id="160" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/bikes/comfort-and-cruisers/drifter-3.html</url>
+    <price>200.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">210</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/DB2010Drifter3SatinRed_Profile_LRG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Drifter 3</name>
+    <vendorCode>L0160MZ4DS</vendorCode>
+</offer>
+<offer id="161" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/mv800-16.1-megapixel-multiview-compact-digital-camera.html</url>
+    <price>279.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">198</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/MV800_NEW_KV_6.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>MV800 16.1 Megapixel MultiView Compact Digital Camera</name>
+    <vendorCode>N0161QCS4X</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="162" available="true">
+    <url>http://medinweb.ru/office-supplies/safes/aiko-safe-model-as-180-office-safe-with-one-shelve-and-one-drawer.html</url>
+    <price>32750.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">253</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/286/detailed/0/cs-180.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AIKO SAFE Model AS 180 Office Safe with one shelve &amp;amp; one drawer</name>
+    <vendorCode>A0162LEU0L</vendorCode>
+    <param name="Производитель">Aiko</param>
+</offer>
+<offer id="163" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/nx200-20.3-megapixel-compact-system-camera.html</url>
+    <price>899.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">198</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/229/detailed/0/NX200_F4_B_1024x768_6.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>NX200 20.3 Megapixel Compact System Camera</name>
+    <vendorCode>W0163ME90H</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="164" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/wb210-10mb-14-megapixel-slim-digital-camera-red.html</url>
+    <price>249.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">198</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/WB210_F_R_Global_4.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>WB210 10MB 14 Megapixel Slim Digital Camera (Red)</name>
+    <vendorCode>O01648JXQC</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="165" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/nikon-1-j1-one-lens-kit-white.html</url>
+    <price>599.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">198</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/190/detailed/0/27528_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nikon 1 J1 One-Lens Kit White</name>
+    <vendorCode>N0165BQMZZ</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="166" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/nikon-1-j1-two-lens-wide-angle-kit-red.html</url>
+    <price>749.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">198</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/238/detailed/0/27534_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Nikon 1 J1 Two-Lens Wide Angle Kit  Red</name>
+    <vendorCode>A01662K0D9</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="167" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/d3100--18-55-vr-lens-kit.html</url>
+    <price>549.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">197</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/25472_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>D3100 + 18-55 VR Lens Kit</name>
+    <vendorCode>H0167T7K2E</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="168" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/digital-cameras/d300s-body-only.html</url>
+    <price>1.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">197</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/25464_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>D300S (Body Only)</name>
+    <vendorCode>C016809TC9</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="169" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/digital-cameras/d5100--af-s-dx-nikkor-18-55mm-f-3.5-5.6g-vr-lens-kit.html</url>
+    <price>749.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">197</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/25478_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>D5100 + AF-S DX NIKKOR 18-55mm f/3.5-5.6G VR Lens Kit</name>
+    <vendorCode>A016998ZXV</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="170" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-clubs/588-chrome-wedge.html</url>
+    <price>145.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">212</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/588crm_hero.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>588 Chrome Wedge</name>
+    <vendorCode>J0170YXQXC</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="171" available="true">
+    <url>http://medinweb.ru/office-supplies/desk-accessories/swingline-stack-and-shred-100x-hands-free-shredder.html</url>
+    <price>499.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">252</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287005214f325c6eac3d5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Swingline™ Stack-and-Shred™ 100X Hands Free Shredder</name>
+    <vendorCode>Q0171LINQ9</vendorCode>
+    <param name="Производитель">Swingline </param>
+</offer>
+<offer id="172" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/compact-full-hd-camcorder.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">199</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/176/detailed/0/T10_use_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Compact Full HD Camcorder</name>
+    <vendorCode>Y0172YCAWT</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="173" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/h300-long-zoom-compact-full-hd-camcorder-black.html</url>
+    <price>349.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">199</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/h300_main_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>H300 Long Zoom Compact Full HD Camcorder (Black)</name>
+    <vendorCode>N0173TLFE1</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="174" available="true">
+    <url>http://medinweb.ru/office-supplies/desk-accessories/swingline-optima-20-electric-stapler.html</url>
+    <price>100.75</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">252</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/222/detailed/0/url_uploaded_file_13287007294f325d3b12476.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Swingline® Optima® 20 Electric Stapler</name>
+    <vendorCode>K0174R9CUN</vendorCode>
+    <param name="Производитель">Swingline </param>
+</offer>
+<offer id="175" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/f50-flash-memory-52x-zoom-camcorder-silver.html</url>
+    <price>179.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">199</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/F50_front_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>F50 Flash Memory 52x Zoom Camcorder (Silver)</name>
+    <vendorCode>S0175KUFJJ</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="176" available="true">
+    <url>http://medinweb.ru/office-supplies/desk-accessories/quartet-euro-magnetic-porcelain-total-erase-mobile-easel.html</url>
+    <price>648.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">252</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287009294f325e041c8e1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Quartet® Euro™ Magnetic Porcelain Total Erase® Mobile Easel</name>
+    <vendorCode>Y01761IUK5</vendorCode>
+    <param name="Производитель">Quartet Manufacturing</param>
+</offer>
+<offer id="177" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-clubs/cg-black-driver.html</url>
+    <price>400.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">212</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/blkdrv_hero.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>CG BLACK DRIVER</name>
+    <vendorCode>J0177S9SI3</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="178" available="true">
+    <url>http://medinweb.ru/office-supplies/desk-accessories/wilson-jones-364-heavy-duty-round-ring-binder-with-label-holder-1-black.html</url>
+    <price>6.83</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">252</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/mbank30208_w550_h550.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Wilson Jones® 364 Heavy Duty Round Ring Binder with Label Holder, 1&amp;quot;, Black</name>
+    <vendorCode>G0178014M3</vendorCode>
+    <param name="Производитель">Wilson Jones</param>
+</offer>
+<offer id="179" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-clubs/cg16-black-pearl-wedge.html</url>
+    <price>299.97</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">212</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/16_bp_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>CG16 Black Pearl Wedge</name>
+    <vendorCode>B0179UHL46</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="180" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/lenses/18-55mm-portrait-lens.html</url>
+    <price>199.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">200</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/EX-S1855SB_600.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>18-55mm Portrait Lens</name>
+    <vendorCode>Q01802L8VS</vendorCode>
+</offer>
+<offer id="181" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-clubs/womens-bloom-complete-set.html</url>
+    <price>899.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">212</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/bloom_berry_set1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Women&amp;#039;s Bloom Complete Set</name>
+    <vendorCode>A0181ZSJSS</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="182" available="true">
+    <url>http://medinweb.ru/office-supplies/desk-accessories/gbc-smart-view-3-ring-report-cover.html</url>
+    <price>6.80</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">252</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/mbank15770_w550_h550.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>GBC® Smart-View® 3-Ring Report Cover</name>
+    <vendorCode>N0182YV5QV</vendorCode>
+</offer>
+<offer id="183" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/lenses/samsung-50-200mm-nx-telephoto-ois-lens.html</url>
+    <price>249.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">200</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/NX_50-200_Lens_600.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung 50-200mm NX Telephoto OIS Lens</name>
+    <vendorCode>E0183D500N</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="184" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/lenses/samsung-30mm-nx-pancake-lens.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">200</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/ED-30NB_pancake2_600_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung 30mm NX Pancake Lens</name>
+    <vendorCode>D0184CU1VL</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="185" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-bags-and-carts/cg-lightweight-cart-bag.html</url>
+    <price>139.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">214</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/5e1cdabf5a35c38ba2b747c9adfddb7f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>CG Lightweight Cart Bag</name>
+    <vendorCode>B0185I7U24</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="186" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-bags-and-carts/cg-black-staff-bag.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">214</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/8ad650de56e5e2272b240d3a6c171545.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>CG Black Staff Bag</name>
+    <vendorCode>N01868E9SB</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="187" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-bags-and-carts/2010-tour-staff-bag-10.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">214</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/167734bda696f56942c278bee07e7236.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>2010 TOUR STAFF Bag 10&amp;quot;</name>
+    <vendorCode>D0187LXFZO</vendorCode>
+    <param name="Производитель">Cleveland</param>
+</offer>
+<offer id="188" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/golf/golf-balls/new-wilson-staff-fifty-elite-yellow-golf-ball.html</url>
+    <price>10.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">213</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/50Elite_Yellow_12ball_Render.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>NEW Wilson Staff Fifty Elite Yellow Golf Ball</name>
+    <vendorCode>M0188MVCYL</vendorCode>
+    <param name="Производитель">Wilson Staff</param>
+</offer>
+<offer id="189" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/lenses/af-s-nikkor-14-24mm-f-2.8g-ed.html</url>
+    <price>1.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">200</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2163_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AF-S NIKKOR 14-24mm f/2.8G ED</name>
+    <vendorCode>O0189UKMNW</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="190" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/lenses/af-s-dx-nikkor-10-24mm-f-3.5-4.5g-ed.html</url>
+    <price>899.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">200</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/228/detailed/0/2181_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>AF-S DX NIKKOR 10-24mm f/3.5-4.5G ED</name>
+    <vendorCode>O019015C2L</vendorCode>
+    <param name="Производитель">Nikon</param>
+</offer>
+<offer id="191" available="true">
+    <url>http://medinweb.ru/music/jazz/esperanza-spalding-radio-music-society.html</url>
+    <price>11.98</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">231</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/02xrms-cd.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Esperanza Spalding - Radio Music Society</name>
+    <vendorCode>Q0191PBM44</vendorCode>
+</offer>
+<offer id="192" available="true">
+    <url>http://medinweb.ru/music/rock/black-and-white-america-cd-pack.html</url>
+    <price>15.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">232</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/lenny_cover.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Black and White America (CD Pack)</name>
+    <vendorCode>E01923M6DA</vendorCode>
+    <param name="Производитель">Roadrunner Records</param>
+</offer>
+<offer id="205" available="true">
+    <url>http://medinweb.ru/electronics/computers/networking/dir-657-hd-media-router-1000.html</url>
+    <price>149.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">171</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/DIR-657_front.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>DIR-657 HD Media Router 1000</name>
+    <vendorCode>Y0205HGGEI</vendorCode>
+    <param name="Производитель">D-Link</param>
+</offer>
+<offer id="194" available="true">
+    <url>http://medinweb.ru/music/rock/u218-singles-u2tcd020.html</url>
+    <price>10.60</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">232</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/U2TCD020.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>U218 Singles (U2TCD020)</name>
+    <vendorCode>P01947A0SW</vendorCode>
+    <param name="Производитель">Abbey Road Studios</param>
+</offer>
+<offer id="195" available="true">
+    <url>http://medinweb.ru/music/rock/crossroads-guitar-festival-2010-2dvd.html</url>
+    <price>29.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">232</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/603497948727.sml_0.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Crossroads Guitar Festival 2010 (2DVD)</name>
+    <vendorCode>I0195ZFDB8</vendorCode>
+    <param name="Производитель">Rhino</param>
+</offer>
+<offer id="196" available="true">
+    <url>http://medinweb.ru/music/rock/feeding-the-monkies-at-ma-maison-zappa.html</url>
+    <price>17.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">232</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/feedingthemonkies_frntLRG.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Feeding the Monkies At Ma Maison (Zappa)</name>
+    <vendorCode>I0196BBF6I</vendorCode>
+</offer>
+<offer id="197" available="true">
+    <url>http://medinweb.ru/music/jazz/guitar-man-album-artwork.html</url>
+    <price>14.98</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">229</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287662164f335d096a3ce.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Guitar Man Album Artwork</name>
+    <vendorCode>A019737E4S</vendorCode>
+    <param name="Производитель">Concord Records</param>
+</offer>
+<offer id="198" available="true">
+    <url>http://medinweb.ru/music/blues/b.b.-king-one-kind-favor-cd-grammy-award-winning-cd-manufacturer-geffen-records-sku-bbk-11onekindfavorcd-reviewed-2-times.html</url>
+    <price>17.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">229</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/bbk_onekindfavorcdcover_sm.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>B.B. King One Kind Favor CD Grammy Award Winning CD Manufacturer: Geffen Records Sku: BBK-11ONEKINDFAVORCD  Reviewed 2 times</name>
+    <vendorCode>K01984N7PI</vendorCode>
+</offer>
+<offer id="199" available="true">
+    <url>http://medinweb.ru/music/blues/b.b.-king-original-greatest-hits-cd.html</url>
+    <price>29.98</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">229</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/bbk_originalhitscd.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>B.B. King - Original Greatest Hits CD</name>
+    <vendorCode>Y0199F6AC6</vendorCode>
+    <param name="Производитель">Universal Music Group</param>
+</offer>
+<offer id="200" available="true">
+    <url>http://medinweb.ru/music/classical/john-rutter-the-colours-of-christmas.html</url>
+    <price>26.92</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">230</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/277/detailed/0/url_uploaded_file_13287719184f33734f6b3e9.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>John Rutter - The Colours of Christmas</name>
+    <vendorCode>X02002U30A</vendorCode>
+    <param name="Производитель">Universal Music Group</param>
+</offer>
+<offer id="201" available="true">
+    <url>http://medinweb.ru/music/classical/beethoven-piano-concertos-nos.-1-and-2.html</url>
+    <price>12.67</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">230</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287720374f3373c6eef1f.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Beethoven Piano Concertos Nos. 1 &amp;amp; 2</name>
+    <vendorCode>V02011EWI8</vendorCode>
+</offer>
+<offer id="202" available="true">
+    <url>http://medinweb.ru/music/classical/new-years-concert-2011-diverse-klassik-welser-moest-wiener-philharmoniker.html</url>
+    <price>34.68</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">230</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/cover1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>New Year&amp;#039;s Concert 2011 Diverse Klassik Welser-moest / Wiener Philharmoniker</name>
+    <vendorCode>T0202OTGXT</vendorCode>
+</offer>
+<offer id="203" available="true">
+    <url>http://medinweb.ru/music/classical/new-years-concert-2012-diverse-wr.philharmoniker-jansons-m.-wr.san.html</url>
+    <price>34.68</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">230</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/cover113287723384f3374f2d5491.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>New Year&amp;#039;s Concert 2012 Diverse Wr.Philharmoniker / Jansons,M. / Wr.Sän</name>
+    <vendorCode>R02034W1ZL</vendorCode>
+</offer>
+<offer id="204" available="true">
+    <url>http://medinweb.ru/music/rock/the-police-the-stewart-copeland-anthology.html</url>
+    <price>14.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">232</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/5OCD09.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>The Police - The Stewart Copeland Anthology</name>
+    <vendorCode>B0204ZOC1I</vendorCode>
+    <param name="Производитель">Entertainment One Ltd</param>
+</offer>
+<offer id="206" available="true">
+    <url>http://medinweb.ru/electronics/computers/networking/rt-n66u-dual-band-wireless-n900-gigabit-router.html</url>
+    <price>179.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">171</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/197/detailed/0/hyyfnOGfxDQXnGM0_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>RT-N66U Dual-Band Wireless-N900 Gigabit Router</name>
+    <vendorCode>Q0206MCK7B</vendorCode>
+    <param name="Производитель">ASUS</param>
+</offer>
+<offer id="207" available="true">
+    <url>http://medinweb.ru/electronics/computers/networking/asus-usb-n53.html</url>
+    <price>42.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">171</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/P_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Asus USB-N53</name>
+    <vendorCode>W0207TLU5R</vendorCode>
+    <param name="Производитель">ASUS</param>
+</offer>
+<offer id="208" available="true">
+    <url>http://medinweb.ru/electronics/computers/networking/h.264-megapixel-surveillance-camera-tl-sc3430.html</url>
+    <price>82.94</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">171</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/TL-SC3430-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>H.264 Megapixel Surveillance Camera TL-SC3430</name>
+    <vendorCode>F0208V084C</vendorCode>
+    <param name="Производитель">TP-Link</param>
+</offer>
+<offer id="209" available="true">
+    <url>http://medinweb.ru/electronics/computers/printers-and-scanners/hp-scanjet-g3110-scanner.html</url>
+    <price>109.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">172</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/l2698a_300.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>HP Scanjet G3110 Scanner</name>
+    <vendorCode>G0209Y9N72</vendorCode>
+    <param name="Производитель">Hewlett-Packard</param>
+</offer>
+<offer id="210" available="true">
+    <url>http://medinweb.ru/electronics/computers/printers-and-scanners/hp-photosmart-plus-e-all-in-one-printer-b210a.html</url>
+    <price>89.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">172</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/cn216a_main.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>HP Photosmart Plus e-All-in-One Printer - B210a</name>
+    <vendorCode>D0210M5AN1</vendorCode>
+    <param name="Производитель">Hewlett-Packard</param>
+</offer>
+<offer id="211" available="true">
+    <url>http://medinweb.ru/electronics/computers/printers-and-scanners/hp-officejet-pro-8600-premium-e-all-in-one-printer.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">172</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/cn577a_main.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>HP Officejet Pro 8600 Premium e-All-in-One Printer</name>
+    <vendorCode>H021184FO0</vendorCode>
+    <param name="Производитель">Hewlett-Packard</param>
+</offer>
+<offer id="212" available="true">
+    <url>http://medinweb.ru/electronics/computers/printers-and-scanners/panasonic-kx-mb2000-24ppm-3-in-1-monochrome-laser-mfp.html</url>
+    <price>129.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">172</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/0120b3d3-82ef-4d27-8d43-9d75b4db19a1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Panasonic KX-MB2000 24PPM 3-in-1 Monochrome Laser MFP</name>
+    <vendorCode>P0212CTOEA</vendorCode>
+    <param name="Производитель">Panasonic</param>
+</offer>
+<offer id="213" available="true">
+    <url>http://medinweb.ru/electronics/computers/processors/intel-boxed-intel-core-i7-2600.html</url>
+    <price>295.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">201</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/352/detailed/0/imageservice.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Intel® Boxed Intel® Core™ i7-2600</name>
+    <vendorCode>R0213E2U6B</vendorCode>
+    <param name="Производитель">Intel</param>
+</offer>
+<offer id="214" available="true">
+    <url>http://medinweb.ru/electronics/computers/desktops/asus-cp6130.html</url>
+    <price>972.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">168</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/P_50013287768924f3386bc5fe80.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>ASUS CP6130</name>
+    <vendorCode>K02149B2ZX</vendorCode>
+    <param name="Производитель">ASUS</param>
+</offer>
+<offer id="215" available="true">
+    <url>http://medinweb.ru/electronics/computers/processors/intel-core-i7-processor-extreme-edition-980x--i7-980x.html</url>
+    <price>1095.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">201</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/imageservice13287772554f338827bf601.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Intel® Core™ i7 processor Extreme Edition 980X – i7-980X</name>
+    <vendorCode>O02154E04H</vendorCode>
+    <param name="Производитель">Intel</param>
+</offer>
+<offer id="227" available="true">
+    <url>http://medinweb.ru/electronics/computers/monitors/acer-3d-series-hn274h-bmiiid.html</url>
+    <price>699.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">170</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/HN274H_350x250.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Acer 3D Series HN274H bmiiid</name>
+    <vendorCode>L0227FHI2Y</vendorCode>
+    <param name="Производитель">Acer</param>
+</offer>
+<offer id="217" available="true">
+    <url>http://medinweb.ru/electronics/computers/desktops/asus-cp6230.html</url>
+    <price>610.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">168</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/P_50013287772614f33882d85395.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>ASUS CP6230</name>
+    <vendorCode>H0217E3OE9</vendorCode>
+    <param name="Производитель">ASUS</param>
+</offer>
+<offer id="218" available="true">
+    <url>http://medinweb.ru/electronics/computers/desktops/asus-essentio-cp1130.html</url>
+    <price>459.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">168</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/P_50013287774434f3388e3b9edd.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>ASUS Essentio CP1130</name>
+    <vendorCode>B0218UO9WS</vendorCode>
+    <param name="Производитель">ASUS</param>
+</offer>
+<offer id="219" available="true">
+    <url>http://medinweb.ru/electronics/computers/laptops/series-3-15.6-laptop.html</url>
+    <price>529.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">169</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/300V5A_Raspberry-Pink_04_6.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Series 3 15.6&amp;quot; Laptop</name>
+    <vendorCode>M0219A3GX3</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="220" available="true">
+    <url>http://medinweb.ru/electronics/computers/laptops/series-7-chronos-14-notebook.html</url>
+    <price>1099.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">169</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/186/detailed/0/700Z-side_back_open-01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Series 7 Chronos 14” Notebook</name>
+    <vendorCode>P0220KHOS3</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="221" available="true">
+    <url>http://medinweb.ru/electronics/computers/laptops/series-9-13.3-laptop.html</url>
+    <price>2049.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">169</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/9-Series-Laptop_04_4.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Series 9 13.3&amp;quot; Laptop</name>
+    <vendorCode>X0221UHBTA</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="222" available="true">
+    <url>http://medinweb.ru/electronics/computers/laptops/series-3-15.6-laptop-ru.html</url>
+    <price>529.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">169</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/600x600_NP300E5A-A01_main.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Series 3 15.6&amp;quot; Laptop</name>
+    <vendorCode>P0222KUH4T</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="223" available="true">
+    <url>http://medinweb.ru/electronics/computers/tablets/samsung-galaxy-tab-8.9-wi-fi-only-32gb-metallic-gray.html</url>
+    <price>499.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">165</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/210/detailed/0/p7310_400x400_large1_cf_1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy Tab 8.9 (Wi-Fi Only) - 32GB Metallic Gray</name>
+    <vendorCode>O0223AQI3W</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="224" available="true">
+    <url>http://medinweb.ru/electronics/computers/tablets/samsung-galaxy-tab-8.9-at-and-t.html</url>
+    <price>479.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">165</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/i957_600x600_xlarge_hf.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy Tab™ 8.9 (AT&amp;amp;T)</name>
+    <vendorCode>Y0224Y3QQU</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="225" available="true">
+    <url>http://medinweb.ru/electronics/computers/tablets/samsung-galaxy-tab-7.0-verizon.html</url>
+    <price>199.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">165</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/Ver_Galaxy_Tab_front2_5.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Samsung Galaxy Tab™ 7.0&amp;quot; (Verizon)</name>
+    <vendorCode>E0225PPZPL</vendorCode>
+    <param name="Производитель">Samsung</param>
+</offer>
+<offer id="226" available="true">
+    <url>http://medinweb.ru/electronics/computers/processors/intel-core-i7-processor-i7-950.html</url>
+    <price>269.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">201</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/359/detailed/0/imageservice_(1).jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Intel® Core™ i7 Processor i7-950</name>
+    <vendorCode>P02266IOPQ</vendorCode>
+    <param name="Производитель">Intel</param>
+</offer>
+<offer id="228" available="true">
+    <url>http://medinweb.ru/electronics/computers/monitors/lg-d2342p-pn.html</url>
+    <price>349.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">170</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/large01.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>LG D2342P-PN</name>
+    <vendorCode>I0228OF40N</vendorCode>
+    <param name="Производитель">LG</param>
+</offer>
+<offer id="229" available="true">
+    <url>http://medinweb.ru/electronics/computers/monitors/hp-2711x-27-led-monitor.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">170</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/xp600aa_300.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>HP 2711x 27&amp;quot; LED Monitor</name>
+    <vendorCode>V0229W5J8F</vendorCode>
+    <param name="Производитель">Hewlett-Packard</param>
+</offer>
+<offer id="230" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/backpacks/2011-pit-boss.html</url>
+    <price>125.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">216</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287871234f33aeb3d0793.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>2011 Pit Boss</name>
+    <vendorCode>B0230S7Q0V</vendorCode>
+    <param name="Производитель">Camelback</param>
+</offer>
+<offer id="231" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/backpacks/2011-tycoon.html</url>
+    <price>99.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">216</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287872334f33af2276de4.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>2011 Tycoon</name>
+    <vendorCode>S0231YYSMK</vendorCode>
+    <param name="Производитель">Camelback</param>
+</offer>
+<offer id="232" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/backpacks/2011-ice-queen.html</url>
+    <price>79.95</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">216</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/url_uploaded_file_13287873494f33af96095d8.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>2011 Ice Queen</name>
+    <vendorCode>S0232MRZ1Y</vendorCode>
+    <param name="Производитель">Camelback</param>
+</offer>
+<offer id="233" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/sleeping-bags/crystal-lake-warm-weather-sleeping-bag.html</url>
+    <price>47.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">217</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2000004455_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Crystal Lake Warm Weather Sleeping Bag</name>
+    <vendorCode>H023315I7E</vendorCode>
+</offer>
+<offer id="234" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/sleeping-bags/white-water-cool-weather-sleeping-bag.html</url>
+    <price>59.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">217</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2000004453_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>White Water™ Cool Weather Sleeping Bag</name>
+    <vendorCode>R0234XOWI6</vendorCode>
+</offer>
+<offer id="235" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/sleeping-bags/everglades-cold-weather-sleeping-bag.html</url>
+    <price>79.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">217</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2000004467_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Everglades Cold Weather Sleeping Bag</name>
+    <vendorCode>N02351Q6BY</vendorCode>
+</offer>
+<offer id="236" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/tents/weathermaster-screened-6-tent-with-hinged-door.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">218</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2000001597_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>WeatherMaster Screened 6 Tent With Hinged Door</name>
+    <vendorCode>A0236BQ31M</vendorCode>
+</offer>
+<offer id="237" available="true">
+    <url>http://medinweb.ru/sports-and-outdoors/camping/tents/elite-evanston-8-tent.html</url>
+    <price>299.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">218</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/2000004674_500.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Elite Evanston 8 Tent</name>
+    <vendorCode>B0237HI9M0</vendorCode>
+</offer>
+<offer id="238" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/apple-iphone/apple-iphone-4s-black.html</url>
+    <price>499.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">235</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/333/detailed/0/iphone-smartphone-hi.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple iPhone 4S Black</name>
+    <vendorCode>Q0238LW6GY</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="239" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/apple-iphone/apple-iphone-4s-white.html</url>
+    <price>509.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">235</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/white-iphone-hi.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple iPhone 4S White</name>
+    <vendorCode>L0239KVQ9F</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="240" available="true">
+    <url>http://medinweb.ru/electronics/computers/tablets/apple-ipad-with-retina-display-wi-fi-64gb-black.html</url>
+    <price>499.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">165</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/387/detailed/0/ipad-black-1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple® - iPad® with Retina® display Wi-Fi - 64GB - Black</name>
+    <vendorCode>E0240Y27BE</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="241" available="true">
+    <url>http://medinweb.ru/electronics/computers/tablets/apple-ipad-with-retina-display-wi-fi-32gb-white.html</url>
+    <price>499.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">165</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/387/detailed/0/ipad-white-1.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple® - iPad® with Retina® display Wi-Fi - 32GB - White</name>
+    <vendorCode>I0241GCXF9</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="242" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/ipods/apple-ipod-classic-black.html</url>
+    <price>249.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">178</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/0/apple-ipod-hi.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple iPod Classic Black</name>
+    <vendorCode>G0242JXP9R</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="243" available="true">
+    <url>http://medinweb.ru/electronics/mp3-players/ipods/apple-ipod-classic-white.html</url>
+    <price>249.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">178</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/243/detailed/0/ipod-shuffle-hi.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple iPod Classic White</name>
+    <vendorCode>U02431526C</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="244" available="true">
+    <url>http://medinweb.ru/electronics/computers/desktops/packard-bell-onetwo.html</url>
+    <price>729.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">168</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/1/pocket_bell.jpg</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Packard Bell OneTwo</name>
+    <vendorCode>B00F3IUN27</vendorCode>
+    <param name="Производитель">Acer</param>
+</offer>
+<offer id="245" available="true">
+    <url>http://medinweb.ru/electronics/cell-phones/apple-iphone/apple-iphone-5c-32gb-cell-phone-green.html</url>
+    <price>699.00</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">235</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/1/iphone_green.png</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>Apple - iPhone 5c 32GB Cell Phone - Green</name>
+    <vendorCode>B00F3IUN24</vendorCode>
+    <param name="Производитель">Apple</param>
+</offer>
+<offer id="246" available="true">
+    <url>http://medinweb.ru/electronics/cameras-and-photo/camcorders/gopro-hero3-black-edition-camera.html</url>
+    <price>399.99</price>
+    <currencyId>RUB</currencyId>
+    <categoryId type="Own">199</categoryId>
+    <picture>http://medinweb.ru/images/thumbnails/280/280/detailed/1/go_pro.png</picture>
+    <store>false</store>
+    <pickup>false</pickup>
+    <delivery>true</delivery>
+    <name>GoPro - Hero3+ Black Edition Camera</name>
+    <vendorCode>B00F3F0GLU</vendorCode>
+    <param name="Производитель">GoPro</param>
+</offer>
+</offers>
+</shop>
+</yml_catalog>
