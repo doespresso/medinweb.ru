@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!-- rus_build_unisender dbazhenov  -->
+<addon scheme="2.0">
+    <id>rus_unisender</id>
+    <version>2.1.2</version>
+    <name>Русская локализация - Unisender</name>
+    <description>Рассылки e-mail и SMS. Модуль подключает импорт контактов покупателей в сервис Unisender</description>
+    <priority>2014</priority>
+    <position>7</position>
+    <status>active</status>
+    <default_language>ru</default_language>
+        <translations> 
+            <item for="name" lang="en">Russian localization - Unisender</item>
+            <item for="description" lang="en">Email and SMS</item>
+        </translations>
+    <settings layout="separate" edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="main">
+                <name>Настройки</name>
+                <items>
+                    <item id="api_key">
+                        <name>Ключ доступа к API</name>
+                        <type>input</type>
+                        <translations>
+                            <item lang="en">API key</item>
+                        </translations>
+                    </item>
+                    <item id="list_name">
+                        <name>Имя списка</name>
+                        <type>selectbox</type>
+                        <translations>
+                            <item lang="en">List name</item>
+                        </translations>
+                    </item>
+                    <item id="unisender_show_at_checkout">
+                        <name>Показывать при оформлении заказа</name>
+                        <type>checkbox</type>
+                        <translations>
+                            <item lang="en">Show at checkout</item>
+                        </translations>
+                    </item>
+                    <item id="unisender_show_on_registration">
+                        <name>Показывать при регистрации</name>
+                        <type>checkbox</type>
+                        <translations>
+                            <item lang="en">Show on registration</item>
+                        </translations>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction" edition_type="ROOT">
+                <name>Инструкции</name>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item>DROP TABLE IF EXISTS ?:unisender_subscribers;</item>
+        <item>DROP TABLE IF EXISTS ?:unisender_user_mailing_lists;</item>
+        <item>
+            CREATE TABLE `?:unisender_subscribers` (
+            `subscriber_id` mediumint(8) unsigned NOT NULL auto_increment,
+            `email` varchar(128) NOT NULL default '',
+            `timestamp` int(11) unsigned NOT NULL default '0',
+            UNIQUE KEY  (`email`) ,
+            PRIMARY KEY  (`subscriber_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item>
+            CREATE TABLE `?:unisender_user_mailing_lists` (
+            `subscriber_id` mediumint(8) unsigned NOT NULL,
+            `list_id` mediumint(8) unsigned NOT NULL,
+            `confirmed` tinyint(3) unsigned NOT NULL default '0',
+            `timestamp` int(11) unsigned NOT NULL default '0',
+            KEY `subscriber_id` (`subscriber_id`),
+            KEY `list_id` (`list_id`),
+            UNIQUE KEY `subscriber_list` (`list_id`, `subscriber_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+    </queries>
+
+    <language_variables>
+        <item lang="en" id="users_not_added_key">Invalid API Key in "Unisender" add-on options.</item>
+        <item lang="ru" id="users_not_added_key">Некорректный ключ доступа к API в настройках аддона "Unisender".</item>
+        <item lang="en" id="users_not_added_list">Not selected list name in "Unisender" add-on options.</item>
+        <item lang="ru" id="users_not_added_list">Не выбран список в настройках аддона "Unisender".</item>
+        <item lang="en" id="add_selected_to_unisender">Add to Unisender selected users</item>
+        <item lang="ru" id="add_selected_to_unisender">Добавить в Unisender отмеченных пользователей</item>
+        <item lang="en" id="users_added">Selected users were added to Unisender.</item>
+        <item lang="ru" id="users_added">Выбранные пользователи добавлены в Unisender.</item>
+        <item lang="en" id="enter_api_key">Enter and save the API key first</item>
+        <item lang="ru" id="enter_api_key">Сначала введите и сохраните ключ доступа к API</item>
+        <item lang="en" id="invalid_api_key">Invalid API Key.</item>
+        <item lang="ru" id="invalid_api_key">Неверный ключ доступа к API.</item>
+        <item lang="en" id="no_response">No response from server.</item>
+        <item lang="ru" id="no_response">Нет ответа от сервера.</item>
+        <item lang="en" id="text_unisender_signup_for_subscriptions">Sign up for our newsletters!</item>
+        <item lang="ru" id="text_unisender_signup_for_subscriptions">Подпишитесь на нашу рассылку!</item>
+    </language_variables>
+</addon>

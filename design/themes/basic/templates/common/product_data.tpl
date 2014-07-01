@@ -38,7 +38,7 @@
     {if $show_name}
         {if $hide_links}<strong>{else}<a href="{"products.view?product_id=`$product.product_id`"|fn_url}" class="product-title">{/if}{$product.product nofilter}{if $hide_links}</strong>{else}</a>{/if}
     {elseif $show_trunc_name}
-        {if $hide_links}<strong>{else}<a href="{"products.view?product_id=`$product.product_id`"|fn_url}" class="product-title" title="{$product.product|strip_tags}">{/if}{$product.product|truncate:45:"...":true nofilter}{if $hide_links}</strong>{else}</a>{/if}
+        {if $hide_links}<strong>{else}<a href="{"products.view?product_id=`$product.product_id`"|fn_url}" class="product-title" title="{$product.product|strip_tags}">{/if}{$product.product|truncate:75:"...":true nofilter}{if $hide_links}</strong>{else}</a>{/if}
     {/if}
 {/capture}
 {if $no_capture}

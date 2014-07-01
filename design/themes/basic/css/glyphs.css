@@ -22,22 +22,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-up-dir, .icon-right-dir, .icon-down-dir, .icon-left-dir, .icon-star-empty, .icon-th-list, .icon-heart, .icon-flight, .icon-ok, .icon-cancel, .icon-cancel-circle, .icon-minus-circle, .icon-right-thin, .icon-cw, .icon-left-circle, .icon-right-circle, .icon-help-circle, .icon-back, .icon-products-multicolumns, .icon-print, .icon-chat, .icon-article-alt, .icon-docs, .icon-zoom-in, .icon-zoom-out, .icon-down-open, .icon-left-open, .icon-right-open, .icon-up-open, .icon-down-micro, .icon-up-micro, .icon-right-open-thin, .icon-left-open-thin, .icon-products-without-options, .icon-short-list, .icon-plus-circle, .icon-user, .icon-doc-text, .icon-calendar, .icon-chart-bar, .icon-download, .icon-search, .icon-lock, .icon-popup, .icon-plus, .icon-folder, .icon-folder-open, .icon-mail, .icon-twitter, .icon-facebook, .icon-file, .icon-trashcan, .icon-d-arrow, .icon-bubble, .icon-upload, .icon-cog, .icon-square, .icon-arrow-up-right, .icon-arrow-up-left, .icon-arrow-down-left, .icon-arrow-down-right, .icon-arrow-down, .icon-arrow-up, .icon-arrow-left, .icon-arrow-right, .icon-star, .icon-star-half, .icon-refresh, .icon-basket, .icon-image, .icon-edit, .icon-translate, .icon-gift, .icon-ban-circle, .icon-wrench,
-.icon-up-dir:before, .icon-right-dir:before, .icon-down-dir:before, .icon-left-dir:before, .icon-star-empty:before, .icon-th-list:before, .icon-heart:before, .icon-flight:before, .icon-ok:before, .icon-cancel:before, .icon-cancel-circle:before, .icon-minus-circle:before, .icon-right-thin:before, .icon-cw:before, .icon-left-circle:before, .icon-right-circle:before, .icon-help-circle:before, .icon-back:before, .icon-products-multicolumns:before, .icon-print:before, .icon-chat:before, .icon-article-alt:before, .icon-docs:before, .icon-zoom-in:before, .icon-zoom-out:before, .icon-down-open:before, .icon-left-open:before, .icon-right-open:before, .icon-up-open:before, .icon-down-micro:before, .icon-up-micro:before, .icon-right-open-thin:before, .icon-left-open-thin:before, .icon-products-without-options:before, .icon-short-list:before, .icon-plus-circle:before, .icon-user:before, .icon-doc-text:before, .icon-calendar:before, .icon-chart-bar:before, .icon-download:before, .icon-search:before, .icon-lock:before, .icon-popup:before, .icon-plus:before, .icon-folder:before, .icon-folder-open:before, .icon-mail:before, .icon-twitter:before, .icon-facebook:before, .icon-file:before, .icon-trashcan:before, .icon-d-arrow:before, .icon-bubble:before, .icon-upload:before, .icon-cog:before, .icon-square:before, .icon-arrow-up-right:before, .icon-arrow-up-left:before, .icon-arrow-down-left:before, .icon-arrow-down-right:before, .icon-arrow-down:before, .icon-arrow-up:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-star:before, .icon-star-half:before, .icon-refresh:before, .icon-basket:before, .icon-image:before, .icon-edit:before, .icon-translate:before, .icon-gift:before, .icon-ban-circle:before, .icon-wrench:before {
-    font-family: 'glyphs';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'glyphs';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 .icon-up-dir:before {
     content: "\e000";

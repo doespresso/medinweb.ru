@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-04-04 15:43:30
+<?php /* Smarty version Smarty-3.1.15, created on 2014-04-28 14:39:31
          compiled from "/var/www/medinweb.ru/public/design/backend/templates/addons/rus_build_pack/views/rus_upgrade/activate.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1029563272533e9ae20878c7-15599185%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '028479c714a848a9c59d34c42a1ae65a254dabc5' => 
     array (
       0 => '/var/www/medinweb.ru/public/design/backend/templates/addons/rus_build_pack/views/rus_upgrade/activate.tpl',
-      1 => 1396609142,
+      1 => 1396612049,
       2 => 'tygh',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_533e9ae21a9e32_04189577',
   'variables' => 
   array (
     'license_info' => 0,
@@ -24,8 +26,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'license_txt' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_533e9ae21a9e32_04189577',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_533e9ae21a9e32_04189577')) {function content_533e9ae21a9e32_04189577($_smarty_tpl) {?><?php
 fn_preload_lang_vars(array('please_enter_license_here','close'));

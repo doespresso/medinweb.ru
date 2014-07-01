@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-04-04 15:44:53
+<?php /* Smarty version Smarty-3.1.15, created on 2014-04-09 10:59:00
          compiled from "/var/www/medinweb.ru/public/design/themes/basic/templates/buttons/button.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:620174108533e9b358a3fa2-17127523%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1f470ef48ac81ae1a2697cceb0ac694b55b16fa2' => 
     array (
       0 => '/var/www/medinweb.ru/public/design/themes/basic/templates/buttons/button.tpl',
-      1 => 1396611751,
+      1 => 1397026700,
       2 => 'tygh',
     ),
   ),
@@ -15,18 +15,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_533e9b35c793d8_86176715',
   'variables' => 
   array (
     'runtime' => 0,
     'but_role' => 0,
     'but_name' => 0,
-    'but_extra' => 0,
     'but_id' => 0,
-    'but_css' => 0,
-    'suffix' => 0,
     'but_meta' => 0,
     'but_onclick' => 0,
     'but_text' => 0,
+    'but_extra' => 0,
+    'suffix' => 0,
     'but_href' => 0,
     'but_target' => 0,
     'but_rel' => 0,
@@ -38,8 +39,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'auth' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_533e9b35c793d8_86176715',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_533e9b35c793d8_86176715')) {function content_533e9b35c793d8_86176715($_smarty_tpl) {?><?php if (!is_callable('smarty_function_set_id')) include '/var/www/medinweb.ru/public/app/functions/smarty_plugins/function.set_id.php';
 ?><?php
@@ -64,18 +63,12 @@ fn_preload_lang_vars(array('delete','delete'));
 <?php }?>
 
 <?php if ($_smarty_tpl->tpl_vars['but_name']->value&&$_smarty_tpl->tpl_vars['but_role']->value!="text"&&$_smarty_tpl->tpl_vars['but_role']->value!="act"&&$_smarty_tpl->tpl_vars['but_role']->value!="delete") {?> 
-    <span <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_extra']->value, ENT_QUOTES, 'UTF-8');?>
- <?php if ($_smarty_tpl->tpl_vars['but_id']->value) {?>id="wrap_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_id']->value, ENT_QUOTES, 'UTF-8');?>
-"<?php }?> <?php if ($_smarty_tpl->tpl_vars['but_css']->value) {?>style="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_css']->value, ENT_QUOTES, 'UTF-8');?>
-"<?php }?> class="button-submit<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['suffix']->value, ENT_QUOTES, 'UTF-8');?>
- button-wrap-left"><span <?php if ($_smarty_tpl->tpl_vars['but_css']->value) {?>style="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_css']->value, ENT_QUOTES, 'UTF-8');?>
-"<?php }?> class="button-submit<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['suffix']->value, ENT_QUOTES, 'UTF-8');?>
- button-wrap-right"><input <?php if ($_smarty_tpl->tpl_vars['but_id']->value) {?>id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_id']->value, ENT_QUOTES, 'UTF-8');?>
+<input class="main_button" <?php if ($_smarty_tpl->tpl_vars['but_id']->value) {?>id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_id']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> <?php if ($_smarty_tpl->tpl_vars['but_meta']->value) {?>class="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_meta']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> type="submit" name="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_name']->value, ENT_QUOTES, 'UTF-8');?>
 " <?php if ($_smarty_tpl->tpl_vars['but_onclick']->value) {?>onclick="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_onclick']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_text']->value, ENT_QUOTES, 'UTF-8');?>
-" /></span></span>
+" />
 
 <?php } elseif ($_smarty_tpl->tpl_vars['but_role']->value=="text"||$_smarty_tpl->tpl_vars['but_role']->value=="act"||$_smarty_tpl->tpl_vars['but_role']->value=="edit") {?> 
     <a <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_extra']->value, ENT_QUOTES, 'UTF-8');?>
@@ -141,6 +134,43 @@ fn_preload_lang_vars(array('delete','delete'));
 "<?php }?>><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_text']->value, ENT_QUOTES, 'UTF-8');?>
 </a></span></span>
 <?php }?>
+
+
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+    
+
+
+    
+
+
+
+    
+
+
+    
+
+
+
+    
+
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
 if (!empty($_capture_buffer)) {
  if (isset($_capture_assign)) $_smarty_tpl->assign($_capture_assign, ob_get_contents());
@@ -168,18 +198,12 @@ if (!empty($_capture_buffer)) {
 <?php }?>
 
 <?php if ($_smarty_tpl->tpl_vars['but_name']->value&&$_smarty_tpl->tpl_vars['but_role']->value!="text"&&$_smarty_tpl->tpl_vars['but_role']->value!="act"&&$_smarty_tpl->tpl_vars['but_role']->value!="delete") {?> 
-    <span <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_extra']->value, ENT_QUOTES, 'UTF-8');?>
- <?php if ($_smarty_tpl->tpl_vars['but_id']->value) {?>id="wrap_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_id']->value, ENT_QUOTES, 'UTF-8');?>
-"<?php }?> <?php if ($_smarty_tpl->tpl_vars['but_css']->value) {?>style="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_css']->value, ENT_QUOTES, 'UTF-8');?>
-"<?php }?> class="button-submit<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['suffix']->value, ENT_QUOTES, 'UTF-8');?>
- button-wrap-left"><span <?php if ($_smarty_tpl->tpl_vars['but_css']->value) {?>style="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_css']->value, ENT_QUOTES, 'UTF-8');?>
-"<?php }?> class="button-submit<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['suffix']->value, ENT_QUOTES, 'UTF-8');?>
- button-wrap-right"><input <?php if ($_smarty_tpl->tpl_vars['but_id']->value) {?>id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_id']->value, ENT_QUOTES, 'UTF-8');?>
+<input class="main_button" <?php if ($_smarty_tpl->tpl_vars['but_id']->value) {?>id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_id']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> <?php if ($_smarty_tpl->tpl_vars['but_meta']->value) {?>class="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_meta']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> type="submit" name="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_name']->value, ENT_QUOTES, 'UTF-8');?>
 " <?php if ($_smarty_tpl->tpl_vars['but_onclick']->value) {?>onclick="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_onclick']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php }?> value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_text']->value, ENT_QUOTES, 'UTF-8');?>
-" /></span></span>
+" />
 
 <?php } elseif ($_smarty_tpl->tpl_vars['but_role']->value=="text"||$_smarty_tpl->tpl_vars['but_role']->value=="act"||$_smarty_tpl->tpl_vars['but_role']->value=="edit") {?> 
     <a <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_extra']->value, ENT_QUOTES, 'UTF-8');?>
@@ -245,4 +269,41 @@ if (!empty($_capture_buffer)) {
 "<?php }?>><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['but_text']->value, ENT_QUOTES, 'UTF-8');?>
 </a></span></span>
 <?php }?>
+
+
+
+    
+    
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+    
+
+
+    
+
+
+
+    
+
+
+    
+
+
+
+    
+
 <?php }?><?php }} ?>

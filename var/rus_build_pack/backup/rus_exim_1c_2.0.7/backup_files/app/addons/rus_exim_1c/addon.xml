@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<!--  rus_build_exim_1C dbazhenov -->
+<addon scheme='2.0' edition_type="ROOT,ULT:VENDOR">
+    <id>rus_exim_1c</id>
+    <version>2.0.7</version>
+    <default_language>ru</default_language>
+    <name>Русская локализация - Экспорт, импорт в 1С</name>
+    <description>Экспорт, импорт в 1С</description>
+    <priority>2999</priority>
+    <status>active</status>
+	<translations> 
+		<item for="name" lang="en">Russian localization - Export, import in 1С</item>
+		<item for="description" lang="en">Export, import in 1С</item>
+	</translations>
+    <settings layout="separate" edition_type="ROOT">
+        <sections>
+            <section id="general">
+                <name>Общие настройки</name>
+                <translations>
+                    <item lang="en" for="name">General settings</item>
+                </translations>
+                <items>
+                    <item id="exim_1c_export_order_shipping">
+                        <name>Включать отдельно стоимость доставки заказа для 1С</name>
+						<translations>
+							<item lang="en">Consider shipping cost a separate product in 1С</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>
+					<item id="exim_1c_export_for_company">
+                        <name>Осуществлять обмен с компанией</name>
+						<translations>
+							<item lang="en">Exchange with company</item>
+						</translations>
+                        <type>selectbox</type>
+                        <default_value>1</default_value>
+                    </item>
+					<item id="exim_1c_export_option_name">
+                        <name>Имя опции</name>
+						<translations>
+							<item lang="en">Option name</item>
+						</translations>
+                        <type>inputbox</type>
+                        <default_value>Варианты</default_value>
+                    </item>
+					<item id="exim_1c_export_product_name">
+                        <type>radiogroup</type>
+                        <name>Использовать в названии товара</name>
+							<translations>
+								<item lang="en">Use in the product name</item>
+							</translations>
+                        <default_value>name</default_value>
+                        <variants>
+                            <item id="name">
+                                <name>Наименование</name>
+								<translations>
+									<item lang="en">Name</item>
+								</translations>
+                            </item>
+                            <item id="full_name">
+                                <name>Полное наименование</name>
+								<translations>
+									<item lang="en">Full name</item>
+								</translations>
+                            </item>
+                        </variants>
+                    </item>
+					<item id="exim_1c_export_product_code">
+                        <type>radiogroup</type>
+                        <name>Использовать в артикуле товара</name>
+						<translations>
+							<item lang="en">Use in the product article</item>
+						</translations>
+                        <default_value>art</default_value>
+                        <variants>
+                            <item id="art">
+                                <name>Артикул</name>
+								<translations>
+									<item lang="en">Article</item>
+								</translations>
+                            </item>
+                            <item id="code">
+                                <name>Код номенклатуры</name>
+								<translations>
+									<item lang="en">Classification code</item>
+								</translations>
+                            </item>
+                        </variants>
+                    </item>
+					<item id="exim_1c_export_brend">
+                        <name>Использовать изготовителя</name>
+						<translations>
+							<item lang="en">Use manufacturer</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>
+					<item id="exim_1c_export_inventory_zero">
+                        <name>Создавать комбинацию с нулевым количеством</name>
+						<translations>
+							<item lang="en">Create combination with zero quantity</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>
+					<item id="exim_1c_export_stock_empty">
+                        <name>Скрывать товары с нулевым остатком</name>
+						<translations>
+							<item lang="en">Hide products with zero stock quantity</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>
+					<item id="exim_1c_export_add_inventory">
+                        <name>Способы отображения характеристик из 1С</name>
+						<translations>
+							<item lang="en">Ways to display properties from 1С</item>
+						</translations>
+                        <type>selectbox</type>
+                        <default_value>standart</default_value>
+                        <variants>
+                            <item id="standart">
+                                <name>Стандартное отображение</name>
+								<translations>
+									<item lang="en">Standard way</item>
+								</translations>
+                            </item>
+                            <item id="no_price">
+                                <name>По свойствам объекта</name>
+								<translations>
+									<item lang="en">By object properties</item>
+								</translations>
+                            </item>
+                        </variants>
+                    </item>
+                </items>
+            </section>
+			<section id="prices" edition_type="ROOT">
+                <name>Установка видов цен</name>
+				<translations>
+					<item lang="en">Adoption of price types</item>
+				</translations>
+                <items>
+					<item id="exim_1c_export_add_prices">
+                        <name>Использовать эту функцию</name>
+						<translations>
+							<item lang="en">Use this function</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>	
+					<item id="exim_1c_export_check_prices">
+                        <name>Запустить модуль в режиме отладки цен</name>
+						<translations>
+							<item lang="en">Run add-on in price debug mode</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>	
+					<item id="exim_1c_export_prices">
+                        <type>template</type>
+                        <default_value>instruction_prices.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+			<section id="true_orders" edition_type="ROOT">
+                <name>Ограничение заказов</name>
+				<translations>
+					<item lang="en">Limitation of orders</item>
+				</translations>
+                <items>
+					<item id="exim_1c_export_add_true_orders">
+                        <name>Использовать эту функцию</name>
+						<translations>
+							<item lang="en">Use this function</item>
+						</translations>
+                        <type>checkbox</type>
+                        <default_value/>
+                    </item>	
+					<item id="exim_1c_from_order_id">
+                        <name>Выгружать с номера</name>
+						<translations>
+							<item lang="en">Export starting from ID</item>
+						</translations>
+                        <type>inputbox</type>
+                    </item>
+					<item id="exim_1c_export_order_statuses">
+                        <name>Статусы ордеров</name>
+						<translations>
+							<item lang="en">Order statuses</item>
+						</translations>
+                        <type>multiple checkboxes</type>
+                        <variants/>
+                    </item>
+                </items>
+            </section>
+            <section id="instruction" edition_type="ROOT">
+                <name>Инструкции</name>
+				<translations>
+					<item lang="en">Instructions</item>
+				</translations>
+                <items>
+                    <item id="instruction">
+                        <type>template</type>
+                        <default_value>instruction.tpl</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <language_variables>
+		<item lang="ru" id="exim_1C">1C</item>
+		<item lang="en" id="exim_1C">1C</item>
+		<item lang="ru" id="1c">1C</item>
+		<item lang="en" id="1c">1C</item>
+		<item lang="ru" id="products_to_1c">Продукты в 1С</item>
+		<item lang="en" id="products_to_1c">Products to 1С</item>
+		<item lang="ru" id="1c_orders_from">Заказы из 1С</item>
+		<item lang="en" id="1c_orders_from">Orders from 1С</item>
+		<item lang="ru" id="1c_products_filename">1с_products</item>
+		<item lang="en" id="1c_products_filename">1с_products</item>
+		<item lang="ru" id="1c_orders_filename">1с_orders</item>
+		<item lang="en" id="1c_orders_filename">1с_orders</item>
+		<item lang="ru" id="1c_select_shop">Выберите витрину</item>
+		<item lang="en" id="1c_select_shop">Select a storefront</item>
+		<item lang="ru" id="1c_classifier">Классификатор (Каталог товаров)</item>
+		<item lang="en" id="1c_classifier">Classifier (Product catalog)</item>
+		<item lang="ru" id="1c_catalog">Каталог товаров</item>
+		<item lang="en" id="1c_catalog">Product catalog</item>
+		<item lang="ru" id="1c_export_selected">Экспорт в 1С</item>
+		<item lang="en" id="1c_export_selected">Export to 1С</item>
+		<item lang="ru" id="1c_additional_options">Дополнительные опции</item>
+		<item lang="en" id="1c_additional_options">Additional options</item>
+		<item lang="ru" id="1c_export_currency">руб</item>
+		<item lang="en" id="1c_export_currency">RUB</item>
+		<item lang="ru" id="error_exim_1c_incorrect_file">Данные о заказах в загруженном файле не найдены</item>
+		<item lang="en" id="error_exim_1c_incorrect_file">No order data in the uploaded file</item>
+		<item lang="ru" id="1c_select_files">Пожалуйста выберите или загрузите файл(ы) для импорта. Файл должен содержать данные о заказах из 1С в формате CommerceML</item>
+		<item lang="en" id="1c_select_files">Please select or upload import file(s). The file(s) should contain order data from 1С in the CommerceML format</item>
+		<item lang="en" id="cant_create_file">File could not be created</item>
+		<item lang="ru" id="cant_create_file">Не удалось создать файл</item>
+		<item lang="ru" id="base_price">Базовая цена</item>
+		<item lang="en" id="base_price">Base price</item>
+		<item lang="ru" id="1c_prices">Цены из 1С</item>
+		<item lang="en" id="1c_prices">1C prices</item>
+		<item lang="ru" id="base_price_empty">Введите базовую цену из 1С</item>
+		<item lang="en" id="base_price_empty">Please enter base price from 1C</item>
+		<item lang="ru" id="correct_1c_price">Цена принята</item>
+		<item lang="en" id="correct_1c_price">Price is accepted</item>
+		<item lang="ru" id="incorrect_1c_price">Ошибка</item>
+		<item lang="en" id="incorrect_1c_price">Error</item>
+		<item lang="ru" id="base_price">Базовая цена</item>
+		<item lang="ru" id="1c_prices">Цены из 1С</item>
+		<item lang="ru" id="base_price_empty">Введите базовую цену из 1С</item>
+		<item lang="ru" id="correct_1c_price">Цена принята</item>
+		<item lang="ru" id="incorrect_1c_price">Ошибка</item>
+		<item lang="ru" id="offers_not_found">Файл offers.xml не найден</item>
+		<item lang="en" id="offers_not_found">offers.xml not found</item>
+		<item lang="ru" id="off_function_import_prices">Функция выгрузки цен отключена</item>
+		<item lang="en" id="off_function_import_prices">The price import function is disabled</item>
+    </language_variables>
+    <queries>
+        <item for="install">CREATE TABLE ?:rus_exim_1c (`id` int(8) UNSIGNED NOT NULL auto_increment, `object_type` varchar(64) NOT NULL, `primary_object` text, `secondary_object` text, PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8</item>
+        <item for="install">ALTER TABLE ?:categories ADD external_id VARCHAR(128) NOT NULL</item>
+        <item for="install">ALTER TABLE ?:products ADD external_id VARCHAR(128) NOT NULL</item>
+        <item for="install">ALTER TABLE ?:product_features ADD external_id VARCHAR(128) NOT NULL</item>
+		<item for="install">ALTER TABLE ?:product_feature_variants ADD external_id VARCHAR(128) NOT NULL</item>
+        <item for="install">ALTER TABLE ?:product_option_variants ADD external_id VARCHAR(128) NOT NULL</item>
+        <item for="install">ALTER TABLE ?:product_options_inventory ADD external_id VARCHAR(128) NOT NULL</item>
+        <item for="install">ALTER TABLE ?:users ADD external_id VARCHAR(128) NOT NULL</item>
+		<item for="install">CREATE TABLE ?:rus_exim_1c_prices (
+							`price_1c_id` mediumint(8) unsigned NOT NULL auto_increment,
+							`price_1c` text NOT NULL, 
+							`type` text NOT NULL, 
+							`usergroup_id` mediumint(8) NOT NULL,
+							PRIMARY KEY  (`price_1c_id`)
+							) ENGINE=MyISAM DEFAULT CHARSET=utf8</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:rus_exim_1c</item>
+    </queries>
+</addon>

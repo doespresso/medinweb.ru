@@ -20,7 +20,7 @@
 {include file="common/scripts.tpl"}
 </head>
 
-<body>
+<body{if $smarty.request.dispatch=='index.index'} class="homepage"{else} class="page"{/if}>
 {if $runtime.customization_mode.design}
     {include file="common/toolbar.tpl" title=__("on_site_template_editing") href="customization.disable_mode?type=design"}
 {/if}

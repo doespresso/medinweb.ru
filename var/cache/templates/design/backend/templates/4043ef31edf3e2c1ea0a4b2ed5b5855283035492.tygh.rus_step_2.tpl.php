@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-04-04 15:47:22
+<?php /* Smarty version Smarty-3.1.15, created on 2014-05-04 18:16:42
          compiled from "/var/www/medinweb.ru/public/design/backend/templates/addons/rus_build_pack/views/rus_upgrade/rus_step_2.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:427203774533e9bcaca2b32-56625173%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4043ef31edf3e2c1ea0a4b2ed5b5855283035492' => 
     array (
       0 => '/var/www/medinweb.ru/public/design/backend/templates/addons/rus_build_pack/views/rus_upgrade/rus_step_2.tpl',
-      1 => 1396609142,
+      1 => 1396612049,
       2 => 'tygh',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_533e9bcad97f70_88924981',
   'variables' => 
   array (
     'check_permissions' => 0,
@@ -26,8 +28,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'addon' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_533e9bcad97f70_88924981',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_533e9bcad97f70_88924981')) {function content_533e9bcad97f70_88924981($_smarty_tpl) {?><?php
 fn_preload_lang_vars(array('no_data','no_data','auto_set_permissions_via_ftp','export_to_ftp','text_uc_non_writable_files','no_data','version','status','active','disable','go_back','next_step'));

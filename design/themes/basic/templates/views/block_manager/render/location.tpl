@@ -4,10 +4,12 @@
     </div>
 {/if}
 
+{if $smarty.request.dispatch=='index.index'}
 {if $containers.header}
-    <div class="tygh-header clearfix">
+    <div class="superslide">
         {$containers.header nofilter}
     </div>
+{/if}
 {/if}
 
 {if $containers.content}

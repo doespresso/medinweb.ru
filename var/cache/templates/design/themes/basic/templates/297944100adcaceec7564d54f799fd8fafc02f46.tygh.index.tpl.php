@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-04-04 15:44:51
+<?php /* Smarty version Smarty-3.1.15, created on 2014-04-07 20:07:28
          compiled from "/var/www/medinweb.ru/public/design/themes/basic/templates/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1178258857533e9b336aba20-54509966%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '297944100adcaceec7564d54f799fd8fafc02f46' => 
     array (
       0 => '/var/www/medinweb.ru/public/design/themes/basic/templates/index.tpl',
-      1 => 1396611751,
+      1 => 1396886846,
       2 => 'tygh',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_533e9b33767053_60618382',
   'variables' => 
   array (
     'page_title' => 0,
@@ -26,8 +28,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'runtime' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_533e9b33767053_60618382',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_533e9b33767053_60618382')) {function content_533e9b33767053_60618382($_smarty_tpl) {?><?php if (!is_callable('smarty_block_hook')) include '/var/www/medinweb.ru/public/app/functions/smarty_plugins/block.hook.php';
 if (!is_callable('smarty_function_render_location')) include '/var/www/medinweb.ru/public/app/functions/smarty_plugins/function.render_location.php';
@@ -85,7 +85,7 @@ if (!empty($_capture_buffer)) {
 
 </head>
 
-<body>
+<body<?php if ($_REQUEST['dispatch']=='index.index') {?> class="homepage"<?php } else { ?> class="page"<?php }?>>
 <?php if ($_smarty_tpl->tpl_vars['runtime']->value['customization_mode']['design']) {?>
     <?php echo $_smarty_tpl->getSubTemplate ("common/toolbar.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('title'=>__("on_site_template_editing"),'href'=>"customization.disable_mode?type=design"), 0);?>
 

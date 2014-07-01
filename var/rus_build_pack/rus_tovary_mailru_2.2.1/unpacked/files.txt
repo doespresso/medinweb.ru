@@ -1,0 +1,10 @@
+app/addons/rus_tovary_mailru/addon.xml
+app/addons/rus_tovary_mailru/controllers/backend/exim.post.php
+app/addons/rus_tovary_mailru/controllers/backend/products.post.php
+app/addons/rus_tovary_mailru/func.php
+app/addons/rus_tovary_mailru/schemas/exim/products.post.php
+app/addons/rus_tovary_mailru/schemas/exim/tovary_mailru.functions.php
+app/addons/rus_tovary_mailru/schemas/exim/tovary_mailru.php
+app/addons/rus_tovary_mailru/schemas/permissions/trusted_controllers.post.php
+design/backend/templates/addons/rus_tovary_mailru/hooks/products/detailed_content.post.tpl
+design/backend/templates/addons/rus_tovary_mailru/settings/instruction.tpl

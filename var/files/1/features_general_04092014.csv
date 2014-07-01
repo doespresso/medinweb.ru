@@ -1,0 +1,7 @@
+Feature name;Feature ID;Language;Type;Group;Description;Categories;Show on the features tab;Show in product list;Show in product header;Position;Status;Store;Feature code;Variants;Prefix;Suffix;Comparsion
+"Единица измерения";"23";"ru";"S";"";"";"";"Y";"Y";"N";"0";"A";"Simtech";"";"бут., канист., капс., кг, компл., м, наб., пар., пач., рул., рулон, уп, шт., уп.";"";"";"N"
+"Количество в коробке";"19";"ru";"T";"";"";"";"Y";"Y";"Y";"0";"A";"Simtech";"boxqnt";"";"";"";"N"
+"Производитель";"18";"ru";"E";"";"";"";"Y";"Y";"Y";"0";"A";"Simtech";"";"AURA, BASIC Medical, Becton Dickinson, BEL, Bel Baby, Bright Medical, Calmor, COSMOPOR Advance, COSMOPOR Antibacterial, COSMOPOR E steril, COSMOS, Diagramm Halbach, DiaMedical, ES-KOMPRESSEN, Fil-Zellin, FIRST AID, Foliodress, HARTMANN, Hartmann, IPS, JNB, KDM, Menalind, Moli, OBVAZOVA, PAGASLING, PAGASLING steril, PAGAVIT, PEHA, Plasti Lab, PUR-ZELLIN, PUR-ZELLIN steril, RIA, SAMU, SFM, SicSac, Skintact, SOFT-ZELLIN, SONY Corporation, STERILUX ES, Suyun, TELA, Themoval, Vala, WATTESTÄBCHEN, Ахтамар, Винар, Гекса, Гельтек, Емельянъ Савостинъ. Ватная фабрика, Навтекс, Ньюфарм, Русвата, РусМедУпак, Эверс-фарм, Этикон (Джонсон и Джонсон)";"";"";"N"
+"Срок годности";"25";"ru";"D";"";"";"";"Y";"N";"N";"0";"A";"Simtech";"";"";"";"";"N"
+"Страна";"26";"ru";"S";"";"";"";"Y";"Y";"Y";"1";"A";"Simtech";"";"Австрия, Великобритания, Германия, Испания, Италия, Китай, Ливан, Малайзия, Россия, Россия , Сербия, США, Япония";"";"";"N"
+"";"31";"ru";"";"";"";"";"Y";"Y";"N";"0";"A";"Simtech";"";"";"";"";"N"

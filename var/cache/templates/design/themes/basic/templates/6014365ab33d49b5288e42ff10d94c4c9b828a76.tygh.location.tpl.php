@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2014-04-04 15:44:59
+<?php /* Smarty version Smarty-3.1.15, created on 2014-04-07 22:40:47
          compiled from "/var/www/medinweb.ru/public/design/themes/basic/templates/views/block_manager/render/location.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:605410556533e9b3b9d8070-09483622%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6014365ab33d49b5288e42ff10d94c4c9b828a76' => 
     array (
       0 => '/var/www/medinweb.ru/public/design/themes/basic/templates/views/block_manager/render/location.tpl',
-      1 => 1396611751,
+      1 => 1396896042,
       2 => 'tygh',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_533e9b3ba2c0a5_05625718',
   'variables' => 
   array (
     'containers' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'rdelim' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.15',
-  'unifunc' => 'content_533e9b3ba2c0a5_05625718',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_533e9b3ba2c0a5_05625718')) {function content_533e9b3ba2c0a5_05625718($_smarty_tpl) {?><?php
 fn_preload_lang_vars(array('choose_your_country'));
@@ -36,11 +36,13 @@ fn_preload_lang_vars(array('choose_your_country'));
     </div>
 <?php }?>
 
+<?php if ($_REQUEST['dispatch']=='index.index') {?>
 <?php if ($_smarty_tpl->tpl_vars['containers']->value['header']) {?>
-    <div class="tygh-header clearfix">
+    <div class="superslide">
         <?php echo $_smarty_tpl->tpl_vars['containers']->value['header'];?>
 
     </div>
+<?php }?>
 <?php }?>
 
 <?php if ($_smarty_tpl->tpl_vars['containers']->value['content']) {?>
